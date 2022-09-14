@@ -1,12 +1,14 @@
 import React from 'react';
 import '../styles/login.css';
-import Logo from '../svg/CodeWave.svg';
+import logo from '../images/logo.png';
 
 
 const login = () => {
   return (
     <div className='login-container'>
-        <div></div>
+        <div className='logo-container'>
+          <img src={logo} className='logo'/>
+        </div>
     </div>
   )
 }
