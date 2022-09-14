@@ -1,5 +1,7 @@
 import React from 'react';
 import '../styles/login.css';
+import Logo from '../svg/CodeWave.svg';
+
 
 const login = () => {
   return (
