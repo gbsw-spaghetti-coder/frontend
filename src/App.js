@@ -1,12 +1,18 @@
-import './App.css';
-import { Switch, Route } from 'react-router-dom';
+import "./App.css";
+import Login from './pages/login';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
     <div>
-      안녕
+      <Login />
+      {/* <BrowserRouter>
+        <Routes>
+          <Route path="/" component={Login} exact={true} />
+        </Routes>
+      </BrowserRouter> */}
     </div>
   );
-}
+};
 
 export default App;
