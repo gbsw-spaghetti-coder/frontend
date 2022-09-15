@@ -3,7 +3,6 @@ import "../styles/login.css";
 import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 
-<<<<<<< HEAD
 const login = (props) => {
   const {bg} = props
   bg('bg-blue')
@@ -23,14 +22,6 @@ const login = (props) => {
           <span className="goSignUp-text-link">회원가입</span> 
         </div>  
       </div>      
-=======
-const login = () => {
-  return (
-    <div className="login-container">
-      <div className="logo-container">
-        <img src={logo} className="logo" />
-      </div>
->>>>>>> d3049f1967c7c39e1809cd43ed97f89d52c45695
     </div>
   );
 };
