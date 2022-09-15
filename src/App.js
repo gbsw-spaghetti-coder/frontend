@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const App = () => {
   return (
     <div>
-      <Login />
+      {/*<Login />*/}
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
