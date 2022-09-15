@@ -14,7 +14,6 @@ const App = () => {
     <div className={bg}>
       <Login bg={changeBg} />
       {/* <BrowserRouter>
-=======
     <div>
       {/*<Login />*/}
       <BrowserRouter>
