@@ -1,16 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 div .bg-blue {
   background: linear-gradient(#004581, #000000);
+=======
+html,
+body {
+>>>>>>> d3049f1967c7c39e1809cd43ed97f89d52c45695
   width: 100%;
   height: 100vh;
 }
 
 .login-container {
+<<<<<<< HEAD
     display: flex;
 }
 
@@ -72,3 +78,9 @@ div .bg-blue {
 }
 
 
+=======
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#004581, #000000);
+}
+>>>>>>> d3049f1967c7c39e1809cd43ed97f89d52c45695
