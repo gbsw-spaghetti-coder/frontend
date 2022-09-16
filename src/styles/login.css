@@ -58,19 +58,6 @@ div .bg-blue {
     text-align: center;
 }
 
-.goSignUp-text {
-    display: inline-block;
-    font-size: 13px;
-    padding-top: 20px;
-}
-
-.goSignUp-text-link {
-    font-size: 13px;
-    padding-top: 20px;
-    padding-left: 5px;
-    color: #0095f6;
-}
-
 .login-form {
     display: block;
     margin-top: 50px;
@@ -116,4 +103,24 @@ div .bg-blue {
     width: 150px;
     height: 30px;
     border-radius: 5px;
+}
+
+.lostPW {
+    text-align: center;
+    color: #0095f6;
+    margin-top: 15px;
+    font-size: 7px;
+}
+
+.goSignUp-text {
+    display: inline-block;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+.goSignUp-text-link {
+    font-size: 13px;
+    padding-top: 20px;
+    padding-left: 5px;
+    color: #0095f6;
 }

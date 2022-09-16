@@ -20,6 +20,7 @@ const login = (props) => {
             <input type="text" className="email-text" placeholder='E-mail' />
             <input type="password" className="pw-text" placeholder='Password' />
             <button type='submit' className='login-button'>로그인</button>
+            <p className='lostPW'>비밀번호를 잃어버리셨나요?</p>
           </div>
         </div>
         <div className="login-layout-bottom">
