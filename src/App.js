@@ -5,8 +5,6 @@ import Error from './pages/Error';
 import './App.css';
 // import classNames from 'classnames';
 
-
-
 const App = () => {
   const [bg, setBg] = useState('');
   const changeBg = (_bg) => {
