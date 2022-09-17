@@ -9,9 +9,10 @@
   height: 100vh;
 } */
 
-body {
+.login-container {
     background: linear-gradient(#004581, #000000);
     height: 100vh;
+    width: 100%;
 }
 
 .login-container {
@@ -67,7 +68,8 @@ body {
     margin-top: 50px;
 }
 
-.email-text, .pw-text {
+.email-text,
+.pw-text {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,11 +88,13 @@ body {
     margin-top: 35px;
 }
 
-.email-text::placeholder, .pw-text::placeholder {
+.email-text::placeholder,
+.pw-text::placeholder {
     color: black;
 }
 
-.email-text:hover, .pw-text:hover {
+.email-text:hover,
+.pw-text:hover {
     width: 200px;
     transition: 1.2s;
 }
@@ -101,7 +105,7 @@ body {
     margin-right: auto;
     margin-top: 20px;
     border: none;
-    background: #004581;    
+    background: #004581;
     color: white;
     font-weight: bold;
     width: 150px;
@@ -123,7 +127,8 @@ body {
     margin-top: 10px;
 }
 
-.left-or-border, .right-or-border {
+.left-or-border,
+.right-or-border {
     display: flex;
     border: 0.1px solid black;
     width: 80px;
@@ -141,14 +146,16 @@ body {
 
 .or {
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
-.kakao-button, .github-button {
+.kakao-button,
+.github-button {
     display: flex;
 }
 
-.kakao-login-button, .github-login-button {
+.kakao-login-button,
+.github-login-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -169,16 +176,30 @@ body {
     padding-top: 8px;
 }
 
+.kakao-login-button:hover {
+    background-color: #9a8b0d;
+    cursor: pointer;
+}
+
+.button-phrase {
+    margin-bottom: 4px;
+}
+
 .github-login-button {
     display: flex;
-    background: #000000;
+    background: #000;
     color: white;
     font-size: 12px;
     padding-left: 20px;
     padding-top: 8px;
 }
 
-.kakao-img, .github-img {
+.github-login-button:hover {
+    background-color: rgb(66, 66, 66);
+}
+
+.kakao-img,
+.github-img {
     display: flex;
     position: relative;
     width: 27px;
@@ -200,7 +221,7 @@ body {
     color: #0095f6;
 }
 
-.logo-mobile, 
+.logo-mobile,
 .logo-text-mobile,
 .login-layout-bottom-mobile {
     display: none;
@@ -283,12 +304,14 @@ body {
         font-size: 30px;
     }
 
-    .email-text, .pw-text {
+    .email-text,
+    .pw-text {
         font-size: 20px;
         width: 300px;
     }
 
-    .email-text:hover, .pw-text:hover {
+    .email-text:hover,
+    .pw-text:hover {
         width: 350px;
     }
 
@@ -302,7 +325,8 @@ body {
         font-size: 15px;
     }
 
-    .left-or-border, .right-or-border {
+    .left-or-border,
+    .right-or-border {
         width: 150px;
     }
 
@@ -314,7 +338,8 @@ body {
         margin-top: 20px;
     }
 
-    .kakao-login-button, .github-login-button {
+    .kakao-login-button,
+    .github-login-button {
         width: 300px;
         height: 50px;
         font-size: 20px;
@@ -332,20 +357,27 @@ body {
         padding-top: 115px;
     }
 
-    .goSignUp-text, .goSignUp-text-link {
+    .goSignUp-text,
+    .goSignUp-text-link {
         font-size: 20px;
-        
+
     }
 
     @media (min-width: 250px) and (max-width: 426px) {
-       .login-layout-top {
-        background: #f5f5f5;
-        box-shadow: none;
-       }
+        .kakao-img,
+        .github-img {
+            bottom: 0;
+        }
 
-       .email-text, .pw-text {
-        background: transparent;
-       }
+        .login-layout-top {
+            background: #f5f5f5;
+            box-shadow: none;
+        }
+
+        .email-text,
+        .pw-text {
+            background: transparent;
+        }
     }
 
 }

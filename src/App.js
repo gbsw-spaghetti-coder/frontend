@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login';
 import Error from './pages/Error';
-import './App.css';
+import SignUp from './pages/SignUp';
 // import classNames from 'classnames';
 
 const App = () => {
@@ -15,6 +15,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login bg={changeBg} />} />
+          <Route path='/signup' element={<SignUp/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
