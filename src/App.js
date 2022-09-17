@@ -1,8 +1,10 @@
-import './App.css';
-import Login from './pages/login';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import classNames from 'classnames';
 import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Login from './pages/Login';
+import Error from './pages/Error';
+import './App.css';
+// import classNames from 'classnames';
+
 
 
 const App = () => {
@@ -14,7 +16,8 @@ const App = () => {
     <div className={bg}>
       <BrowserRouter>
         <Routes>
-          <Route path="/login" element={<Login bg={changeBg} />} />
+          <Route path="/" element={<Login bg={changeBg} />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
     </div>
