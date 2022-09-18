@@ -49,7 +49,7 @@
 .login-text {
     text-align: center;
     font-size: 30px;
-    font-weight: 700px;
+    font-weight: 700;
     letter-spacing: 2px;
     padding-top: 50px;
 }
@@ -111,6 +111,11 @@
     width: 150px;
     height: 30px;
     border-radius: 5px;
+}
+
+.login-button:hover {
+    cursor: pointer;
+    background: #0048;
 }
 
 .lostPW {
@@ -196,6 +201,7 @@
 
 .github-login-button:hover {
     background-color: rgb(66, 66, 66);
+    cursor: pointer;
 }
 
 .kakao-img,
@@ -227,47 +233,13 @@
     display: none;
 }
 
-@media (min-width: 1101px) and (max-width: 1245px) {
-
-    .logo-layout {
-        position: relative;
-        right: 70px;
-    }
-
-    .login-layout {
-        position: relative;
-        right: 200px;
-    }
-}
-
-@media(min-width: 1024px) and (max-width: 1100px) {
-    .logo-layout {
-        position: relative;
-        right: 70px;
-    }
-
-    .logo {
-        width: 500px;
-    }
-
-    .logo-text {
-        font-size: 45px;
-        right: 55px;
-    }
-
-    .login-layout {
-        position: relative;
-        right: 150px;
-    }
-}
-
 @media (min-width: 200px) and (max-width: 950px) {
-    body {
-        background: #f5f5f5;
-    }
 
     .login-container {
         display: block;
+        width: 100%;
+        height: 100vh;
+        background: #f5f5f5;
     }
 
     .logo-layout {
@@ -275,11 +247,12 @@
     }
 
     .login-layout-top {
+        position: relative;
         display: block;
         width: 500px;
         height: 900px;
         margin: auto;
-        margin-top: 100px;
+        top: 50px;
         box-shadow: 0 0 4px gray;
     }
 
@@ -350,34 +323,48 @@
     .login-layout-bottom {
         display: none;
     }
-
     .login-layout-bottom-mobile {
-        display: flex;
-        padding-left: 110px;
+        display: block;
         padding-top: 115px;
+        margin-left: 115px;
     }
 
     .goSignUp-text,
     .goSignUp-text-link {
         font-size: 20px;
-
     }
 
-    @media (min-width: 250px) and (max-width: 426px) {
+    @media (min-width: 250px) and (max-width: 426px)  {
+        .login-container {
+            background: white;
+        }
+
         .kakao-img,
         .github-img {
             bottom: 0;
         }
 
+        .button-phrase {
+            padding-left: 10px;
+        }
+
         .login-layout-top {
-            background: #f5f5f5;
+            background: white;
             box-shadow: none;
+
+        }
+
+        .login-layout-bottom-mobile {
+            display: block;
+            padding-top: 115px;
+            margin-left: 120px;
         }
 
         .email-text,
         .pw-text {
             background: transparent;
         }
+
     }
 
 }
