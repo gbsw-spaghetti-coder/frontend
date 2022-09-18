@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login';
-import Error from './pages/Error';
-import SignUp from './pages/SignUp';
+import { Login, Error, SignUp } from './pages/index';
 // import classNames from 'classnames';
 
 const App = () => {
