@@ -28,17 +28,11 @@ const SignUp = () => {
 
     if(values.email === '') {
       alert("이메일을 입력하세요... ㅠㅠ");
-    }
-
-    if(values.nickname === '') {
+    } else if (values.nickname === '') {
       alert("닉네임을입려하세요ㅠㅠ");
-    }
-
-    if(values.password === '') {
+    } else if (values.password === '') {
       alert("비밀번호적으세요");
-    }
-
-    if(values.passwordCheck === '') {
+    } else if (values.passwordCheck === '') {
       alert("비밀번호체크르랳주세요")
     }
 
