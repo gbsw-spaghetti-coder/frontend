@@ -1,13 +1,14 @@
 import React from 'react';
+import '../styles/error.css';
 
 const Error = () => {
   const redirectMainpage = () => {
     window.location.href = '/';
   };
   return (
-    <div>
-      <h1>404 error</h1>
-      <button onClick={redirectMainpage}>메인으로 돌아가기</button>
+    <div className="error-container">
+      <h1 className="error-text">404 Not Found</h1>
+      <button onClick={redirectMainpage} className="error-button">메인으로 돌아가기</button>
     </div>
   );
 };

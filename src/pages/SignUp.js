@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import classNames from 'classnames/bind';
 import logo from '../images/logo.png';
 import style from '../styles/signup.module.css';
@@ -39,6 +40,27 @@ const SignUp = () => {
     if(values.password !== values.passwordCheck) {
       alert("비밀번호가달라요^^");
     }
+
+    const data = {
+      email: values.email,
+      nick: values.nickname,
+      password: values.passwordCheck
+    }
+
+
+    try {
+      const response = await axios.post('/api/auth/sign', data, {withCredentials: true})
+
+      if (response.data.success) {
+        alert(response.data.message);
+        window.location.href = "/";
+        console.log(response);
+      }
+    } catch (error) {
+      alert(error.response.data.message);
+    }
+
+
   }
 
   return (
