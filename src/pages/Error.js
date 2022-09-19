@@ -2,8 +2,8 @@ import React from 'react';
 
 const Error = () => {
   const redirectMainpage = () => {
-    window.location.href = "/";
-  }
+    window.location.href = '/';
+  };
   return (
     <div>
       <h1>404 error</h1>

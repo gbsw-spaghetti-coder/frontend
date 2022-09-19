@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* 1rem당 16px */
@@ -12,361 +12,357 @@
 } */
 
 .login-container {
-    background: linear-gradient(#004581, #000000);
-    height: 100vh;
-    width: 100%;
+  background: linear-gradient(#004581, #000000);
+  height: 100vh;
+  width: 100%;
 }
 
 .login-container {
-    display: flex;
+  display: flex;
 }
 
 .logo-layout {
-    display: block;
+  display: block;
 }
 
 .logo {
-    width: 700px;
-    margin-top: 150px;
-    margin-left: 100px;
+  width: 700px;
+  margin-top: 150px;
+  margin-left: 100px;
 }
 
 .logo-text {
-    position: relative;
-    color: white;
-    font-size: 55px;
-    font-weight: bold;
-    margin-left: 290px;
-    bottom: 30px;
+  position: relative;
+  color: white;
+  font-size: 55px;
+  font-weight: bold;
+  margin-left: 290px;
+  bottom: 30px;
 }
 
 .login-layout-top {
-    width: 270px;
-    height: 430px;
-    background-color: white;
-    margin-top: 70px;
-    margin-left: 230px;
+  width: 270px;
+  height: 430px;
+  background-color: white;
+  margin-top: 70px;
+  margin-left: 230px;
 }
 
 .login-text {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding-top: 50px;
 }
 
 .login-layout-bottom {
-    width: 270px;
-    height: 60px;
-    background-color: white;
-    margin-top: 20px;
-    margin-left: 230px;
-    text-align: center;
+  width: 270px;
+  height: 60px;
+  background-color: white;
+  margin-top: 20px;
+  margin-left: 230px;
+  text-align: center;
 }
 
 .login-form {
-    display: block;
-    margin-top: 50px;
+  display: block;
+  margin-top: 50px;
 }
 
 .email-text,
 .pw-text {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 5px;
-    padding: 4px;
-    border: none;
-    outline: none;
-    border-bottom: 1px solid black;
-    width: 170px;
-    font-weight: lighter;
-    font-size: 13px;
-    transition: 1.5s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding: 4px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 170px;
+  font-weight: lighter;
+  font-size: 13px;
+  transition: 1.5s;
 }
 
 .pw-text {
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 .email-text::placeholder,
 .pw-text::placeholder {
-    color: black;
+  color: black;
 }
 
 .email-text:hover,
 .pw-text:hover {
-    width: 200px;
-    transition: 1.2s;
+  width: 200px;
+  transition: 1.2s;
 }
 
 .login-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    border: none;
-    background: #004581;
-    color: white;
-    font-weight: bold;
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: none;
+  background: #004581;
+  color: white;
+  font-weight: bold;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .login-button:hover {
-    cursor: pointer;
-    background: #0048;
+  cursor: pointer;
+  background: #0048;
 }
 
 .lostPW {
-    position: relative;
-    text-align: center;
-    color: #0095f6;
-    margin-top: 7px;
-    font-size: 5px;
+  position: relative;
+  text-align: center;
+  color: #0095f6;
+  margin-top: 7px;
+  font-size: 5px;
 }
 
 .or-layout {
-    display: flex;
-    margin: auto;
-    margin-top: 10px;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .left-or-border,
 .right-or-border {
-    display: flex;
-    border: 0.1px solid black;
-    width: 80px;
-    height: 0.5px;
-    margin-top: 10px;
+  display: flex;
+  border: 0.1px solid black;
+  width: 80px;
+  height: 0.5px;
+  margin-top: 10px;
 }
 
 .left-or-border {
-    margin: auto;
+  margin: auto;
 }
 
 .right-or-border {
-    margin: auto
+  margin: auto;
 }
 
 .or {
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .kakao-button,
 .github-button {
-    display: flex;
+  display: flex;
 }
 
 .kakao-login-button,
 .github-login-button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    font-weight: bold;
-    width: 150px;
-    height: 30px;
-    border-radius: 5px;
-    margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  font-weight: bold;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .kakao-login-button {
-    display: flex;
-    background: #FAE100;
-    color: black;
-    font-size: 12px;
-    padding-left: 20px;
-    padding-top: 8px;
+  display: flex;
+  background: #fae100;
+  color: black;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-top: 8px;
 }
 
 .kakao-login-button:hover {
-    background-color: #9a8b0d;
-    cursor: pointer;
+  background-color: #9a8b0d;
+  cursor: pointer;
 }
 
 .button-phrase {
-    margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .github-login-button {
-    display: flex;
-    background: #000;
-    color: white;
-    font-size: 12px;
-    padding-left: 20px;
-    padding-top: 8px;
+  display: flex;
+  background: #000;
+  color: white;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-top: 8px;
 }
 
 .github-login-button:hover {
-    background-color: rgb(66, 66, 66);
-    cursor: pointer;
+  background-color: rgb(66, 66, 66);
+  cursor: pointer;
 }
 
 .kakao-img,
 .github-img {
-    display: flex;
-    position: relative;
-    width: 27px;
-    height: 27px;
-    right: 10px;
-    bottom: 6px;
+  display: flex;
+  position: relative;
+  width: 27px;
+  height: 27px;
+  right: 10px;
+  bottom: 6px;
 }
 
 .goSignUp-text {
-    display: inline-block;
-    font-size: 13px;
-    padding-top: 20px;
+  display: inline-block;
+  font-size: 13px;
+  padding-top: 20px;
 }
 
 .goSignUp-text-link {
-    font-size: 13px;
-    padding-top: 20px;
-    padding-left: 5px;
-    color: #0095f6;
+  font-size: 13px;
+  padding-top: 20px;
+  padding-left: 5px;
+  color: #0095f6;
 }
 
 .logo-mobile,
 .logo-text-mobile,
 .login-layout-bottom-mobile {
-    display: none;
+  display: none;
 }
 
 @media (min-width: 200px) and (max-width: 950px) {
+  .login-container {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5;
+  }
 
+  .logo-layout {
+    display: none;
+  }
+
+  .login-layout-top {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 900px;
+    margin: auto;
+    top: 50px;
+    box-shadow: 0 0 4px gray;
+  }
+
+  .login-text {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    width: 350px;
+  }
+
+  .logo-text-mobile {
+    position: relative;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    text-align: center;
+    bottom: 10px;
+    font-size: 30px;
+  }
+
+  .email-text,
+  .pw-text {
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .email-text:hover,
+  .pw-text:hover {
+    width: 350px;
+  }
+
+  .login-button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .lostPW {
+    font-size: 15px;
+  }
+
+  .left-or-border,
+  .right-or-border {
+    width: 150px;
+  }
+
+  .or {
+    font-size: 25px;
+  }
+
+  .kakao-button {
+    margin-top: 20px;
+  }
+
+  .kakao-login-button,
+  .github-login-button {
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 13px;
+  }
+
+  .login-layout-bottom {
+    display: none;
+  }
+  .login-layout-bottom-mobile {
+    display: block;
+    padding-top: 115px;
+    margin-left: 115px;
+  }
+
+  .goSignUp-text,
+  .goSignUp-text-link {
+    font-size: 20px;
+  }
+
+  @media (min-width: 250px) and (max-width: 426px) {
     .login-container {
-        display: block;
-        width: 100%;
-        height: 100vh;
-        background: #f5f5f5;
+      background: white;
     }
 
-    .logo-layout {
-        display: none;
+    .kakao-img,
+    .github-img {
+      bottom: 0;
+    }
+
+    .button-phrase {
+      padding-left: 10px;
     }
 
     .login-layout-top {
-        position: relative;
-        display: block;
-        width: 500px;
-        height: 900px;
-        margin: auto;
-        top: 50px;
-        box-shadow: 0 0 4px gray;
+      background: white;
+      box-shadow: none;
     }
 
-    .login-text {
-        display: none;
-    }
-
-    .logo-mobile {
-        display: block;
-        margin: auto;
-        padding-top: 100px;
-        width: 350px;
-    }
-
-    .logo-text-mobile {
-        position: relative;
-        display: block;
-        margin: auto;
-        font-weight: bold;
-        text-align: center;
-        bottom: 10px;
-        font-size: 30px;
+    .login-layout-bottom-mobile {
+      display: block;
+      padding-top: 115px;
+      margin-left: 120px;
     }
 
     .email-text,
     .pw-text {
-        font-size: 20px;
-        width: 300px;
+      background: transparent;
     }
-
-    .email-text:hover,
-    .pw-text:hover {
-        width: 350px;
-    }
-
-    .login-button {
-        width: 300px;
-        height: 50px;
-        font-size: 20px;
-    }
-
-    .lostPW {
-        font-size: 15px;
-    }
-
-    .left-or-border,
-    .right-or-border {
-        width: 150px;
-    }
-
-    .or {
-        font-size: 25px;
-    }
-
-    .kakao-button {
-        margin-top: 20px;
-    }
-
-    .kakao-login-button,
-    .github-login-button {
-        width: 300px;
-        height: 50px;
-        font-size: 20px;
-        padding-left: 50px;
-        padding-top: 13px;
-    }
-
-    .login-layout-bottom {
-        display: none;
-    }
-    .login-layout-bottom-mobile {
-        display: block;
-        padding-top: 115px;
-        margin-left: 115px;
-    }
-
-    .goSignUp-text,
-    .goSignUp-text-link {
-        font-size: 20px;
-    }
-
-    @media (min-width: 250px) and (max-width: 426px)  {
-        .login-container {
-            background: white;
-        }
-
-        .kakao-img,
-        .github-img {
-            bottom: 0;
-        }
-
-        .button-phrase {
-            padding-left: 10px;
-        }
-
-        .login-layout-top {
-            background: white;
-            box-shadow: none;
-
-        }
-
-        .login-layout-bottom-mobile {
-            display: block;
-            padding-top: 115px;
-            margin-left: 120px;
-        }
-
-        .email-text,
-        .pw-text {
-            background: transparent;
-        }
-
-    }
-
+  }
 }
