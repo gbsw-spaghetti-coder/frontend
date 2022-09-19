@@ -17,6 +17,7 @@ const Login = (props) => {
     email: "",
     password: "",
   })
+  /*const [cookie, setCookie] = useState("");*/
 
   const handleChange = e => {
     setValues({
@@ -26,7 +27,7 @@ const Login = (props) => {
   }
 
   const submit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     const data = {
       email: values.email,
@@ -34,15 +35,15 @@ const Login = (props) => {
     };
 
     try {
-      await axios.post('/api/auth/login', data, { withCredentials: true })
-        .then((response) => {
-          console.log(response);
-          alert(response.data.message);
-        }).catch((error) => {
-          console.error(error);
-        })
-    } catch (error) {
-      console.error(error);
+      const response = await axios.post('/api/auth/login', data, { withCredentials: true })
+
+      if(response.data.success) {
+        alert(response.data.message);
+        window.location.href="/";
+        console.log(response);
+      }
+    } catch(error) {
+      alert(error.response.data.message);
     }
   }
 
@@ -96,6 +97,7 @@ const Login = (props) => {
                 <img src={Github} className={cs("github-img")} alt="error" />
                 <span className={cs('button-phrase')}>깃허브로 로그인</span>
               </button>
+              {/*<a href="http://localhost:3001/api/auth/github">깃허브</a>*/}
             </div>
             <div className={cs("login-layout-bottom-mobile")}>
               <p className={cs("goSignUp-text")}>계정이 없으신가요?</p>
