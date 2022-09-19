@@ -4,3 +4,42 @@
     box-sizing: border-box;
 }
 
+/* 1rem당 16px */
+
+.signUp-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.signUp-layout-left {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#004581, #000000);
+}
+
+.signUp-logo-img {
+    display: block;
+    width: 50rem;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+}
+
+.signUp-logo-text {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.signUp-layout-right {
+    display: flex;
+    width: 35rem;
+    height: 100vh;
+}
+
+

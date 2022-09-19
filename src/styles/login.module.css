@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* 1rem당 16px */
+
 /* div .bg-blue {
   background: linear-gradient(#004581, #000000);
   height: 100vh;
