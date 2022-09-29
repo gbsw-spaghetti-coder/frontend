@@ -87,10 +87,10 @@ const Login = (props) => {
               <p className={cs('right-or-border')} />
             </div>
             <div className={cs('kakao-button')}>
-              <button type="submit" className={cs('kakao-login-button')}>
+              <a href="http://127.0.0.1:3001/api/auth/kakao" className={cs('kakao-login-button')}>
                 <img src={Kakao} className={cs('kakao-img')} alt="error" />
                 <span className={cs('button-phrase')}>카카오로 로그인</span>
-              </button>
+              </a>
             </div>
             <div className={cs('github-button')}>
               <a href="http://127.0.0.1:3001/api/auth/github" className={cs('github-login-button')}>
