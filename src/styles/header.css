@@ -37,13 +37,12 @@
 
 .search-layout {
     display: flex;
+    margin: auto;
 }
 
 .search-input {
     width: 500px;
     height: 40px;
-    margin: auto;
-    margin-left: 170px;
     border: 0;
     outline: 0;
     border-radius: 10px;
@@ -55,12 +54,17 @@
     outline: 0
 }
 
+.search-button {
+    border: none;
+    background: white;
+}
+
 .search-icon {
     position: relative;
     width: 20px;
     height: 20px;
     margin: auto;
-    right: 2rem;
+    right: 30px;
 }
 
 .search-icon:hover {
@@ -114,21 +118,36 @@
     display: none;
 }
 
-@media (min-width: 450px) and (max-width: 1024px) {
+@media (min-width: 450px) and (max-width: 950px) {
     .header-container {
         width: 100%;
         height: 150px;
+    }
+
+    .menu-layout-mobile {
+        display: flex;
+    }
+
+    .menu-icon {
+        width: 80px;
+        height: 80px;
+        margin: auto;
     }
 
     .menu-layout {
         display: none;
     }
 
-    .search-input {
-        width: 400px;
-        height: 80px;
-        font-size: 20px;
+    .search-layout {
+        display: flex;
         margin: auto;
+    }
+
+    .search-input {
+        width: 350px;
+        height: 70px;
+        font-size: 20px;
+        border-radius: 20px;
     }
 
     .lol-layout {
@@ -138,28 +157,42 @@
     .search-icon {
         width: 30px;
         height: 30px;
-        right: 40px;
+        right: 43px;
     }
 }
 
-@media (min-width: 281px) and (max-width: 426px) {
+@media (min-width: 281px) and (max-width: 449px) {
     .header-container {
         width: 100%;
-        height: 130px;
+        height: 100px;
     }  
 
     .menu-layout {
         display: none;
     }
 
+    .menu-layout-mobile {
+        display: flex;
+    }
+
+    .menu-icon {
+        width: 50px;
+        height: 50px;
+        margin: auto;
+    }
+
     .lol-layout {
         display: none;
     }
 
+    .search-layout {
+        display: flex;
+        margin: auto;
+    }
+
     .search-input {
         width: 260px;
-        height: 50px;
-        margin: auto;
+        height: 40px;
         font-size: 15px;
     }
 

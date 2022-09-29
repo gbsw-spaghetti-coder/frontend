@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/header.css';
 import Search from '../images/search.png';
+import Menu from '../images/menu.png';
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
         <button>질문</button>
         <button>카테고리</button>
       </div>
-      <div className="menu-layout-mobile"></div>
+      <div className="menu-layout-mobile">
+        <img src={Menu} alt="메뉴바" className='menu-icon' />
+      </div>
       <div className="search-layout">
         <input
           type="text"
@@ -18,7 +21,9 @@ const Header = () => {
           className="search-input"
           name="search"
         />
+        <button className='search-button'>
         <img src={Search} alt="검색" className="search-icon" />
+        </button>
       </div>
       <div className="lol-layout">
         <div className="lo-layout">
