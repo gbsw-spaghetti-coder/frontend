@@ -12,7 +12,9 @@ const Header = () => {
         <button>카테고리</button>
       </div>
       <div className="menu-layout-mobile">
-        <img src={Menu} alt="메뉴바" className='menu-icon' />
+        <button type="submit" className="menu-icon-button">
+          <img src={Menu} alt="메뉴바" className="menu-icon" />
+        </button>
       </div>
       <div className="search-layout">
         <input
@@ -21,14 +23,14 @@ const Header = () => {
           className="search-input"
           name="search"
         />
-        <button className='search-button'>
-        <img src={Search} alt="검색" className="search-icon" />
+        <button className="search-button" type="submit">
+          <img src={Search} alt="검색" className="search-icon" />
         </button>
       </div>
       <div className="lol-layout">
         <div className="lo-layout">
           <span>로그인</span>
-          <div className='height-line'></div>
+          <div className="height-line"></div>
           <span>회원가입</span>
         </div>
         <div className="l-layout">

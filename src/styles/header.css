@@ -118,10 +118,19 @@
     display: none;
 }
 
-@media (min-width: 450px) and (max-width: 950px) {
+.menu-icon-button {
+    background-color: transparent;
+    border: 0;
+}
+
+.menu-icon-button:hover {
+    border: 0;
+}
+
+@media (min-width: 550px) and (max-width: 950px) {
     .header-container {
         width: 100%;
-        height: 150px;
+        height: 120px;
     }
 
     .menu-layout-mobile {
@@ -144,7 +153,7 @@
     }
 
     .search-input {
-        width: 350px;
+        width: 400px;
         height: 70px;
         font-size: 20px;
         border-radius: 20px;
@@ -161,7 +170,7 @@
     }
 }
 
-@media (min-width: 281px) and (max-width: 449px) {
+@media (min-width: 281px) and (max-width: 550px) {
     .header-container {
         width: 100%;
         height: 100px;
@@ -191,7 +200,7 @@
     }
 
     .search-input {
-        width: 260px;
+        width: 280px;
         height: 40px;
         font-size: 15px;
     }
@@ -206,18 +215,27 @@
 @media (min-width: 100px) and (max-width: 280px) {
     .header-container {
         width: 100%;
-        height: 80px;
+        height: 50px;
     }
 
     .menu-layout, .lol-layout {
         display: none;
     }
 
+    .menu-layout-mobile {
+        display: flex;
+    }
+
+    .menu-icon {
+        width: 35px;
+        height: 35px;
+        margin-top: 3px;
+    }
+
     .search-input {
         width: 200px;
-        margin: auto;
+        height: 30px;
         font-size: 11px;
-        margin-left: 55px;
     }
 
     .search-icon {
