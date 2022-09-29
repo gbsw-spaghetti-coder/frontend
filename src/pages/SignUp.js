@@ -8,23 +8,60 @@ import { Link } from 'react-router-dom';
 const cs = classNames.bind(style);
 
 const SignUp = () => {
-  const [values, setValues] = useState({
-    email: '',
-    nick: '',
-    password: '',
-    passwordCheck: '',
+  const [email, setEmail] = useState("");
+  const [nick, setNick] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordCheck, setPasswordCheck] = useState("");
+
+  const [errors, setErrors] = useState({
+    emailError: false,
+    nickError: false,
+    passwordError: false,
+    passwordCheckError: false
   });
-  const [error, setError] = useState("");
 
-  const { email, nick, password, passwordCheck } = values;
+  const emailHandler = e => {
+    if(!email.match('@') && !email.match('.')) {
+      setErrors({
+        emailError: true
+      })
+    } else if(email.match('@') && email.match('.')) {
+      setErrors({
+        emailError: false
+      })
+    }
+    setEmail(e.target.value);
+  }
 
+  const nickHandler = e => {
+    if (nick === '') {
+      setErrors({
+        ...errors,
+        nickError: true
+      })
+    }
+    setNick(e.target.value);
+  }
 
-  const handleChange = (e) => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const passwordHandler = e => {
+    if (password === '') {
+      setErrors({
+        ...errors,
+        passwordError: true,
+      })
+    }
+    setPassword(e.target.value);
+  }
+
+  const passwordCheckHandler = e => {
+    if(passwordCheck === '') {
+      setErrors({
+        ...errors,
+        passwordCheckError: true,
+      });
+    }
+    setPasswordCheck(e.target.value);
+  }
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -48,15 +85,16 @@ const SignUp = () => {
             name="email"
             placeholder="이메일"
             className={cs('signUp-mail')}
-            onChange={handleChange}
+            onChange={emailHandler}
           />
+          { errors.emailError && <p>이메일에ㄹ</p>}
           <br />
           <input
             type="text"
             name="nick"
             placeholder="닉네임을 입력해주세요."
             className={cs('signUp-nickname')}
-            onChange={handleChange}
+            onChange={nickHandler}
           />{' '}
           <br />
           <input
@@ -64,7 +102,7 @@ const SignUp = () => {
             name="password"
             placeholder="비밀번호를 입력해주세요."
             className={cs('signUp-pw')}
-            onChange={handleChange}
+            onChange={passwordHandler}
           />{' '}
           <br />
           <input
@@ -72,7 +110,7 @@ const SignUp = () => {
             name="passwordCheck"
             placeholder="비밀번호 확인"
             className={cs('signUp-pwChk')}
-            onChange={handleChange}
+            onChange={passwordCheckHandler}
           />
         </div>
         <button type="submit" className={cs('signUp-button')} onClick={onSubmit}>
