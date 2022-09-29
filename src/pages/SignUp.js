@@ -14,7 +14,7 @@ const SignUp = () => {
     password: '',
     passwordCheck: '',
   });
-  const [isDisabled, setDisabled] = useState(true);
+  const [error, setError] = useState("");
 
   const { email, nick, password, passwordCheck } = values;
 
@@ -26,57 +26,8 @@ const SignUp = () => {
     });
   };
 
-  const isValidInput = email.length >= 1 && nick.length >= 1 && password.length >= 1 && passwordCheck.length >= 1;
-
-  const isValidEmail = email.includes('@') && email.includes('.');
-
-  const isValidPassword = password === passwordCheck;
-
-  const getIsActive = isValidEmail && isValidPassword && isValidInput === true;
-
-  const handleButtonValid = () => {
-    if (
-      isValidInput ||
-      isValidEmail ||
-      isValidPassword
-    ) {
-      setDisabled(false);
-    }
-  }
   const onSubmit = async (e) => {
     e.preventDefault();
-
-    /*if (values.email === '') {
-      alert('이메일을 입력하세요... ㅠㅠ');
-    } else if (values.nick === '') {
-      alert('닉네임을입려하세요ㅠㅠ');
-    } else if (values.password === '') {
-      alert('비밀번호적으세요');
-    } else if (values.passwordCheck === '') {
-      alert('비밀번호체크르랳주세요');
-    }
-
-    if (values.password !== values.passwordCheck) {
-      alert('비밀번호가달라요^^');
-    }*/
-
-    const data = {
-      email: values.email,
-      nick: values.nick,
-      password: values.passwordCheck,
-    };
-
-    try {
-      const response = await axios.post('/api/auth/sign', data, { withCredentials: true });
-
-      if (response.data.success) {
-        alert(response.data.message);
-        window.location.href = '/';
-        console.log(response);
-      }
-    } catch (error) {
-      alert(error.response.data.message);
-    }
   };
 
   return (
