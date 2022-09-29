@@ -39,7 +39,6 @@ const Login = (props) => {
 
       if (response.data.success) {
         alert(response.data.message);
-        window.location.href = '/';
         console.log(response);
       }
     } catch (error) {
@@ -94,11 +93,10 @@ const Login = (props) => {
               </button>
             </div>
             <div className={cs('github-button')}>
-              <button type="submit" className={cs('github-login-button')}>
+              <a href="http://127.0.0.1:3001/api/auth/github" className={cs('github-login-button')}>
                 <img src={Github} className={cs('github-img')} alt="error" />
                 <span className={cs('button-phrase')}>깃허브로 로그인</span>
-              </button>
-              {/*<a href="http://localhost:3001/api/auth/github">깃허브</a>*/}
+              </a>
             </div>
             <div className={cs('login-layout-bottom-mobile')}>
               <p className={cs('goSignUp-text')}>계정이 없으신가요?</p>
