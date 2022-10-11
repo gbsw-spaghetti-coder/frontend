@@ -1,14 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .header-container {
     display: flex;
     width: 100%;
     height: 65px;
     box-shadow: 0 0 4px gray;
+    background: white;
 }
 
 .menu-layout {
@@ -208,7 +203,7 @@
     .search-icon {
         width: 18px;
         height: 18px;
-        right: 25px;
+        right: 35px;
     }
 }
 
