@@ -8,75 +8,63 @@ import { Link } from 'react-router-dom';
 const cs = classNames.bind(style);
 
 const SignUp = () => {
-  const [values, setValues] = useState({
-    email: '',
-    nick: '',
-    password: '',
-    passwordCheck: '',
+  const [email, setEmail] = useState("");
+  const [nick, setNick] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordCheck, setPasswordCheck] = useState("");
+
+  const [errors, setErrors] = useState({
+    emailError: false,
+    nickError: false,
+    passwordError: false,
+    passwordCheckError: false
   });
-  const [isDisabled, setDisabled] = useState(true);
 
-  const { email, nick, password, passwordCheck } = values;
-
-
-  const handleChange = (e) => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const isValidInput = email.length >= 1 && nick.length >= 1 && password.length >= 1 && passwordCheck.length >= 1;
-
-  const isValidEmail = email.includes('@') && email.includes('.');
-
-  const isValidPassword = password === passwordCheck;
-
-  const getIsActive = isValidEmail && isValidPassword && isValidInput === true;
-
-  const handleButtonValid = () => {
-    if (
-      isValidInput ||
-      isValidEmail ||
-      isValidPassword
-    ) {
-      setDisabled(false);
+  const emailHandler = e => {
+    if(!email.match('@') && !email.match('.')) {
+      setErrors({
+        emailError: true
+      })
+    } else if(email.match('@') && email.match('.')) {
+      setErrors({
+        emailError: false
+      })
     }
+    setEmail(e.target.value);
   }
+
+  const nickHandler = e => {
+    if (nick === '') {
+      setErrors({
+        ...errors,
+        nickError: true
+      })
+    }
+    setNick(e.target.value);
+  }
+
+  const passwordHandler = e => {
+    if (password === '') {
+      setErrors({
+        ...errors,
+        passwordError: true,
+      })
+    }
+    setPassword(e.target.value);
+  }
+
+  const passwordCheckHandler = e => {
+    if(passwordCheck === '') {
+      setErrors({
+        ...errors,
+        passwordCheckError: true,
+      });
+    }
+    setPasswordCheck(e.target.value);
+  }
+
   const onSubmit = async (e) => {
     e.preventDefault();
-
-    /*if (values.email === '') {
-      alert('이메일을 입력하세요... ㅠㅠ');
-    } else if (values.nick === '') {
-      alert('닉네임을입려하세요ㅠㅠ');
-    } else if (values.password === '') {
-      alert('비밀번호적으세요');
-    } else if (values.passwordCheck === '') {
-      alert('비밀번호체크르랳주세요');
-    }
-
-    if (values.password !== values.passwordCheck) {
-      alert('비밀번호가달라요^^');
-    }*/
-
-    const data = {
-      email: values.email,
-      nick: values.nick,
-      password: values.passwordCheck,
-    };
-
-    try {
-      const response = await axios.post('/api/auth/sign', data, { withCredentials: true });
-
-      if (response.data.success) {
-        alert(response.data.message);
-        window.location.href = '/';
-        console.log(response);
-      }
-    } catch (error) {
-      alert(error.response.data.message);
-    }
   };
 
   return (
@@ -97,15 +85,16 @@ const SignUp = () => {
             name="email"
             placeholder="이메일"
             className={cs('signUp-mail')}
-            onChange={handleChange}
+            onChange={emailHandler}
           />
+          { errors.emailError && <p>이메일에ㄹ</p>}
           <br />
           <input
             type="text"
             name="nick"
             placeholder="닉네임을 입력해주세요."
             className={cs('signUp-nickname')}
-            onChange={handleChange}
+            onChange={nickHandler}
           />{' '}
           <br />
           <input
@@ -113,7 +102,7 @@ const SignUp = () => {
             name="password"
             placeholder="비밀번호를 입력해주세요."
             className={cs('signUp-pw')}
-            onChange={handleChange}
+            onChange={passwordHandler}
           />{' '}
           <br />
           <input
@@ -121,7 +110,7 @@ const SignUp = () => {
             name="passwordCheck"
             placeholder="비밀번호 확인"
             className={cs('signUp-pwChk')}
-            onChange={handleChange}
+            onChange={passwordCheckHandler}
           />
         </div>
         <button type="submit" className={cs('signUp-button')} onClick={onSubmit}>
