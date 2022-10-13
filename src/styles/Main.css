@@ -1,3 +1,7 @@
+body {
+  overflow: hidden;
+}
+
 .main-container {
   background: linear-gradient(#646464,#004581);
   height: 100vh;
