@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Login, Error, SignUp, Header, Main, Svg } from './pages/index';
+import { Login, Error, SignUp, Header, Main } from './pages/index';
 // import classNames from 'classnames';
 
 const App = () => {
@@ -11,11 +11,10 @@ const App = () => {
   return (
     <div className={bg}>
       <BrowserRouter>
-        <Routes> 
-          
+        <Routes>
+
           <Route path="/login" element={<Login bg={changeBg} />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/svg" element={<Svg />} />
           <Route path="/" element={<Main />} />
           <Route path="*" element={<Error />} />
         </Routes>
