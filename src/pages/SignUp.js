@@ -1,127 +1,172 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import classNames from 'classnames/bind';
 import logo from '../images/logo.png';
-import style from '../styles/signup.module.css';
+import '../styles/signup.css';
 import { Link } from 'react-router-dom';
 
-const cs = classNames.bind(style);
-
 const SignUp = () => {
-  const [email, setEmail] = useState("");
-  const [nick, setNick] = useState("");
-  const [password, setPassword] = useState("");
-  const [passwordCheck, setPasswordCheck] = useState("");
+  const [email, setEmail] = useState('');
+  const [nick, setNick] = useState('');
+  const [password, setPassword] = useState('');
+  const [passwordCheck, setPasswordCheck] = useState('');
+
+  const [pwType, setPwType] = useState({
+    type: 'password',
+    visible: false,
+  });
+
+  const handlePasswordType = (e) => {
+    setPwType(() => {
+      if (!pwType.visible) {
+        return { type: 'text', visible: true };
+      }
+      return { type: 'password', visible: false };
+    });
+  };
 
   const [errors, setErrors] = useState({
     emailError: false,
     nickError: false,
     passwordError: false,
-    passwordCheckError: false
+    passwordCheckError: false,
   });
 
-  const emailHandler = e => {
-    if(!email.match('@') && !email.match('.')) {
+  const emailHandler = (e) => {
+    if (!email.match('@') && !email.match('.')) {
       setErrors({
-        emailError: true
-      })
-    } else if(email.match('@') && email.match('.')) {
+        emailError: true,
+      });
+    } else if (email.match('@') && email.match('.')) {
       setErrors({
-        emailError: false
-      })
+        emailError: false,
+      });
     }
     setEmail(e.target.value);
-  }
+  };
 
-  const nickHandler = e => {
+  const nickHandler = (e) => {
     if (nick === '') {
       setErrors({
         ...errors,
-        nickError: true
-      })
+        nickError: true,
+      });
+    } else if (nick !== '') {
+      setErrors({
+        nickError: false,
+      });
     }
     setNick(e.target.value);
-  }
+  };
 
-  const passwordHandler = e => {
+  const passwordHandler = (e) => {
     if (password === '') {
       setErrors({
         ...errors,
         passwordError: true,
-      })
-    }
-    setPassword(e.target.value);
-  }
-
-  const passwordCheckHandler = e => {
-    if(passwordCheck === '') {
+      });
+    } else if (password !== '') {
       setErrors({
-        ...errors,
-        passwordCheckError: true,
+        passwordError: false,
       });
     }
-    setPasswordCheck(e.target.value);
-  }
+    setPassword(e.target.value);
+  };
+
+  const passwordCheckHandler = (e) => {
+    if (passwordCheck === password) {
+      setErrors({
+        ...errors,
+        passwordCheckError: false,
+      });
+    }
+  };
 
   const onSubmit = async (e) => {
     e.preventDefault();
   };
 
   return (
-    <div className={cs('signUp-container')}>
-      <div className={cs('signUp-layout-left')}>
-        <img src={logo} alt="logo" className={cs('signUp-logo-img')}></img>
-        <span className={cs('signUp-logo-text')}>Code Wave</span>
+    <div className="signUp-container">
+      <div className="signUp-layout-left">
+        <img src={logo} alt="logo" className="signUp-logo-img"></img>
+        <span className="signUp-logo-text">Code Wave</span>
       </div>
-      <div className={cs('signUp-layout-right')}>
-        <p className={cs('signUp-text')}>SIGN UP</p>
-        <div className={cs('signUp-logo-mobile')}>
-          <img src={logo} alt="logo" className={cs('signUp-logo-img-mobile')}></img>
-          <span className={cs('signUp-logo-text-mobile')}>Code Wave</span>
+      <div className="signUp-layout-right">
+        <p className="signUp-text">SIGN UP</p>
+        <div className="signUp-logo-mobile">
+          <img src={logo} alt="logo" className="signUp-logo-img-mobile"></img>
+          <span className="signUp-logo-text-mobile">Code Wave</span>
         </div>
-        <div className={cs('inputs')}>
+        <div className="inputs">
           <input
             type="email"
             name="email"
             placeholder="이메일"
-            className={cs('signUp-mail')}
+            className="signUp-mail"
             onChange={emailHandler}
           />
-          { errors.emailError && <p>이메일에ㄹ</p>}
-          <br />
+          {errors.emailError && (
+            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+              이메일 형식에 맞게 입력해주세요.
+            </p>
+          )}
           <input
             type="text"
             name="nick"
             placeholder="닉네임을 입력해주세요."
-            className={cs('signUp-nickname')}
+            className="signUp-nickname"
             onChange={nickHandler}
-          />{' '}
-          <br />
+          />
+          {errors.nickError && (
+            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+              닉네임을 입력해주세요.
+            </p>
+          )}
+
           <input
-            type="password"
+            type={pwType.type}
             name="password"
             placeholder="비밀번호를 입력해주세요."
-            className={cs('signUp-pw')}
+            className="signUp-pw"
             onChange={passwordHandler}
-          />{' '}
-          <br />
+          />
+          {errors.passwordError && (
+            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+              비밀번호를 입력해주세요.
+            </p>
+          )}
+
           <input
-            type="password"
+            type={pwType.type}
             name="passwordCheck"
             placeholder="비밀번호 확인"
-            className={cs('signUp-pwChk')}
+            className="signUp-pwChk"
             onChange={passwordCheckHandler}
           />
+          {errors.passwordCheckError && (
+            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+              비밀번호 일치한지 확인해주세요.
+            </p>
+          )}
         </div>
-        <button type="submit" className={cs('signUp-button')} onClick={onSubmit}>
+        <button type="submit" className="signUp-button" onClick={onSubmit}>
           회원가입
         </button>
+        <div className="pwVisible">
+            <span onClick={handlePasswordType}>
+              {pwType.visible ? (
+                <span className="pwHide">비밀번호 숨기기</span>
+              ) : (
+                <span className="pwShow">비밀번호 보이기</span>
+              )}
+            </span>
+          </div>
         {/*<button
           type="submit"
           disabled={isDisabled}
           onClick={handleButtonValid}
         >fdfdfdff</button>*/}
-        <p className={cs('goLogin-text')}>계정이 있으신가요?</p>
+        <p className="goLogin-text">계정이 있으신가요?</p>
       </div>
     </div>
   );
