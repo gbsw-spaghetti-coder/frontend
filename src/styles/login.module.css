@@ -83,7 +83,6 @@
   width: 170px;
   font-weight: lighter;
   font-size: 13px;
-  transition: 1.5s;
 }
 
 .pw-text {
@@ -93,12 +92,6 @@
 .email-text::placeholder,
 .pw-text::placeholder {
   color: black;
-}
-
-.email-text:hover,
-.pw-text:hover {
-  width: 200px;
-  transition: 1.2s;
 }
 
 .login-button {
@@ -282,11 +275,6 @@
   .pw-text {
     font-size: 20px;
     width: 300px;
-  }
-
-  .email-text:hover,
-  .pw-text:hover {
-    width: 350px;
   }
 
   .login-button {

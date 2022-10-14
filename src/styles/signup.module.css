@@ -63,7 +63,6 @@
   border-bottom: 0.5px solid black;
   margin-top: 5rem;
   width: 230px;
-  transition: 1.3s;
   padding: 5px 3px;
 }
 
@@ -73,7 +72,6 @@
   border-bottom: 0.5px solid black;
   margin-top: 3rem;
   width: 230px;
-  transition: 1.3s;
   padding: 5px 3px;
 }
 
@@ -83,7 +81,6 @@
   border-bottom: 0.5px solid black;
   margin-top: 3rem;
   width: 230px;
-  transition: 1.3s;
   padding: 5px 3px;
 }
 
@@ -93,16 +90,7 @@
   border-bottom: 0.5px solid black;
   margin-top: 3rem;
   width: 230px;
-  transition: 1.3s;
   padding: 5px 3px;
-}
-
-.inputs > input:nth-of-type(1):hover,
-.inputs > input:nth-of-type(2):hover,
-.inputs > input:nth-of-type(3):hover,
-.inputs > input:nth-of-type(4):hover {
-  width: 250px;
-  transition: 1.3s;
 }
 
 .signUp-button {
