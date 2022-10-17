@@ -8,6 +8,37 @@
     background: #f5f5f5;
 }   
 
+.color-div {
+    display: flex;
+}
+
+.blue-color, .red-color, .green-color, .gray-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    margin: 5px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.red-color {
+    background: #FF4838;
+}
+
+.blue-color {
+    background: #3366FF;
+}
+
+.green-color {
+    background: #71DB61;
+}
+
+.gray-color {
+    background: #F5F5F5;
+
+}
+
+
 .myPage-layout-bottom {
     display: flex;
     width: 100%;
@@ -21,4 +52,8 @@
     height: 230px;
     margin: 0 40px;
     border-radius: 10px;
+}
+
+.profile-name {
+    margin-top: 23px;
 }
