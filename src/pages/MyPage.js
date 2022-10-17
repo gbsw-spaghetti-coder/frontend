@@ -8,17 +8,17 @@ const MyPage = () => {
   const RedColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
     layout.style.transition = "1.5s";
-    layout.style.backgroundColor = '#FF4838';
+    layout.style.backgroundColor = '#FFA184';
   };
 
   const GreenColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
-    layout.style.backgroundColor = '#71DB61';
+    layout.style.backgroundColor = '#00C896';
   };
 
   const BlueColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
-    layout.style.backgroundColor = '#3366FF';
+    layout.style.backgroundColor = '#8685EF';
   };
 
   const GrayColorChange = () => {
@@ -39,8 +39,11 @@ const MyPage = () => {
         </div>
       </div>
       <div className="myPage-layout-bottom">
+        <div style={{ display: 'flex' }}>
         <img src={Profile} className="profile-img" alt="프로필" />
         <h2 className="profile-name">민규민규민규민규</h2>
+        <button type='submit' name='add-button' className='profile-button'>편집하기</button>
+        </div>
       </div>
     </div>
   );
