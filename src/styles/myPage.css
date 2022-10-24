@@ -9,14 +9,15 @@
 }   
 
 .color-div {
-    display: flex;
+    display: inline-block;
 }
 
 .blue-color, .red-color, .green-color, .gray-color {
+    display: flex;
     width: 20px;
     height: 20px;
     border-radius: 50px;
-    margin: 5px;
+    margin: 10px;
     border: 2px solid white;
     cursor: pointer;
 }
@@ -35,7 +36,6 @@
 
 .gray-color {
     background: #F5F5F5;
-
 }
 
 .myPage-layout-bottom {
@@ -49,13 +49,22 @@
     bottom: 150px;
     width: 230px;
     height: 230px;
-    margin: 0 40px;
-    border-radius: 10px;
+    margin: 0 30px;
+    border-radius: 100px;
 }
 
 .profile-name {
     display: flex;
-    margin-top: 15px;
+    margin-top: 13px;
+    position: relative;
+    right: 15px; 
+}
+
+.profile-button-div {
+    display: block;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
 }
 
 .profile-button {
@@ -67,15 +76,18 @@
     color: white;
     border: 0;    
     border-radius: 30px;
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 10px;
-    box-shadow: 4px 4px 4px gray;
     outline: 0;
+    transition: 0.6s;
 }
 
 .profile-button:hover {
     outline: 0;
+    transition: 0.2s;
+    box-shadow: 4px 4px 4px gray;
+}
+
+.myPage-layout-smallBottom {
+    display: block;
 }
 
 .introduce-text {
@@ -83,3 +95,11 @@
     width: 400px;
     height: 100px;
 }
+
+/* 
+
+   <div className='introduce-layout'>
+            <span className='introduce-text'></span>
+        </div>
+
+*/
