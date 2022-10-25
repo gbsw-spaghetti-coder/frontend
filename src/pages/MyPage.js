@@ -46,20 +46,20 @@ const MyPage = () => {
         <img src={Profile} className="profile-img" alt="프로필" />
         <div className="profileAndIntroduce">
           <h2 className="profile-name">민규민규민규민규</h2>
-          <span className="introduce-text">자기소개: 시발 존나 하기싫다</span>
+          <span className="introduce-text">자기소개: 너무 하기좋다</span>
         </div>
         <div className="Progress-container">
           <div>
             <span className='progress-text'>CSS</span>
-            <progress value="10" max="100" className='progress-bar' />
+            <progress value="80" max="100" className='progress-bar' />
             <span className='progress-text'>JavaScript</span>
-            <progress value="10" max="100" className='progress-bar' />
-            <span className='progress-text'>CSS</span>
-            <progress value="10" max="100" className='progress-bar' />
-            <span className='progress-text'>JavaScript</span>
-            <progress value="10" max="100" className='progress-bar' />
-            <span className='progress-text'>CSS</span>
-            <progress value="10" max="100" className='progress-bar' />
+            <progress value="60" max="100" className='progress-bar' />
+            <span className='progress-text'>React</span>
+            <progress value="50" max="100" className='progress-bar' />
+            <span className='progress-text'>Vue</span>
+            <progress value="0" max="100" className='progress-bar' />
+            <span className='progress-text'>PHP</span>
+            <progress value="1" max="100" className='progress-bar' />
           </div>
         </div>
       </div>
