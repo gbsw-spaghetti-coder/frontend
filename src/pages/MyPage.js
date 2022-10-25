@@ -38,15 +38,17 @@ const MyPage = () => {
           <div className="blue-color" onClick={BlueColorChange}></div>
           <div className="gray-color" onClick={GrayColorChange}></div>
         </div>
-      </div>
-      <div className="myPage-layout-bottom">
-        <img src={Profile} className="profile-img" alt="프로필" />
-        <h2 className="profile-name">민규민규민규민규</h2>
         <div className="profile-button-div">
           <input type="submit" name="add-button" className="profile-button" value="프로필편집" />
         </div>
-        <div className=''>
-
+      </div>
+      <div className="myPage-layout-bottom">   
+        <img src={Profile} className="profile-img" alt="프로필" />
+        <h2 className="profile-name">민규민규민규민규</h2>
+      </div>  
+      <div className='myPage-layout-bottom2'>
+      <div className='introduce-layout'>
+          <span>나는 문어</span>
         </div>
       </div>
     </div>
