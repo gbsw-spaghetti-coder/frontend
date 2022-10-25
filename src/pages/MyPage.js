@@ -50,16 +50,26 @@ const MyPage = () => {
         </div>
         <div className="Progress-container">
           <div>
+            <div className='progress-div'>
             <span className='progress-text'>CSS</span>
             <progress value="80" max="100" className='progress-bar' />
+            </div>
+            <div className='progress-div'>
             <span className='progress-text'>JavaScript</span>
             <progress value="60" max="100" className='progress-bar' />
+            </div>
+            <div className='progress-div'>
             <span className='progress-text'>React</span>
             <progress value="50" max="100" className='progress-bar' />
+            </div>
+            <div className='progress-div'>
             <span className='progress-text'>Vue</span>
             <progress value="0" max="100" className='progress-bar' />
+            </div>
+            <div className='progress-div'>
             <span className='progress-text'>PHP</span>
             <progress value="1" max="100" className='progress-bar' />
+            </div>
           </div>
         </div>
       </div>
