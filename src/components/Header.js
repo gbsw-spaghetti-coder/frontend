@@ -1,9 +1,29 @@
 import React from 'react';
+import axios from 'axios';
 import '../styles/header.css';
 import Search from '../images/search.png';
 import Menu from '../images/menu.png';
+import error from "../pages/Error";
+
 
 const Header = () => {
+
+  const logout = async () => {
+    if (localStorage.getItem('token') === null) {
+      alert("로그인안되있씁니다시발새끼야")
+    } else {
+      localStorage.clear();
+      await axios.get('/api/auth/logout', {withCredentials: true})
+        .then((res) => {
+          console.log(res);
+          alert(res.data.message);
+
+        }).catch((error) => {
+          alert(error.response.data.message);
+        })
+    }
+  }
+
   return (
     <div className="header-container">
       <div className="menu-layout">
@@ -33,7 +53,7 @@ const Header = () => {
           <div className="height-line"></div>
           <span>회원가입</span>
         </div>
-        <div className="l-layout">
+        <div className="l-layout" onClick={logout}>
           <span>로그아웃</span>
         </div>
       </div>

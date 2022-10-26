@@ -34,6 +34,7 @@
 //     try {
 //       const response = await axios.post('/api/auth/login', data, { withCredentials: true });
 
+// <<<<<<< HEAD
 //       if (response.data.success) {
 //         alert(response.data.message);
 //         console.log(response);
@@ -43,6 +44,18 @@
 //       alert(error.response.data.message);
 //     }
 //   };
+
+  //     if (response.data.success) {
+  //       alert(response.data.message);
+  //       localStorage.clear();
+  //       localStorage.setItem("token", "token");
+  //       window.location.href = "/";
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //     alert(error.response.data.message);
+  //   }
+  // };
 
 //   return (
 //     <div className='login-container'>
