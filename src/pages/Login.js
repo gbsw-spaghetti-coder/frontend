@@ -38,7 +38,7 @@ const Login = (props) => {
         alert(response.data.message);
         localStorage.clear();
         localStorage.setItem("token", "token");
-        console.log(response);
+        window.location.href = "/";
       }
     } catch (error) {
       console.log(error);

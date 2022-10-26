@@ -67,16 +67,14 @@ const MyPage = () => {
       </div>
       <div className="myPage-layout-bottom">
         <img src={Profile} className="profile-img" alt="프로필" />
-        <div className="profileAndIntroduce">
+        <div style={{ height: "50px" }}>
           <h2 className="profile-name">{nick}</h2>
           <span className="introduce-text">자기소개: {introduce}</span>
         </div>
         <div className="Progress-container">
-          <div>
             <div className='progress-div'>
             <span className='progress-text'>CSS</span>
             <progress value="80" max="100" className='progress-bar' />
-            </div>
             <div className='progress-div'>
             <span className='progress-text'>JavaScript</span>
             <progress value="60" max="100" className='progress-bar' />
