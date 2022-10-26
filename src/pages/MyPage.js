@@ -33,23 +33,23 @@ const MyPage = () => {
     layout.style.backgroundColor = '#F5F5F5';
   };
 
-  const fetchMydata = async () => {
-    if(localStorage.getItem("token") === null) {
-      alert("로그인 하세요")
-      window.location.href = "/";
-    } else {
-      await axios.get('/api/user', {withCredentials: true})
-        .then((res) => {
-          setNick(res.data.nick);
-          setIntroduce(res.data.introduce);
-        }).catch((error) => {
-          console.log(error);
-        })
-    }
-  }
-  useEffect( () => {
-    fetchMydata();
-  }, [])
+  // const fetchMydata = async () => {
+  //   if(localStorage.getItem("token") === null) {
+  //     alert("로그인 하세요")
+  //     window.location.href = "/";
+  //   } else {
+  //     await axios.get('/api/user', {withCredentials: true})
+  //       .then((res) => {
+  //         setNick(res.data.nick);
+  //         setIntroduce(res.data.introduce);
+  //       }).catch((error) => {
+  //         console.log(error);
+  //       })
+  //   }
+  // }
+  // useEffect( () => {
+  //   fetchMydata();
+  // }, [])
 
   return (
     <div className="myPage-container">
