@@ -13,7 +13,7 @@ const Header = () => {
       alert("로그인안되있씁니다시발새끼야")
     } else {
       localStorage.clear();
-      await axios.get('/api/auth/logout', {withCredentials: true})
+      await axios.get('/api/auth/logout', { withCredentials: true })
         .then((res) => {
           console.log(res);
           alert(res.data.message);
