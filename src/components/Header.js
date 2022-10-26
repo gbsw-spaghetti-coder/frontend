@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import '../styles/header.css';
 import Search from '../images/search.png';
@@ -7,6 +7,12 @@ import error from "../pages/Error";
 
 
 const Header = () => {
+
+  const [token, setToken] = useState(localStorage.getItem('token'));
+
+  useEffect(() => {
+    console.log(token)
+  }, []);
 
   const logout = async () => {
     if (localStorage.getItem('token') === null) {
@@ -17,7 +23,7 @@ const Header = () => {
         .then((res) => {
           console.log(res);
           alert(res.data.message);
-
+          window.location.href = "/login";
         }).catch((error) => {
           alert(error.response.data.message);
         })
@@ -48,14 +54,17 @@ const Header = () => {
         </button>
       </div>
       <div className="lol-layout">
-        <div className="lo-layout">
-          <span>로그인</span>
-          <div className="height-line"></div>
-          <span>회원가입</span>
-        </div>
-        <div className="l-layout" onClick={logout}>
-          <span>로그아웃</span>
-        </div>
+        {token?(
+          <div className="l-layout" onClick={logout}>
+            <span>로그아웃</span>
+          </div>
+        ) : (
+          <div className="lo-layout">
+            <span>로그인</span>
+            <div className="height-line"></div>
+            <span>회원가입</span>
+          </div>
+        )}
       </div>
     </div>
   );
