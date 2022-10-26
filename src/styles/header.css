@@ -68,7 +68,7 @@
 .lol-layout, .lo-layout {
     display: flex;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 15px;
 }
 
 .lol-layout {
@@ -80,16 +80,14 @@
     font-weight: 500;
     font-size: 14px;
     margin-top: 2px;
-    display: none;
 }
 
 .height-line {
     border-left: 1px solid black;
     height: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
     margin-top: 5px;
-    display: none;
 }
 
 .lo-layout span:nth-of-type(1):hover,

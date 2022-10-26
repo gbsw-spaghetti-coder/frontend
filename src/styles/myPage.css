@@ -104,7 +104,6 @@
 
 .progress-bar {
     appearance: none;
-    background: red;
 }
 
 .progress-bar::-webkit-progress-bar {
@@ -124,6 +123,7 @@
         height: 550px;
     }
 
+    
 
 }
 

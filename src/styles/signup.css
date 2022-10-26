@@ -144,6 +144,28 @@
   display: none;
 }
 
+.check-text {
+  display: flex;
+  font-size: 5px;
+  color: red; 
+  margin-top: 10px;
+  margin-left: 92px;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .check-text {
+    margin-left: 87px;
+  }
+
+  .signUp-layout-left2 {
+    margin-top: 300px;
+  }
+
+  .signUp-layout-right {
+    margin-top: 300px;
+  }
+}
+
 @media (min-width: 200px) and (max-width: 1024px) {
   .signUp-container {
     background: #f5f5f5;
@@ -216,8 +238,18 @@
   }
 
   .goLogin-text {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 18px;
+  }
+
+  .pwHide, .pwShow {
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+  }
+
+  .check-text {
+    margin-left: 115px;
   }
 
   @media (min-width: 250px) and (max-width: 426px) {
@@ -232,6 +264,10 @@
     .signUp-layout-right {
       background: white;
       box-shadow: none;
+    }
+
+    .check-text {
+      margin-left: 65px;
     }
   }
 }
