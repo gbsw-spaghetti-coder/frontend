@@ -36,6 +36,8 @@ const Login = (props) => {
 
       if (response.data.success) {
         alert(response.data.message);
+        localStorage.clear();
+        localStorage.setItem("token", "token");
         console.log(response);
       }
     } catch (error) {

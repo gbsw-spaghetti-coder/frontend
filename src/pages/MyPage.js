@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/myPage.css';
 import Header from '../components/Header';
 import Profile from '../images/profile.png';
+import axios from "axios";
 
 const MyPage = () => {
+
+  const [nick, setNick] = useState("");
+  const [introduce, setIntroduce] = useState("");
+
   const RedColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
     layout.style.transition = '0.5s';
@@ -28,6 +33,24 @@ const MyPage = () => {
     layout.style.backgroundColor = '#F5F5F5';
   };
 
+  const fetchMydata = async () => {
+    if(localStorage.getItem("token") === null) {
+      alert("로그인 하세요")
+      window.location.href = "/";
+    } else {
+      await axios.get('/api/user', {withCredentials: true})
+        .then((res) => {
+          setNick(res.data.nick);
+          setIntroduce(res.data.introduce);
+        }).catch((error) => {
+          console.log(error);
+        })
+    }
+  }
+  useEffect( () => {
+    fetchMydata();
+  }, [])
+
   return (
     <div className="myPage-container">
       <Header />
@@ -45,8 +68,8 @@ const MyPage = () => {
       <div className="myPage-layout-bottom">
         <img src={Profile} className="profile-img" alt="프로필" />
         <div className="profileAndIntroduce">
-          <h2 className="profile-name">민규민규민규민규</h2>
-          <span className="introduce-text">자기소개: 너무 하기좋다</span>
+          <h2 className="profile-name">{nick}</h2>
+          <span className="introduce-text">자기소개: {introduce}</span>
         </div>
         <div className="Progress-container">
           <div>
@@ -68,7 +91,7 @@ const MyPage = () => {
             </div>
             <div className='progress-div'>
             <span className='progress-text'>PHP</span>
-            <progress value="1" max="100" className='progress-bar' />
+            <progress value="100" max="100" className='progress-bar' />
             </div>
           </div>
         </div>
