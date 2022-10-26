@@ -75,6 +75,7 @@ const SignUp = () => {
 
   const passwordCheckHandler = (e) => {
     console.log("체크", e.target.value);
+    console.log(passwordCheck === password);
     if (passwordCheck === password) {
       setErrors({
         ...errors,
@@ -95,8 +96,10 @@ const SignUp = () => {
   return (
     <div className="signUp-container">
       <div className="signUp-layout-left">
+        <div className='signUp-layout-left2'>
         <img src={logo} alt="logo" className="signUp-logo-img"></img>
         <span className="signUp-logo-text">Code Wave</span>
+        </div>
       </div>
       <div className="signUp-layout-right">
         <p className="signUp-text">SIGN UP</p>
@@ -138,7 +141,7 @@ const SignUp = () => {
             onChange={passwordHandler}
           />
           {errors.passwordError && (
-            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+            <p className='check-text'>
               비밀번호를 입력해주세요.
             </p>
           )}
@@ -151,7 +154,7 @@ const SignUp = () => {
             onChange={passwordCheckHandler}
           />
           {errors.passwordCheckError && (
-            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+            <p className='check-text'>
               비밀번호 일치한지 확인해주세요.
             </p>
           )}
