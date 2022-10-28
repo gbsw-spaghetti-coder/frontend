@@ -1,0 +1,21 @@
+.category-container {
+    display: block;
+}
+
+.category-button-div {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.category-button-frontend, .category-button-backend, .category-button-db_Server, .category-button-Etc {
+    border: 0;
+    background-color: #009EFA;
+    color: white;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow:  0 0 5px gray;
+    cursor: pointer;
+}
