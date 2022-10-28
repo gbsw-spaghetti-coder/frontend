@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import '../styles/header.css';
 import Search from '../images/search.png';
 import Menu from '../images/menu.png';
@@ -19,7 +20,7 @@ const Header = () => {
       alert("로그인안되있씁니다시발새끼야")
     } else {
       localStorage.clear();
-      await axios.get('/api/auth/logout', {withCredentials: true})
+      await axios.get('/api/auth/logout', { withCredentials: true })
         .then((res) => {
           console.log(res);
           alert(res.data.message);

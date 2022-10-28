@@ -163,14 +163,14 @@ const SignUp = () => {
           회원가입
         </button>
         <div className="pwVisible">
-            <span onClick={handlePasswordType}>
-              {pwType.visible ? (
-                <span className="pwHide">비밀번호 숨기기</span>
-              ) : (
-                <span className="pwShow">비밀번호 보이기</span>
-              )}
-            </span>
-          </div>
+          <span onClick={handlePasswordType}>
+            {pwType.visible ? (
+              <span className="pwHide">비밀번호 숨기기</span>
+            ) : (
+              <span className="pwShow">비밀번호 보이기</span>
+            )}
+          </span>
+        </div>
         {/*<button
           type="submit"
           disabled={isDisabled}
