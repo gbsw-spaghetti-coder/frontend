@@ -152,7 +152,7 @@
   margin-left: 92px;
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1439px) and (max-width: 1440px) {
   .check-text {
     margin-left: 87px;
   }

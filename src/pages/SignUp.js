@@ -28,7 +28,7 @@ const SignUp = () => {
     emailError: false,
     nickError: false,
     passwordError: false,
-    passwordCheckError: true,
+    passwordCheckError: false,
   });
 
   const emailHandler = (e) => {
@@ -74,9 +74,8 @@ const SignUp = () => {
   };
 
   const passwordCheckHandler = (e) => {
-    console.log("체크", e.target.value);
-    console.log(passwordCheck === password);
-    if (passwordCheck === password) {
+    setPasswordCheck(e.target.value)
+    if (password === e.target.value) {
       setErrors({
         ...errors,
         passwordCheckError: false,
@@ -86,7 +85,6 @@ const SignUp = () => {
         passwordCheckError: true,
       })
     }
-    setPasswordCheck(e.target.value)
   };
 
   const onSubmit = async (e) => {
