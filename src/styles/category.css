@@ -8,14 +8,29 @@
     text-align: center;
 }
 
-.category-button-frontend, .category-button-backend, .category-button-db_Server, .category-button-Etc {
-    border: 0;
-    background-color: #009EFA;
+/*#ec6a5e  #f5bf4f #61c554  */ 
+
+.category-button-div button {
+    border: none;
+    background: #009efa;
     color: white;
-    width: 100px;
     height: 30px;
     margin-left: 20px;
-    border-radius: 15px;
-    box-shadow:  0 0 5px gray;
+    border-radius: 20px;
+    box-shadow:  0 0 10px gray;
     cursor: pointer;
+}
+
+.btn-active {
+    transition: 0.9s;
+    width: 250px;
+}
+
+.btn-not-active {
+    transition: 1s;
+    width: 30px;
+}
+
+.not-clicked {
+    width: 85px;
 }
