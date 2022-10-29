@@ -1,0 +1,118 @@
+.frontend-container {
+    display: block; 
+    width: 70%;
+    height: 610px;
+    background: white;
+    margin: 160px auto 0 auto;
+    box-shadow: 0 0 4px gray;
+ }
+
+.frontend-category-layout {
+    display: block;
+}
+ 
+ .frontend-category-to-top {
+    display: flex;
+ }
+ 
+ .frontend-category-to-middle {
+    display: flex;
+ }
+
+ .frontend-category-to-bottom {
+    display: flex;
+ }
+
+.frontend-category-to-top div {
+    width: 20%;
+    height: 150px;
+    border-radius: 20px;
+    background: #282828;
+    box-shadow: 0 0 10px gray;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+ }
+
+ .frontend-category-to-middle div {    
+    width: 20%;
+    height: 150px;
+    border-radius: 20px;
+    background: #282828;
+    box-shadow: 0 0 10px gray;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+ }
+
+ .frontend-category-to-bottom div {
+    width: 20%;
+    height: 150px;
+    border-radius: 20px;
+    background: #282828;
+    box-shadow: 0 0 10px gray;
+    margin: 50px auto 0 auto;
+    cursor: pointer;
+ }
+
+ .frontend-category-item img {
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    transition: 0.6s;
+}
+
+.js-img, .ts-img {
+    position: relative;
+    bottom: 20px;
+    right: 7px;
+}
+
+.asp-img {
+    position: relative;
+    top: 25px;
+}
+
+.frontend-category-item:nth-of-type(1):hover {
+    background: #e34c26;
+    transition: 0.8s;
+}
+
+.frontend-category-item:nth-of-type(2):hover {
+    background: #285dd6;
+    transition: 0.8s;
+}
+
+.frontend-category-item:nth-of-type(3):hover {
+    background: #f0db4f;
+    transition: 0.8s;
+}
+
+.frontend-category-item:nth-of-type(4):hover {
+    background: #007acc;
+    transition: 0.8s;
+}
+
+.frontend-category-to-middle .frontend-category-item:nth-of-type(1):hover {
+    background: #61dbfb;
+    transition: 0.8s;
+}
+
+.frontend-category-to-middle .frontend-category-item:nth-of-type(2):hover {
+    background:#34495e;
+    transition: 0.8s;
+}
+.frontend-category-to-middle .frontend-category-item:nth-of-type(3):hover {
+    background: #00335b; 
+    transition: 0.8s;
+}
+
+
+ .addToCategoryItem {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-top: 35px;
+ }

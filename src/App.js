@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
-import { Login, Error, SignUp, Main, MyPage, Category } from './pages/index';
+import { Login, Error, SignUp, Main, MyPage, Category, Frontend, Backend, DBServer, Etc, Div } from './pages/index';
 // import classNames from 'classnames';
 
 const App = () => {
@@ -18,6 +18,11 @@ const App = () => {
           <Route path="*" element={<Error />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/category" element={<Category />} />
+
+          <Route path="/frontend" element={<Frontend />} />
+          <Route path="/backend" element={<Backend />} />
+          <Route path="/db_server" element={<DBServer />} />
+          <Route path="/etc" element={<Etc />} />
         </Routes>
       </BrowserRouter>
     </div>
