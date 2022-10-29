@@ -31,6 +31,7 @@
     box-shadow: 0 0 10px gray;
     margin: 30px auto 0 auto;
     cursor: pointer;
+    transition: 0.8s;
  }
 
  .frontend-category-to-middle div {    
@@ -43,6 +44,7 @@
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    transition: 0.8s;
  }
 
  .frontend-category-to-bottom div {
@@ -53,6 +55,7 @@
     box-shadow: 0 0 10px gray;
     margin: 50px auto 0 auto;
     cursor: pointer;
+    transition: 0.8s;
  }
 
  .frontend-category-item img {
@@ -61,7 +64,6 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    transition: 0.6s;
 }
 
 .js-img, .ts-img {
@@ -75,22 +77,22 @@
     top: 25px;
 }
 
-.frontend-category-item:nth-of-type(1):hover {
+.frontend-category-to-top .frontend-category-item:nth-of-type(1):hover {
     background: #e34c26;
     transition: 0.8s;
 }
 
-.frontend-category-item:nth-of-type(2):hover {
+.frontend-category-to-top .frontend-category-item:nth-of-type(2):hover {
     background: #285dd6;
     transition: 0.8s;
 }
 
-.frontend-category-item:nth-of-type(3):hover {
+.frontend-category-to-top .frontend-category-item:nth-of-type(3):hover {
     background: #f0db4f;
     transition: 0.8s;
 }
 
-.frontend-category-item:nth-of-type(4):hover {
+.frontend-category-to-top .frontend-category-item:nth-of-type(4):hover {
     background: #007acc;
     transition: 0.8s;
 }
@@ -101,7 +103,7 @@
 }
 
 .frontend-category-to-middle .frontend-category-item:nth-of-type(2):hover {
-    background:#34495e;
+    background:#41B883;
     transition: 0.8s;
 }
 .frontend-category-to-middle .frontend-category-item:nth-of-type(3):hover {
@@ -109,10 +111,10 @@
     transition: 0.8s;
 }
 
-
  .addToCategoryItem {
     text-align: center;
     color: white;
     font-size: 50px;
     margin-top: 35px;
  }
+

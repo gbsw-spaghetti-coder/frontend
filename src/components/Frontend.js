@@ -36,10 +36,10 @@ const Frontend = () => {
           </div>
         </div>
         <div className="frontend-category-to-bottom">
-          <div className="frontend-category-item">
+          <div className="frontend-category-item-">
             <p className='addToCategoryItem'>+</p>
           </div>
-          <div className="frontend-category-item">
+          <div className="frontend-category-item-">
             <p className='addToCategoryItem'>+</p>
           </div>
           <div className="frontend-category-item">
