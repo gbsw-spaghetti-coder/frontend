@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import styles from '../styles/category.css';
 import classNames from 'classnames/bind';
+import Frontend from '../components/Frontend';
 
 const cs = classNames.bind(styles)
 
@@ -45,9 +46,10 @@ const Category = () => {
           className= {cs(buttonState === 3 ? "btn-active" : "btn-not-active", 'etc-btn', isButtonClicked === false && 'not-clicked')}
           onClick={() => {setButtonState(3); setIsButtonClicked(true)}}
         >{buttonState === 0 || buttonState === 1 || buttonState === 2 ? 'E' : '기타'} </button>
-
       </div>
-      <div className='category'></div>
+      <div className='category'>
+        <Frontend />
+      </div>
     </div>
   );
 };

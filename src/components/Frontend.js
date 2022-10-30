@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/frontend.css';
-import { Html, Css, Js, Ts, ReactImg, Vue, Asp} from "../pages/img";
+import { Html, Css, Js, Ts, ReactImg, Vue} from "../pages/img";
 
 
 const Frontend = () => {
@@ -20,6 +20,7 @@ const Frontend = () => {
           <div className="frontend-category-item">
             <img className="ts-img" src={Ts} alt="ts" />
           </div>
+          
         </div>
         <div className="frontend-category-to-middle">
           <div className="frontend-category-item">
@@ -29,7 +30,7 @@ const Frontend = () => {
             <img className="vue-img" src={Vue} alt="vue" />
           </div>
           <div className="frontend-category-item">
-            <img className="asp-img" src={Asp} alt="asp" />
+            <p className='addToCategoryItem'>+</p>
           </div>
           <div className="frontend-category-item">
             <p className='addToCategoryItem'>+</p>
