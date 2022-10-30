@@ -1,9 +1,10 @@
 .frontend-container {
     display: block; 
     width: 70%;
-    height: 610px;
+    height: 580px;
     background: transparent;
-    margin: 10px auto 0 auto;
+    margin: 25px auto 0 auto;
+    border-radius: 5px;
  }
 
 .frontend-category-layout {
@@ -26,8 +27,8 @@
     width: 20%;
     height: 150px;
     border-radius: 20px;
-    background: #f5f5f5;
-    box-shadow: 0 0 10px gray;
+    background: #ffffff;
+    box-shadow: 0 0 3px black;
     margin: 30px auto 0 auto;
     cursor: pointer;
     transition: 0.8s;
@@ -37,9 +38,9 @@
     width: 20%;
     height: 150px;
     border-radius: 20px;
-    background: #f5f5f5;
-    box-shadow: 0 0 10px gray;
-    margin-top: 50px;
+    background: #ffffff;
+    box-shadow: 0 0 3px black;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -50,9 +51,9 @@
     width: 20%;
     height: 150px;
     border-radius: 20px;
-    background: #f5f5f5;
-    box-shadow: 0 0 10px gray;
-    margin: 50px auto 0 auto;
+    background: #ffffff;
+    box-shadow: 0 0 3px black;
+    margin: 30px auto 0 auto;
     cursor: pointer;
     transition: 0.8s;
  }
@@ -62,18 +63,7 @@
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-}
-
-.js-img, .ts-img {
-    position: relative;
-    bottom: 20px;
-    right: 7px;
-}
-
-.asp-img {
-    position: relative;
-    top: 25px;
+    margin-top: 29px;
 }
 
 .frontend-category-to-top .frontend-category-item:nth-of-type(1):hover {
