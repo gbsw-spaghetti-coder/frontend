@@ -1,0 +1,52 @@
+.category-container {
+    display: block;
+}
+
+.category-button-div {
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*   background: #ec6a5e #f5bf4f #61c554  */ 
+
+.category-button-div button {
+    border: none;
+    background: #009efa;
+    color: white;
+    height: 30px;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-shadow:  0 0 10px gray;
+    cursor: pointer;
+}
+
+.btn-active {
+    transition: 0.9s;
+    width: 250px;
+}
+
+.btn-not-active {
+    transition: 1s;
+    width: 30px;
+}
+
+.not-clicked {
+    width: 85px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
