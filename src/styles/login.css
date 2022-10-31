@@ -41,7 +41,7 @@
   display: block;
   width: 35rem;
   height: 100vh;
-  margin-top: 200px;
+  margin-top: 45px;
 }
 
 .login-text {
@@ -49,6 +49,7 @@
   text-align: center;
   font-size: 2.8rem;
   font-weight: 500;
+  padding-top: 100px;
 }
 
 .login-logo-text-mobile,
@@ -59,7 +60,7 @@
 .inputs {
   display: block;
   text-align: center;
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
 .inputs > input:nth-of-type(1) {
@@ -93,6 +94,7 @@
   height: 35px;
   border-radius: 5px;
   border: none;
+  font-size: 15px;
 }
 
 .login-button:hover {
@@ -105,7 +107,8 @@
   text-align: center;
   color: #0095f6;
   margin-top: 7px;
-  font-size: 5px;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .or-layout {
@@ -124,11 +127,13 @@
 }
 
 .left-or-border {
-  margin: auto;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .right-or-border {
-  margin: auto;
+  margin-right: auto;
+  margin-left: 10px;
 }
 
 .or {
@@ -144,26 +149,24 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   border: none;
   font-weight: bold;
-  width: 150px;
-  height: 30px;
+  width: 200px;
+  height: 35px;
   border-radius: 5px;
-  margin-top: 10px;
+  background: #000;
+  color: white;
+  text-align: center;
+  font-size: 15px;
 }
 
 .button-phrase {
-  margin-bottom: 4px;
+  position: relative;
+  bottom: 20px;
+  margin: auto;
 }
 
-.github-login-button {
-  display: flex;
-  background: #000;
-  color: white;
-  font-size: 12px;
-  padding-left: 20px;
-  padding-top: 8px;
-}
 
 .github-login-button:hover {
   background-color: rgb(66, 66, 66);
@@ -175,14 +178,18 @@
   position: relative;
   width: 27px;
   height: 27px;
-  right: 10px;
-  bottom: 6px;
+  top: 4px;  
+  left: 7px; 
+}
+
+.login-layout-bottom {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .goSignUp-text {
   display: inline-block;
   font-size: 13px;
-  padding-top: 20px;
 }
 
 .goSignUp-text-link {
@@ -190,6 +197,7 @@
   padding-top: 20px;
   padding-left: 5px;
   color: #0095f6;
+  cursor: pointer;
 }
 
 .logo-mobile,

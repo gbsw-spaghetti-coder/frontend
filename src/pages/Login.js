@@ -99,11 +99,6 @@ const Login = () => {
               <span className="button-phrase">깃허브로 로그인</span>
             </a>
           </div>
-          <div className="login-layout-bottom-mobile">
-            <p className="goSignUp-text">계정이 없으신가요?</p>
-            <span className="goSignUp-text-link">회원가입</span>
-          </div>
-
           <div className="login-layout-bottom">
             <p className="goSignUp-text">계정이 없으신가요?</p>
             <span className="goSignUp-text-link">회원가입</span>

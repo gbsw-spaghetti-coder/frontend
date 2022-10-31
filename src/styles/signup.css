@@ -108,12 +108,22 @@
   background: #0048;
 }
 
-.goLogin-text {
-  color: #0095f6;
-  font-size: 14px;
+.signUp-layout-bottom {
   text-align: center;
-  margin-top: 50px;
-  font-weight: bold;
+  margin-top: 20px;
+}
+
+.goLogin-text {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.goLogin-text-link {
+  font-size: 13px;
+  padding-top: 20px;
+  padding-left: 5px;
+  color: #0095f6;
+  cursor: pointer;
 }
 
 .pwVisible {
@@ -233,6 +243,10 @@
 
   .goLogin-text {
     margin-top: 50px;
+    font-size: 18px;
+  }
+
+  .goLogin-text-link {
     font-size: 18px;
   }
 
