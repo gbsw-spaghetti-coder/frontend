@@ -6,7 +6,7 @@ const Etc = () => {
   return (
     <div className="etcCategory-container">
       <div className="etc-category-layout">
-        <div className="etc-category-top">
+        <div className="etc-category-to-top">
           <div className="etc-category-item">
             <img className="sql-img" src={Sql} alt="sql" />
           </div>
@@ -20,7 +20,7 @@ const Etc = () => {
             <img className="arduino-img" src={Arduino} alt="arduino" />
           </div>
         </div>
-        <div className="etc-category-middle">
+        <div className="etc-category-to-middle">
           <div className="etc-category-item">
             <img className="android-img" src={Android} alt="android" />
           </div>
@@ -34,7 +34,7 @@ const Etc = () => {
             <p className="addToCategoryItem">+</p>
           </div>
         </div>
-        <div className="etc-category-bottom">
+        <div className="etc-category-to-bottom">
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>

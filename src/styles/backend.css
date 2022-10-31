@@ -63,5 +63,60 @@
     width: 40%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 29px;
+    margin-top: 25px;
+}
+
+.backend-category-to-top .backend-category-item:nth-of-type(1):hover {
+    transition: 0.8s;
+    background: #283593;
+}
+
+.backend-category-to-top .backend-category-item:nth-of-type(2):hover {
+    transition: 0.8s;
+    background: #684d95;
+}
+
+.backend-category-to-top .backend-category-item:nth-of-type(3):hover {
+    transition: 0.8s;
+    background: #00599c;
+}
+
+.backend-category-to-top .backend-category-item:nth-of-type(4):hover {
+    transition: 0.8s;
+    background: #29beb0;
+}
+
+.backend-category-to-middle .backend-category-item:nth-of-type(1):hover {
+    transition: 0.8s;
+    background: #f89820;
+}
+
+.backend-category-to-middle .backend-category-item:nth-of-type(2):hover {
+    transition: 0.8s;
+    background: #aeb2d5;
+}
+
+.backend-category-to-middle .backend-category-item:nth-of-type(3):hover {
+    transition: 0.8s;
+    background: linear-gradient(to right, #306998, #ffe873);
+}
+
+.backend-category-to-middle .backend-category-item:nth-of-type(4):hover {
+    transition: 0.8s;
+    background: #cc0000;
+}
+
+.backend-category-to-bottom .backend-category-item:nth-of-type(1):hover {
+    transition: 0.8s;
+    background: #252525;
+}
+
+.backend-category-to-bottom .backend-category-item:nth-of-type(2):hover {
+    transition: 0.8s;
+    background: #00d084;
+}
+
+.backend-category-to-bottom .backend-category-item:nth-of-type(3):hover {
+    transition: 0.8s;
+    background: #007acc;
 }
