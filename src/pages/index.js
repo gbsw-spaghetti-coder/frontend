@@ -7,5 +7,4 @@ export { default as Category } from './Category';
 
 export { default as Frontend } from '../components/Frontend';
 export { default as Backend } from '../components/Backend';
-export { default as DBServer } from '../components/DBServer';
 export { default as Etc } from '../components/Etc';
