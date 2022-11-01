@@ -1,0 +1,30 @@
+.coin-layout {
+    display: block;
+    width: 100px;
+    height: 100px;  
+    background: white;  
+    border-radius: 15px;
+    position: relative;
+    margin-top: 45px;
+    right: 110px;
+    box-shadow: 0 0 4px gray inset;
+}
+
+.coin-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    left: 20px;
+    top: 5px;
+}
+
+.coin-text {
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #252525;
+    width: 80px;
+    margin: auto;
+    padding: 1px;
+}

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import '../styles/myPage.css';
 import Header from '../components/Header';
 import Profile from '../images/profile.png';
-import axios from "axios";
+import axios from 'axios';
+import Coin from '../components/Coin';
 
 const MyPage = () => {
-
-  const [nick, setNick] = useState("");
-  const [introduce, setIntroduce] = useState("");
+  const [nick, setNick] = useState('');
+  const [introduce, setIntroduce] = useState('');
 
   const RedColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
@@ -61,37 +61,16 @@ const MyPage = () => {
           <div className="blue-color" onClick={BlueColorChange}></div>
           <div className="gray-color" onClick={GrayColorChange}></div>
         </div>
+        <Coin />
         <div className="profile-button-div">
           <input type="submit" name="add-button" className="profile-button" value="프로필편집" />
         </div>
       </div>
       <div className="myPage-layout-bottom">
         <img src={Profile} className="profile-img" alt="프로필" />
-        <div style={{ height: "50px" }}>
-          <h2 className="profile-name">{nick}</h2>
-          <span className="introduce-text">자기소개: {introduce}</span>
-        </div>
-        <div className="Progress-container">
-            <div className='progress-div'>
-            <span className='progress-text'>CSS</span>
-            <progress value="80" max="100" className='progress-bar' />
-            <div className='progress-div'>
-            <span className='progress-text'>JavaScript</span>
-            <progress value="60" max="100" className='progress-bar' />
-            </div>
-            <div className='progress-div'>
-            <span className='progress-text'>React</span>
-            <progress value="50" max="100" className='progress-bar' />
-            </div>
-            <div className='progress-div'>
-            <span className='progress-text'>Vue</span>
-            <progress value="0" max="100" className='progress-bar' />
-            </div>
-            <div className='progress-div'>
-            <span className='progress-text'>PHP</span>
-            <progress value="100" max="100" className='progress-bar' />
-            </div>
-          </div>
+        <div style={{ height: '50px' }}>
+          <h2 className="profile-name">{/* {nick} */}민규민규민규민규민규</h2>
+          <p className="introduce-text">자기소개: {/* {introduce} */} 피곤해요</p>
         </div>
       </div>
     </div>

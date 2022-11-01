@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../styles/pwEdit.css';     
 
 const PasswordEdit = () => {
   return (
@@ -6,4 +7,4 @@ const PasswordEdit = () => {
   )
 }
 
-export default PasswordEdit
+export default PasswordEdit;

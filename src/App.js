@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
-import { Login, Error, SignUp, Main, MyPage, Category, Frontend, Backend, Etc, Div } from './pages/index';
+import { Login, Error, SignUp, Main, MyPage, Category, CoinPage } from './pages/index';
 // import classNames from 'classnames';
 
 const App = () => {
@@ -15,9 +15,7 @@ const App = () => {
           <Route path="/my-page" element={<MyPage />} />
           <Route path="/category" element={<Category />} />
 
-          <Route path="/frontend" element={<Frontend />} />
-          <Route path="/backend" element={<Backend />} />
-          <Route path="/etc" element={<Etc />} />
+          <Route path="/coin" element={<CoinPage />} />
         </Routes>
       </BrowserRouter>
     </div>

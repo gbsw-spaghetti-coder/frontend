@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import '../styles/Main.css';
+import Coin from '../components/Coin';
 
 const Main = () => {
   return (
