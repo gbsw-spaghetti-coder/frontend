@@ -4,5 +4,3 @@ export { default as Error } from './Error';
 export { default as Main } from './Main';
 export { default as MyPage } from './MyPage';
 export { default as Category } from './Category';
-
-export { default as CoinPage } from '../components/Coin';

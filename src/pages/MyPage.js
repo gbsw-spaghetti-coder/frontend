@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import '../styles/myPage.css';
 import Header from '../components/Header';
 import Profile from '../images/profile.png';
+import Coin from './Coin'; 
 import axios from 'axios';
-import Coin from '../components/Coin';
+
 
 const MyPage = () => {
   const [nick, setNick] = useState('');
@@ -61,16 +62,18 @@ const MyPage = () => {
           <div className="blue-color" onClick={BlueColorChange}></div>
           <div className="gray-color" onClick={GrayColorChange}></div>
         </div>
-        <Coin />
         <div className="profile-button-div">
           <input type="submit" name="add-button" className="profile-button" value="프로필편집" />
         </div>
       </div>
       <div className="myPage-layout-bottom">
         <img src={Profile} className="profile-img" alt="프로필" />
-        <div style={{ height: '50px' }}>
-          <h2 className="profile-name">{/* {nick} */}민규민규민규민규민규</h2>
+        <div style={{ height: '30px'}}>
+          <h2 className="profile-name">{/* {nick} */}박민규</h2>
           <p className="introduce-text">자기소개: {/* {introduce} */} 피곤해요</p>
+        </div>
+        <div className="myPage-layout-bottom2">
+
         </div>
       </div>
     </div>
