@@ -1,24 +1,27 @@
-.myPage-container {
+.myPage-myPage-table-to-textarea {
     display: block;
 }
 
 .myPage-layout-top {
     display: flex;
-    height: 380px;
+    height: 350px;
     background: #f5f5f5;
-}   
+}
 
 .color-div {
     display: flex;
     margin-left: 2px;
 }
 
-.blue-color, .red-color, .green-color, .gray-color {
+.blue-color,
+.red-color,
+.green-color,
+.gray-color {
     width: 20px;
     height: 20px;
     border-radius: 50px;
     margin-top: 10px;
-    margin-left: 10px;  
+    margin-left: 10px;
     border: 2px solid white;
     cursor: pointer;
 }
@@ -63,13 +66,12 @@
 .profile-button:hover {
     outline: 0;
     transition: 0.6s;
-    box-shadow: 0px 0px 0px 0px ;
+    box-shadow: 0px 0px 0px 0px;
 }
 
 .myPage-layout-bottom {
     display: flex;
-    height: 100vh;
-    border: 1px solid black;
+    height: 120px;
 }
 
 .profile-img {
@@ -79,17 +81,68 @@
     width: 200px;
     height: 200px;
     margin: 0 30px;
-    border-radius: 90px;
+    border-radius: 70px;
 }
 
 .profile-name {
-    display: block;
+    display: flex;
     margin-top: 10px;
 }
 
 .introduce-text {
     display: block;
     font-weight: 700;
+}
+
+.myPage-layout-bottom2 {
+    display: flex;
+}
+
+.myPage-table-to-textarea {
+    display: block;
+    width: 35%;
+    height: 200px;
+    margin: auto;
+    background: #f5f5f5;
+}
+
+.myPage-table-to-comment {
+    display: block;
+    width: 35%;
+    height: 200px;
+    margin: auto;
+    background: #f5f5f5;
+}
+
+.myPage-td {
+    padding: 30px 20px;
+    border-bottom: 1px solid black;
+    width: 500px;
+    font-size: 17px;
+}
+
+.myPage-td-category {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    position: relative;
+}
+
+.myPage-table-to-textarea::-webkit-scrollbar {
+    width: 10px;
+}
+
+.myPage-table-to-textarea::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.myPage-table-to-textarea::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px white
 }
 
 @media(min-width: 1230px) and (max-width: 1440px) {
@@ -112,7 +165,7 @@
     .profile-name {
         font-size: 30px;
     }
-    
+
     .introduce-text {
         font-size: 17px;
     }
@@ -160,10 +213,6 @@
 
 }
 
-@media (min-width: 381px) and (max-width: 550px) { 
+@media (min-width: 381px) and (max-width: 550px) {}
 
-}
-
-@media (min-width: 100px) and (max-width: 380px) { 
-    
-}
+@media (min-width: 100px) and (max-width: 380px) {}

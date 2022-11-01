@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/myPage.css';
 import Header from '../components/Header';
 import Profile from '../images/profile.png';
-import Coin from './Coin'; 
+import Coin from './Coin';
 import axios from 'axios';
-
 
 const MyPage = () => {
   const [nick, setNick] = useState('');
@@ -64,16 +63,57 @@ const MyPage = () => {
         </div>
         <div className="profile-button-div">
           <input type="submit" name="add-button" className="profile-button" value="프로필편집" />
+          <div>
+          </div>
         </div>
       </div>
       <div className="myPage-layout-bottom">
         <img src={Profile} className="profile-img" alt="프로필" />
         <div style={{ height: '30px'}}>
-          <h2 className="profile-name">{/* {nick} */}박민규</h2>
-          <p className="introduce-text">자기소개: {/* {introduce} */} 피곤해요</p>
+          <h2 className="profile-name">{/* {nick} */}박경민</h2>
+          <p className="introduce-text">자기소개: {/* {introduce} */} 나는 문어</p>
         </div>
-        <div className="myPage-layout-bottom2">
-
+        <Coin />
+      </div>
+      <div className="myPage-layout-bottom2">
+          <div className="myPage-table-to-textarea" style={{ overflow: 'auto' }}>
+            <table>
+              <tbody>
+                <tr className='myPage-tr'>
+                  <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-category'>CSS</td>
+                </tr>
+                <tr className='myPage-tr'>
+                  <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-category'>CSS</td>
+                </tr>
+                <tr className='myPage-tr'>
+                  <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-category'>CSS</td>
+                </tr>
+                <tr className='myPage-tr'>
+                  <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-category'>CSS</td>
+                </tr>
+                <tr className='myPage-tr'>
+                  <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-category'>CSS</td>
+                </tr>
+                <tr className='myPage-tr'>
+                  <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-category'>CSS</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="myPage-table-to-comment" style={{ overflow: 'auto' }}>
+            <table>
+              <tbody>
+                <tr>
+                  <td className='myPage-td'>이거 이렇게해야됨 ㅋㅋ</td>
+                </tr>
+              </tbody>
+            </table>
         </div>
       </div>
     </div>
