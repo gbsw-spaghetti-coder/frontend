@@ -36,6 +36,21 @@
     width: 85px;
 }
 
+.go-to-main-layout {
+    display: block;
+}
+
+.go-to-main-category {
+    display: block;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.go-to-main-category:hover {
+    cursor: pointer;
+    color: #0095f6;
+}
+
 
 
 

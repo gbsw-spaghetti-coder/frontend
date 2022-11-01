@@ -62,12 +62,19 @@ const Category = () => {
       <Etc />
       </div>
 
+      <div>
+
       {buttonState === 0 && (<Frontend/>)}
 
       {buttonState === 1 && (<Backend/>)}
 
       {buttonState === 2 && (<Etc/>)}
+
+      </div>
       
+      <div className='go-to-main-layout'>
+      <span className='go-to-main-category'>메인 페이지로</span>
+      </div>
     </div>
   );
 };
