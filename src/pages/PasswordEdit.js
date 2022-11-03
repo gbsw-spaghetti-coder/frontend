@@ -3,7 +3,9 @@ import '../styles/pwEdit.css';
 
 const PasswordEdit = () => {
   return (
-    <div>PasswordEdit</div>
+    <div className='passwordEdit-container'>
+      
+    </div>
   )
 }
 

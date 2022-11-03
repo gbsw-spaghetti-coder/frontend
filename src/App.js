@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import CoinPage from "./pages/Coin"
 import { Login, Error, SignUp, Main, MyPage, Category } from './pages/index';
 
+
 const App = () => {
   return (
     <div>

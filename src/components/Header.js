@@ -17,7 +17,7 @@ const Header = () => {
 
   const logout = async () => {
     if (localStorage.getItem('token') === null) {
-      alert("로그인안되있씁니다시발새끼야")
+      alert("로그인이 안 되어 있습니다")
     } else {
       localStorage.clear();
       await axios.get('/api/auth/logout', { withCredentials: true })
