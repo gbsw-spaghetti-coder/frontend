@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import CoinPage from "./pages/Coin"
 import { Login, Error, SignUp, Main, MyPage, Category } from './pages/index';
+import PwEdit from './pages/PasswordEdit';
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/category" element={<Category />} />
 
+          <Route path="/password" element={<PwEdit />} />
           <Route path="/coin" element={<CoinPage />} />
         </Routes>
       </BrowserRouter>
