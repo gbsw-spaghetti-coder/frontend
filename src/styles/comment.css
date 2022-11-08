@@ -1,0 +1,35 @@
+.comment-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-body {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    padding: 40;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+
+.commentCloseBtn {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    border: 0;
+    color: rgba(0, 0, 0, 0.7);
+    background: transparent;
+    font-size: 20px;
+}
+
+.commentCloseBtn:hover {
+    cursor: pointer;
+}

@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import CoinPage from "./pages/Coin"
-import { Login, Error, SignUp, Main, MyPage, Category } from './pages/index';
-import PwEdit from './pages/PasswordEdit';
-import Header from './components/Header';
+import { Login, Error, SignUp, Main, MyPage, Category, PwEdit } from './pages/index';
+import Comment from './components/comment';
 
 
 const App = () => {
@@ -17,10 +16,9 @@ const App = () => {
           <Route path="*" element={<Error />} />
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/category" element={<Category />} />
-
           <Route path="/password" element={<PwEdit />} />
-          <Route path="/coin" element={<CoinPage />} />
-          <Route path="/header" element={<Header />} />
+          
+          <Route path="/comment" element={<Comment />} />
         </Routes>
       </BrowserRouter>
     </div>
