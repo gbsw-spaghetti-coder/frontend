@@ -30,7 +30,7 @@ const Main = () => {
               </thead>
               <tbody>
                 <tr id="main-tr">
-                  <td>1</td>
+                  <td>9</td>
                   <td>이거 어떻게 해야 margin이 먹히나요??</td>
                   <td>박경민</td>
                   <td>2022-10-22</td>
@@ -39,7 +39,7 @@ const Main = () => {
                   <td>59</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>2</td>
+                  <td>8</td>
                   <td>밑에분 php 무시하지 마세요</td>
                   <td>임재현</td>
                   <td>2022-10-22</td>
@@ -48,7 +48,7 @@ const Main = () => {
                   <td>20</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>3</td>
+                  <td>7</td>
                   <td>php 좋은거 맞나요?</td>
                   <td>박민규</td>
                   <td>2022-10-22</td>
@@ -57,7 +57,7 @@ const Main = () => {
                   <td>100</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>4</td>
+                  <td>6</td>
                   <td>자바로 은행 취업 가능할까요?</td>
                   <td>김동혁</td>
                   <td>2022-10-22</td>
@@ -75,7 +75,7 @@ const Main = () => {
                   <td>150</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>6</td>
+                  <td>4</td>
                   <td>밑에분 똑같은 글 도배하지 말아주세요</td>
                   <td>김진효</td>
                   <td>2022-10-22</td>
@@ -84,7 +84,7 @@ const Main = () => {
                   <td>10</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>7</td>
+                  <td>3</td>
                   <td>이거 어떻게 해야 margin이 먹히나요??</td>
                   <td>박경민</td>
                   <td>2022-10-22</td>
@@ -93,7 +93,7 @@ const Main = () => {
                   <td>0</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>8</td>
+                  <td>2</td>
                   <td>이거 어떻게 해야 margin이 먹히나요??</td>
                   <td>박경민</td>
                   <td>2022-10-22</td>
@@ -102,7 +102,7 @@ const Main = () => {
                   <td>0</td>
                 </tr>
                 <tr id="main-tr">
-                  <td>9</td>
+                  <td>1</td>
                   <td>이거 어떻게 해야 margin이 먹히나요??</td>
                   <td>박경민</td>
                   <td>2022-10-22</td>
