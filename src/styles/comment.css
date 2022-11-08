@@ -12,9 +12,9 @@
 
 .comment-body {
     position: absolute;
-    width: 300px;
+    width: 315px;
     height: 500px;
-    padding: 40;
+    padding: 40px;
     text-align: center;
     background: rgb(255, 255, 255);
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
@@ -23,7 +23,7 @@
 .commentCloseBtn {
     position: absolute;
     top: 4px;
-    right: 15px;
+    right: 10px;
     border: 0;
     color: rgba(0, 0, 0, 0.7);
     background: transparent;
@@ -31,5 +31,33 @@
 }
 
 .commentCloseBtn:hover {
+    cursor: pointer;
+}
+
+.comment-input {
+    display: block;
+    position: relative;
+    border: 0;
+    border-bottom: 1.2px solid black;
+    background: transparent;
+    width: 270px;
+    padding: 4px;
+    top: 30px;
+    right: 25px;
+    outline: 0;
+}
+
+.delete-comment-div {
+    position: relative;
+    top: 8.5px;
+    left: 129px;
+    padding: 0 0 1px;
+}
+
+.delete-comment {
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    border-bottom: 1px solid black;
     cursor: pointer;
 }

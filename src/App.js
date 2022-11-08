@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import CoinPage from "./pages/Coin"
 import { Login, Error, SignUp, Main, MyPage, Category, PwEdit } from './pages/index';
-import Comment from './components/comment';
+import Comment from './components/Comment';
 
 
 const App = () => {
