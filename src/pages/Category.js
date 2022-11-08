@@ -27,9 +27,6 @@ const Category = () => {
   return (
     <div className="category-container">
       <Header />
-      <div className='go-to-main-layout'>
-      <span className='go-to-main-category'>메인 페이지로</span>
-      </div>
       <div className="category-button-div">
         <button
           type="submit"

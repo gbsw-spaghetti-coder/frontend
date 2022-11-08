@@ -11,6 +11,27 @@
     margin-left: 30px;
 }
 
+.logo-header {
+    cursor: pointer;
+}
+
+.logo-header img {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    top: 2px;
+    left: 15px;
+  }
+
+.logo-header p {
+    font-size: 4px;
+    font-weight: bold;
+    position: relative;
+    left: 37px;
+    bottom: 7px;
+    color: black;
+}
+
 .menu-layout button:nth-of-type(1),
 .menu-layout button:nth-of-type(2),
 .menu-layout button:nth-of-type(3) {
@@ -37,7 +58,7 @@
 
 .search-input {
     min-width: 100%;
-    width: 500px;
+    width: 350px;
     height: 50px;
     border: 0;
     outline: 0;
@@ -83,6 +104,7 @@
     font-weight: 500;
     font-size: 14px;
     margin-top: 2px;
+    color: black;
 }
 
 .height-line {
@@ -128,6 +150,10 @@
         height: 80px;
     }
 
+    .logo-header {
+        display: none;
+      }
+
     .menu-layout-mobile {
         display: flex;
     }
@@ -171,6 +197,10 @@
         height: 40px;
     }
 
+    .logo-header {
+        display: none;
+      }
+
     .menu-layout {
         display: none;
     }
@@ -213,6 +243,10 @@
         width: 100%;
         height: 40px;
     }
+
+    .logo-header {
+        display: none;
+      }
 
     .menu-layout,
     .lol-layout {

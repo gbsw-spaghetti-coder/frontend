@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import CoinPage from "./pages/Coin"
 import { Login, Error, SignUp, Main, MyPage, Category } from './pages/index';
 import PwEdit from './pages/PasswordEdit';
+import Header from './components/Header';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
 
           <Route path="/password" element={<PwEdit />} />
           <Route path="/coin" element={<CoinPage />} />
+          <Route path="/header" element={<Header />} />
         </Routes>
       </BrowserRouter>
     </div>

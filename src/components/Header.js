@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import '../styles/header.css';
 import Search from '../images/search.png';
 import Menu from '../images/menu.png';
-import error from "../pages/Error";
+import Logo from '../images/logo.png';
 
 
 const Header = () => {
@@ -33,10 +33,20 @@ const Header = () => {
 
   return (
     <div className="header-container">
+      <Link to="/">
+      <div className='logo-header'>
+      <img src={Logo} alt="logo" className="logo-header" />
+      <p>Code Wave</p>
+      </div>
+      </Link>
       <div className="menu-layout">
+        <Link to="/mypage">
         <button>마이페이지</button>
-        <button>질문</button>
+        </Link>
+        <button>게임</button>
+        <Link to="/category">
         <button>카테고리</button>
+        </Link>
       </div>
       <div className="menu-layout-mobile">
         <button type="submit" className="menu-icon-button">
@@ -61,9 +71,13 @@ const Header = () => {
           </div>
         ) : (
           <div className="lo-layout">
+            <Link to="/login">
             <span>로그인</span>
+            </Link>
             <div className="height-line"></div>
+            <Link to="/signup">
             <span>회원가입</span>
+            </Link>
           </div>
         )}
       </div>
