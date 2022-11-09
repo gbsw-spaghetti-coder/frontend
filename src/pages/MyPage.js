@@ -100,7 +100,7 @@ const MyPage = () => {
                   <td className='myPage-td-category'>CSS</td>
                 </tr>
                 <tr className='myPage-tr'>
-                  <td className='myPage-td-last'>이거 어떻게 해야 margin이 먹히나요??</td>
+                  <td className='myPage-td-last'>이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요?? </td>
                   <td className='myPage-td-category-last'>CSS</td>
                 </tr>
               </tbody>
@@ -158,7 +158,6 @@ const MyPage = () => {
               </tbody>
             </table>
         </div>
-        <span className='go-to-main'>메인 페이지로</span>
       </div>
     </div>
   );

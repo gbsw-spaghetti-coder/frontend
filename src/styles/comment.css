@@ -16,7 +16,7 @@
     height: 500px;
     padding: 40px;
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: #f5f5f5;
     box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
 }
 
@@ -38,7 +38,7 @@
     display: block;
     position: relative;
     border: 0;
-    border-bottom: 1.2px solid black;
+    border-bottom: 1px solid gray;
     background: transparent;
     width: 270px;
     padding: 4px;
@@ -58,7 +58,7 @@
     font-size: 13px;
     font-weight: 500;
     position: relative;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid gray;
     cursor: pointer;
 }
 
@@ -69,17 +69,46 @@
     background: transparent;
     position: relative;
     right: 40px;
-    top: 25px;
+    top: 20px;
+}
 
+.comment-id-p {
+    display: block;
+    padding-top: 15px;
+    width: 300px;
 }
 
 .comment-id {
     display: block;
-    padding: 5px 8px;
+    padding: 5px 15px;
     text-align: left;
     font-weight: 700;
+    position: relative;
+    bottom: 20px;
 }
 
 .comment-text {
-    padding: 5px;
+    display: block;
+    position: relative;
+    bottom: 24px;
+    padding: 5px 16px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.commentArrayDiv::-webkit-scrollbar {
+    width: 8px;
+}
+
+.commentArrayDiv::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.commentArrayDiv::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 4px white;
 }
