@@ -65,17 +65,21 @@
 .commentArrayDiv {
     overflow: auto;
     width: 315px;
-    height: 300px;
-    border: 1px solid black;
+    height: 355px;
     background: transparent;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    top: 30px;
+    right: 40px;
+    top: 25px;
+
 }
 
 .comment-id {
     display: block;
-    padding: 2px 5px;
+    padding: 5px 8px;
     text-align: left;
+    font-weight: 700;
+}
+
+.comment-text {
+    padding: 5px;
 }
