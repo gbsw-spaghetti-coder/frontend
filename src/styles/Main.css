@@ -65,7 +65,7 @@ thead tr, #main-tr {
   height: 40px;
 }
 
-#main-tr :nth-of-type(2):hover {
+#main-tr:nth-of-type(2):hover {
   cursor: pointer;
   color: #0095f6;
 }

@@ -36,7 +36,6 @@ const Header = () => {
       <Link to="/">
       <div className='logo-header'>
       <img src={Logo} alt="logo" className="logo-header" />
-      <p>Code Wave</p>
       </div>
       </Link>
       <div className="menu-layout">
