@@ -1,8 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
-import CoinPage from "./pages/Coin"
-import { Login, Error, SignUp, Main, MyPage, Category, PwEdit } from './pages/index';
-import Comment from './components/Comment';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Login, Error, SignUp, Main, MyPage, Category, PwEdit, PostDetail } from './pages/index';
+import Post from './components/Post'; 
 
 
 const App = () => {
@@ -17,8 +16,9 @@ const App = () => {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/category" element={<Category />} />
           <Route path="/password" element={<PwEdit />} />
-          
-          <Route path="/comment" element={<Comment />} />
+          <Route path="/post" element={<PostDetail />} />
+
+          <Route path="/post2" element={<Post />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -5,3 +5,4 @@ export { default as Main } from './Main';
 export { default as MyPage } from './MyPage';
 export { default as Category } from './Category';
 export { default as PwEdit } from './PasswordEdit';
+export { default as PostDetail } from './PostDetail';

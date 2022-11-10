@@ -1,0 +1,11 @@
+.post-container {
+    display: block;
+}
+
+.post-title-layout {
+    width: 60%;
+    height: 65px;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    margin-top: 50px;
+}
