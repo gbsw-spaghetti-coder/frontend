@@ -20,4 +20,23 @@
 
 .post-info span {
     font-size: 10px;
+    position: relative;
+    padding: 0 2px;
+    bottom: 5px;
 }
+
+.title-line {
+    border-right: 1px solid black;
+    height: 0.1px;  
+}
+
+.title-item3 {
+    position: relative;
+    margin-left: 775px;
+}
+
+.title-item2, .title-item4, .title-item5 {
+    margin-left: 3px;
+}
+
+
