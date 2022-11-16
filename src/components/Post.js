@@ -10,12 +10,9 @@ const Post = () => {
           </div>
           <div className='post-info'>
           <span className='title-item1'>박경민</span>
-          <span className='title-line'></span>
           <span className='title-item2'>2022-10-22</span>
           <span className='title-item3'>조회 59</span>
-          <span className='title-line'></span>
           <span className='title-item4'>좋아요 10</span>
-          <span className='title-line'></span>
           <span className='title-item5'>CSS</span>
           </div>
         </div>
