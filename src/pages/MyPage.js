@@ -8,6 +8,8 @@ import axios from 'axios';
 const MyPage = () => {
   const [nick, setNick] = useState('');
   const [introduce, setIntroduce] = useState('');
+  const [coin, setCoin ] = useState(0);
+  const [profileImg, setProfileImg] = useState("");
 
   const RedColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
@@ -33,23 +35,25 @@ const MyPage = () => {
     layout.style.backgroundColor = '#F5F5F5';
   };
 
-  // const fetchMydata = async () => {
-  //   if(localStorage.getItem("token") === null) {
-  //     alert("로그인 하세요")
-  //     window.location.href = "/";
-  //   } else {
-  //     await axios.get('/api/user', {withCredentials: true})
-  //       .then((res) => {
-  //         setNick(res.data.nick);
-  //         setIntroduce(res.data.introduce);
-  //       }).catch((error) => {
-  //         console.log(error);
-  //       })
-  //   }
-  // }
-  // useEffect( () => {
-  //   fetchMydata();
-  // }, [])
+  const fetchMydata = async () => {
+    if(localStorage.getItem("token") === null) {
+      alert("로그인 하세요")
+      window.location.href = "/";
+    } else {
+      await axios.get('/api/user', {withCredentials: true})
+        .then((res) => {
+          setNick(res.data.nick);
+          setIntroduce(res.data.introduce);
+          setProfileImg(res.data.profile_img);
+          setCoin(res.data.point);
+        }).catch((error) => {
+          console.log(error);
+        })
+    }
+  }
+  useEffect( () => {
+    fetchMydata();
+  }, [])
 
   return (
     <div className="myPage-container">
@@ -68,12 +72,12 @@ const MyPage = () => {
         </div>
       </div>
       <div className="myPage-layout-bottom">
-        <img src={Profile} className="profile-img" alt="프로필" />
+        <img src={profileImg} className="profile-img" alt="프로필" />
         <div style={{ height: '30px'}}>
-          <h2 className="profile-name">{/* {nick} */}박경민</h2>
-          <p className="introduce-text">자기소개: {/* {introduce} */} 나는 문어</p>
+          <h2 className="profile-name"> {nick}</h2>
+          <p className="introduce-text">자기소개: {introduce}</p>
         </div>
-        <Coin />
+        <Coin coin={coin}/>
       </div>
       <div className="myPage-layout-bottom2">
           <div className="myPage-table-to-textarea" style={{ overflow: 'auto' }}>

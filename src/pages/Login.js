@@ -32,7 +32,8 @@ const Login = () => {
       const response = await axios.post('/api/auth/login', data, { withCredentials: true });
       if (response.data.success) {
         alert(response.data.message);
-        console.log(response);
+        window.location.href = "/";
+        localStorage.setItem("token", "token");
       }
     } catch (error) {
       console.log(error);
