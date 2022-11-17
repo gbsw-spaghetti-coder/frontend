@@ -29,21 +29,9 @@ const Main = () => {
                 </tr>
               </thead>
               <tbody>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <tr id="main-tr">
-                  <td>9</td>
-                  <Link to="/post">
-=======
                 <tr id='main-tr'>
                   <td>1</td>
->>>>>>> a321b08207f73fee8322cb3ef29c761cd738f74c
-=======
-                <tr id='main-tr'>
-                  <td>1</td>
->>>>>>> a321b08207f73fee8322cb3ef29c761cd738f74c
                   <td>이거 어떻게 해야 margin이 먹히나요??</td>
-                  </Link>
                   <td>박경민</td>
                   <td>2022-10-22</td>
                   <td>10</td>

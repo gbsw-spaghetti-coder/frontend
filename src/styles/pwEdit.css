@@ -7,7 +7,7 @@
 
 .pw-edit-logo {
     display: block;
-    width: 240px;
+    width: 300px;
     height: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -21,19 +21,19 @@
     text-align: center;
     font-size: 25px;
     position: relative;
-    bottom: 10px;
+    bottom: 15px;
 }
 
 .passwordEdit-layout {
     display: block;
     position: relative;
-    top: 30px;
+    top: 10px;
     width: 300px;
     height: 500px;
     background: white;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 0 10px black inset;
+    box-shadow: 0 0 5px black inset;
     border-radius: 10px;
 }
 
