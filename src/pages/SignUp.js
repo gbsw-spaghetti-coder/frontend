@@ -131,7 +131,7 @@ const SignUp = () => {
             onChange={emailHandler}
           />
           {errors.emailError && (
-            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+            <p className='check-text'>
               이메일 형식에 맞게 입력해주세요.
             </p>
           )}
@@ -143,7 +143,7 @@ const SignUp = () => {
             onChange={nickHandler}
           />
           {errors.nickError && (
-            <p style={{ display: 'flex', fontSize: '5px', color: 'red', padding: '10px 90px' }}>
+            <p className='check-text'>
               닉네임을 입력해주세요.
             </p>
           )}
