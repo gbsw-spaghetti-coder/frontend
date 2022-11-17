@@ -133,8 +133,7 @@
 }
 
 .pwHide, .pwShow {
-  font-size: 5px;
-  cursor: pointer;
+  font-size: 10px;
 }
 
 .pwHide:hover {
