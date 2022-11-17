@@ -31,6 +31,7 @@ const Login = () => {
     try {
       const response = await axios.post('/api/auth/login', data, { withCredentials: true });
       if (response.data.success) {
+        localStorage.clear();
         alert(response.data.message);
         window.location.href = "/";
         localStorage.setItem("token", "token");
