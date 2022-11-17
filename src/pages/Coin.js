@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import {BsCoin } from "react-icons/bs"
 import '../styles/coin.css';
 import PropTypes from 'prop-types';
+import axios from "axios";
 
 const Coin = ({ coin }) => {
+
+  const [point, setPoint] = useState(0);
+
+  /*useEffect(async () => {
+    await axios.get('/api/user', {withCredentials: true})
+      .then((res) => {
+        setPoint(res.data.point);
+      })
+  })*/
 
   return (
     <div className='coin-container'>
@@ -15,8 +25,6 @@ const Coin = ({ coin }) => {
   )
 };
 
-Coin.defaultProps = {
-  coin : 1000
-};
+
 
 export default Coin;

@@ -7,15 +7,15 @@
     width: 65%;
     height: 40px;
     background-color: white;
-    box-shadow: 0 0 3px gray;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 5px solid #004581;
+    border: 0.1px solid #d3d3d3;
+    border-radius: 4px 4px 0px 0px;
 }
 
 .post-title h6 {
-    padding: 2px 2px;
+    padding: 3px 4px;
 }
 
 .post-info {
@@ -25,7 +25,7 @@
 .post-info span {
     font-size: 10px;
     position: relative;
-    padding: 0 2px;
+    padding: 0 4px;
 }
 
 .title-item2 {
@@ -41,12 +41,11 @@
     width: 65%;
     height: 350px;
     background-color: white;
-    box-shadow: 0 0 3px gray;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-top: 2px solid #004581;
-    border-bottom: 2px solid #004581;
+    border: 0.1px solid #d3d3d3;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .post-del-btn {
@@ -64,7 +63,7 @@
     position: relative;
     top: 5px; 
     transition: 0.3s;
-    box-shadow: 0 0 7px gray;
+    box-shadow: 0 0 3px gray;
 }
 
 .post-del-btn:hover {
@@ -95,12 +94,13 @@
 }
 
 .comment-div {
+    display: block;
     width: 30px;
     height: 30px;
     background: white;
-    box-shadow: 0 0 4px gray;
+    border: 1px solid #d3d3d3;
     border-radius: 50px;
-    margin-left: 270px;
+    margin: auto;
     margin-top: 5px;
 }
 
@@ -108,7 +108,7 @@
     display: block;
     margin: auto;
     position: relative;
-    top: 8px;
+    top: 6px;
     cursor: pointer;
     color: black;
 }
@@ -126,6 +126,5 @@
 
 .post-text-div::-webkit-scrollbar-track {
     background-color: transparent;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 4px white;
+    border-radius: 10px;;
 }

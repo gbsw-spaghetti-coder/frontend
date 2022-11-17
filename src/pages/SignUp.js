@@ -89,6 +89,23 @@ const SignUp = () => {
 
   const onSubmit = async (e) => {
     e.preventDefault();
+
+    const data = {
+      email,
+      password,
+      nick
+    };
+
+    await axios.post('/api/auth/sign', data, { withCredentials: true })
+      .then((res) => {
+        alert(res.data.message);
+        window.location.href = "/login";
+      })
+      .catch((err) => {
+        console.log(err.response.data.message);
+        window.location.href = "/signup";
+      })
+
   };
 
   return (

@@ -12,12 +12,12 @@
 
 .category-button-div button {
     border: none;
-    background: #252525;
+    background: #5182ee;
     color: white;
     height: 40px;
     margin-left: 20px;
     border-radius: 15px;
-    box-shadow:  0 0 10px gray;
+    box-shadow:  0 0 5px gray;
     cursor: pointer;
     font-size: 15px;
 }
