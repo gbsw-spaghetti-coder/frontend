@@ -33,7 +33,7 @@ const PasswordEdit = () => {
       alert("로그인 하세요")
       window.location.href = "/";
     } else {
-      await axios.post('/')
+      await axios.post('/api/user/password', {withCredentials: true})
     }
   }
   useEffect( () => {
