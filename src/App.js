@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Login, Error, SignUp, Main, MyPage, Category, PwEdit, PostDetail } from './pages/index';
 import Post from './components/Post'; 
+import Comment from './components/Comment';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/post" element={<PostDetail />} />
 
           <Route path="/post2" element={<Post />} />
+          <Route path="/comment" element={<Comment />} />
         </Routes>
       </BrowserRouter>
     </div>
