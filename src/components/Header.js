@@ -40,9 +40,14 @@ const Header = () => {
       </div>
       </Link>
       <div className="menu-layout">
-        <Link to="/mypage">
-        <button>마이페이지</button>
-        </Link>
+        {token ? (
+          <Link to="/mypage">
+            <button>마이페이지</button>
+          </Link>
+        ) : (
+          <p></p>
+        )}
+
         <button>게임</button>
         <Link to="/category">
         <button>카테고리</button>
