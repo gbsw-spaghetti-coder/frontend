@@ -4,11 +4,11 @@ import Pagination from "react-js-pagination";
 import { useState } from "react";
 
 const Page = ({ page, setPage }) => {
-  const [page, setPage] = useState(1);
+  /*const [page, setPage] = useState(1);*/
 
-  const handlePageChange = () => {
+  /*const handlePageChange = (page) => {
     setPage(page);
-  };
+  };*/
 
   return (
     <Pagination
@@ -18,7 +18,7 @@ const Page = ({ page, setPage }) => {
       pageRangeDisplayed={10}
       prevPageText={"‹"}
       nextPageText={"›"}
-      onChange={handlePageChange}
+
     />
   );
 };

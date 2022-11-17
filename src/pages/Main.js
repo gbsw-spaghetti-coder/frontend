@@ -2,20 +2,21 @@ import React, {useEffect, useState} from 'react';
 import Header from '../components/Header';
 import { Link } from 'react-router-dom';
 import '../styles/Main.css';
+import '../styles/page.css';
 import axios from "axios";
-import Page from '../components/Page';
+import Pagination from "react-js-pagination";
 
-const Main = (props) => {
-
+const Main = () => {
   const [data, setData] = useState([]);
-  const [currentpage, setCurrentpage] = useState(1);
+  const [page, setPage] = useState(1);
 
-  const setPage = (e) => {
-    setCurrentpage(e);
-  };
+  const handlePageChange = (page) => {
+    setPage(page);
+    getQuestion();
+  }
 
   const getQuestion = async () => {
-    await axios.get(`/api/question?page=${currentpage}`, { withCredentials: true })
+    await axios.get(`/api/question/${page}`, { withCredentials: true })
       .then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -24,10 +25,6 @@ const Main = (props) => {
         console.error(err);
       })
   }
-
-  useEffect( () => {
-    getQuestion();
-  }, []);
 
   return (
     <>
@@ -67,7 +64,15 @@ const Main = (props) => {
               ))}
               </tbody>
             </table>
-            <Page setPage={setPage}/>
+            <Pagination
+              activePage={page}
+              itemsCountPerPage={10}
+              totalItemsCount={450}
+              pageRangeDisplayed={10}
+              prevPageText={"‹"}
+              nextPageText={"›"}
+              onChange={handlePageChange}
+            />
           </div>
         </div>
       </div>
