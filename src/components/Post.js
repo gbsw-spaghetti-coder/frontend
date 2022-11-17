@@ -3,7 +3,7 @@ import '../styles/post.css';
 import { Link } from 'react-router-dom';
 import { FaTrash } from 'react-icons/fa';
 import { BiCommentDetail } from 'react-icons/bi';
-import Comment from '../components/Comment';
+import Comment from './Comment';
 
 const Post = () => {
   const [modalOpen, setModalOpen] = useState(false);

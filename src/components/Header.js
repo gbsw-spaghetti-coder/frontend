@@ -25,6 +25,7 @@ const Header = () => {
           console.log(res);
           alert(res.data.message);
           window.location.href = "/login";
+          localStorage.clear();
         }).catch((error) => {
           alert(error.response.data.message);
         })

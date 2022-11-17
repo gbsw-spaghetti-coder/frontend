@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import '../styles/pwEdit.css';
 import logo from '../images/logo.png';
+import axios from "axios";
 
 const PasswordEdit = () => {
   const [pwType, setPwType] = useState({
@@ -17,6 +18,28 @@ const PasswordEdit = () => {
     });
   };
 
+  const validatePassword = async (req, res) => {
+    await axios.post('/api/auth/password', { withCredentials: true })
+      .then((res) => {
+        alert(res.data.message);
+      })
+      .catch((err) => {
+        alert(err.response.data.message);
+      })
+  }
+
+  const editPassword = async () => {
+    if(localStorage.getItem("token") === null) {
+      alert("로그인 하세요")
+      window.location.href = "/";
+    } else {
+      await axios.post('/')
+    }
+  }
+  useEffect( () => {
+    editPassword();
+  }, [])
+
   return (
     <div className="passwordEdit-container">
       <img src={logo} alt="logo" className="pw-edit-logo" />
@@ -30,7 +53,7 @@ const PasswordEdit = () => {
             name="old-pw"
             placeholder="현재 비밀번호를 입력하세요"
           />
-          <button type="submit">확인</button>
+          <button type="submit" onClick={validatePassword}>확인</button>
         </div>
         <div className="new-pw-div">
           <input
