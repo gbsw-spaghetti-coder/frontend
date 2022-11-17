@@ -8,15 +8,16 @@ import Pagination from "react-js-pagination";
 
 const Main = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
 
   const handlePageChange = (page) => {
     setPage(page);
-    getQuestion();
+
   }
 
   const getQuestion = async () => {
-    await axios.get(`/api/question/${page}`, { withCredentials: true })
+    await axios.get(`/api/question/?page=${page}`, { withCredentials: true })
       .then((res) => {
         console.log(res.data);
         setData(res.data);
@@ -25,6 +26,10 @@ const Main = () => {
         console.error(err);
       })
   }
+
+  useEffect(() => {
+    getQuestion();
+  }, [page]);
 
   return (
     <>
