@@ -2,7 +2,7 @@
     display: block;
 }
 
-.post-title-layout {
+.post-title-layout-top {
     display: block;
     width: 65%;
     height: 40px;
@@ -36,4 +36,96 @@
     margin-right: 3px;
 }
 
+.post-title-layout-bottom {
+    display: block;
+    width: 65%;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0 0 3px gray;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #004581;
+    border-bottom: 2px solid #004581;
+}
 
+.post-del-btn {
+    display: block;
+    width: 70px;
+    height: 25px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    background: #E74545;
+    color: white;
+    cursor: pointer;
+    margin-left: auto; 
+    margin-right: 5px;
+    position: relative;
+    top: 5px; 
+    transition: 0.3s;
+    box-shadow: 0 0 7px gray;
+}
+
+.post-del-btn:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 7px #E74545;
+}
+
+.trash-icon {
+    position: relative;
+    width: 10px;
+    top: 1.5px;
+    right: 5px;
+}
+
+.post-text-div {
+    overflow: auto;
+    width: 95%;
+    height: 300px;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.post-text-div span {
+    display: block;
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+.comment-div {
+    width: 30px;
+    height: 30px;
+    background: white;
+    box-shadow: 0 0 4px gray;
+    border-radius: 50px;
+    margin-left: 270px;
+    margin-top: 5px;
+}
+
+.comment-icon {
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+    color: black;
+}
+
+.post-text-div::-webkit-scrollbar {
+    width: 8px;
+}
+
+.post-text-div::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.post-text-div::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 4px white;
+}
