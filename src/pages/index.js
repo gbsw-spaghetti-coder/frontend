@@ -6,3 +6,5 @@ export { default as MyPage } from './MyPage';
 export { default as Category } from './Category';
 export { default as PwEdit } from './PasswordEdit';
 export { default as PostDetail } from './PostDetail';
+export { default as Write } from './Write';
+export { default as WriteEdit } from './WriteEdit';

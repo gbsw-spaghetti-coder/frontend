@@ -1,0 +1,49 @@
+.writeLayout-container {
+    display: flex;
+}
+
+.write-layout {
+    margin: auto;
+    margin-top: 70px;
+} 
+
+.writeToTitle {
+    border: 0.1px solid #d3d3d3;
+    width: 500px;
+    height: 30px;
+    margin-right: 53px;
+    padding: 0px 6px;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: 0;
+    box-shadow: 0px 2px 3px #d3d3d3;
+}
+
+.choiceToCategory {
+    border: 0.1px solid #d3d3d3;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: 0;
+    box-shadow: 0px 2px 3px#d3d3d3;
+}
+
+.choiceToCategory option {
+}
+
+.choiceToCategory::-webkit-scrollbar {
+    width: 10px;
+}
+
+.choiceToCategory::-webkit-scrollbar-thumb {
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+.choiceToCategory::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
