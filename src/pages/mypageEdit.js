@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../styles/myPageEdit.css';
 import '../styles/myPage.css';
 import Header from '../components/Header';
 import Profile from '../images/profile.png';
@@ -74,8 +75,8 @@ const MyPage = () => {
       <div className="myPage-layout-bottom">
         <img src={profileImg} className="profile-img" alt="프로필" />
         <div style={{ height: '30px' }}>
-          <h2 className="profile-name"> {nick}</h2>
-          <p className="introduce-text">자기소개: {introduce}</p>
+          <h2 className="profile-name"><div className='profile-name_div'>닉네임: <input type="text" className='profile-name_div_input' /></div></h2>
+          <p className="introduce-text"><div className='introduce-text_div'>자기소개: <textarea className='introduce-text_div_textarea' rows="3" cols="30"></textarea></div></p>
         </div>
         <Coin coin={coin} />
       </div>
