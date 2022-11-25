@@ -6,7 +6,7 @@ import Profile from '../images/profile.png';
 import Coin from './Coin';
 import axios from 'axios';
 
-const MyPage = () => {
+const MyPageEdit = () => {
   const [nick, setNick] = useState('');
   const [introduce, setIntroduce] = useState('');
   const [coin, setCoin] = useState(0);
@@ -168,4 +168,4 @@ const MyPage = () => {
   );
 };
 
-export default MyPage;
+export default MyPageEdit;
