@@ -13,32 +13,32 @@ const WriteLayout = () => {
         />
         <select name="choice" className="choiceToCategory">
           <option selected>카테고리 선택</option>
-          <option>- 프론트엔드 -</option>
-          <option>HTML</option>
-          <option>CSS</option>
-          <option>JavaScript</option>
-          <option>TypeScript</option>
-          <option>ReactJs</option>
-          <option>VueJs</option>
-          <option>- 백엔드 -</option>
-          <option>C</option>
-          <option>CS</option>
-          <option>CPP</option>
-          <option>Go</option>
-          <option>JAVA</option>
-          <option>PHP</option>
-          <option>Python</option>
-          <option>Ruby</option>
-          <option>Rust</option>
-          <option>Spring</option>
-          <option>TypeScript</option>
-          <option>NodeJs</option>
-          <option>- 기타 -</option>
-          <option>Sql</option>
-          <option>Linux</option>
-          <option>Unity</option>
-          <option>Arduino</option>
-          <option>Android</option>
+          <option value="front">- 프론트엔드 -</option>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+          <option value="ts">TypeScript</option>
+          <option value="react">ReactJs</option>
+          <option value="vue">VueJs</option>
+          <option value="back">- 백엔드 -</option>
+          <option value="c">C</option>
+          <option value="c#">CS</option>
+          <option value="c++">CPP</option>
+          <option value="go">Go</option>
+          <option value="java">JAVA</option>
+          <option value="php">PHP</option>
+          <option value="py">Python</option>
+          <option value="rudy">Ruby</option>
+          <option value="rust">Rust</option>
+          <option value="spring">Spring</option>
+          <option value="ts">TypeScript</option>
+          <option value="node">NodeJs</option>
+          <option value="etc">- 기타 -</option>
+          <option value="sql">Sql</option>
+          <option value="linux">Linux</option>
+          <option value="unity">Unity</option>
+          <option value="arduino">Arduino</option>
+          <option value="android">Android</option>
         </select>
       </div>
     </div>
