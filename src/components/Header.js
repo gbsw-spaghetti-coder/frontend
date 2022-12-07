@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/header.css';
 import Search from '../images/search.png';
 import Menu from '../images/menu.png';
@@ -31,14 +31,19 @@ const Header = () => {
         })
     }
   }
+  const navigate = useNavigate();
+
+  const handleGoHome = () => {
+    navigate(-1);
+  }
 
   return (
     <div className="header-container">
-      <Link to="/">
+      <div onClick={handleGoHome}>
       <div className='logo-header'>
       <img src={Logo} alt="logo" className="logo-header" />
       </div>
-      </Link>
+      </div>
       <div className="menu-layout">
         {token ? (
           <Link to="/mypage">

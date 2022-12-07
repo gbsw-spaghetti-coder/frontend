@@ -13,7 +13,6 @@ const Main = () => {
 
   const handlePageChange = (page) => {
     setPage(page);
-
   }
 
   const getQuestion = async () => {
@@ -58,11 +57,11 @@ const Main = () => {
               <tbody>
               {data.map((data, i) => (
                 <tr id="main-tr">
-                  <td>{data.id}</td>
+                  <td><Link to={`/post/${data.id}`}>{data.id}</Link></td>
                   <td>{data.title}</td>
-                  <td>{data.createdAt}</td>
                   <td>{data.User.nick}</td>
-                  <td>{data.Goods}</td>
+                  <td>{data.createdAt}</td>
+                  <td>{data.Goods.length}</td>
                   <td>{data.category}</td>
                   <td>{data.views}</td>
                 </tr>

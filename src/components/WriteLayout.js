@@ -13,14 +13,14 @@ const WriteLayout = () => {
         />
         <select name="choice" className="choiceToCategory">
           <option selected>카테고리 선택</option>
-          <option value="front">- 프론트엔드 -</option>
+          <option disabled>- 프론트엔드 -</option>
           <option value="html">HTML</option>
           <option value="css">CSS</option>
           <option value="js">JavaScript</option>
           <option value="ts">TypeScript</option>
           <option value="react">ReactJs</option>
           <option value="vue">VueJs</option>
-          <option value="back">- 백엔드 -</option>
+          <option disabled>- 백엔드 -</option>
           <option value="c">C</option>
           <option value="c#">CS</option>
           <option value="c++">CPP</option>
@@ -33,7 +33,7 @@ const WriteLayout = () => {
           <option value="spring">Spring</option>
           <option value="ts">TypeScript</option>
           <option value="node">NodeJs</option>
-          <option value="etc">- 기타 -</option>
+          <option disabled>- 기타 -</option>
           <option value="sql">Sql</option>
           <option value="linux">Linux</option>
           <option value="unity">Unity</option>
