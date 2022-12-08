@@ -8,4 +8,3 @@ export { default as PwEdit } from './PasswordEdit';
 export { default as PostDetail } from './PostDetail';
 export { default as Write } from './Write';
 export { default as WriteEdit } from './WriteEdit';
-export { default as MyPageEdit } from './MyPageEdit';

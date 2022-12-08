@@ -4,7 +4,7 @@
 
 .myPage-layout-top {
     display: flex;
-    height: 260px;
+    height: 440px;
     background: #f5f5f5;
 }
 
@@ -154,7 +154,6 @@
     color: #0095f6;
 }
 
-
 .myPage-td-comment-last {
     padding: 10px 20px;
     width: 500px;
@@ -232,9 +231,8 @@
 
 @media(min-width: 1230px) and (max-width: 1440px) {
     .myPage-layout-top {
-        height: 400px;
+        height: 500px;
     }
-
 }
 
 @media(min-width: 1024px) and (max-width: 1229px) {
@@ -255,26 +253,22 @@
         font-size: 17px;
     }
 
-    .progress-div {
-        margin-top: 30px;
+    .myPage-table-to-comment {
+        position: relative;
+        left: 100px;
+        width: 350px;
     }
 
-    .progress-text {
-        font-size: 20px;
+    .myPage-myPage-table-to-textarea {
+        position: relative;
+        width: 400px;
     }
-
-    /* .progress-bar::-webkit-progress-bar {
-        width: 550px;
-        height: 20px;
-        background: #f5f5f5;
-    } */
 }
 
 @media(min-width: 550px) and (max-width: 960px) {
     .myPage-layout-top {
         height: 450px;
     }
-
 
     .profile-img {
         width: 230px;
@@ -286,18 +280,35 @@
         font-size: 30px;
     }
 
-    .introduce-text {
-        font-size: 20px;
+    .myPage-table-to-comment {
+        position: relative;
+        left: 100px;
+        width: 300px;
     }
 
-    /* .progress-bar::-webkit-progress-bar {
-        width: 550px;
-        height: 20px;
-        background: #f5f5f5;
-    } */
-
+    .myPage-myPage-table-to-textarea {
+        position: fixed;
+        width: 500px;
+    }
 }
 
-@media (min-width: 381px) and (max-width: 550px) {}
+@media (min-width: 320px) and (max-width: 550px) {
+    
+    .myPage-layout-bottom2 {
+        width: 600px;
+    }
 
-@media (min-width: 100px) and (max-width: 380px) {}
+    .myPage-table-to-comment {
+        position: relative;
+        left: 100px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+    } 
+}

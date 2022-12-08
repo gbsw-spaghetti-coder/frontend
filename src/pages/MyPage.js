@@ -72,12 +72,11 @@ const MyPage = () => {
         </div>
       </div>
       <div className="myPage-layout-bottom">
-        <img src={profileImg} className="profile-img" alt="프로필" />
+        <img src={Profile} className="profile-img" alt="프로필" />
         <div style={{ height: '30px' }}>
-          <h2 className="profile-name"> {nick}</h2>
-          <p className="introduce-text">자기소개: {introduce}</p>
+          <h2 className="profile-name">이름{nick}</h2>
         </div>
-        <Coin coin={coin} />
+        <Coin coin={coin} className="coin"/>
       </div>
       <div className="myPage-layout-bottom2">
         <div className="myPage-table-to-textarea" style={{ overflow: 'auto' }}>
@@ -116,9 +115,9 @@ const MyPage = () => {
               <tr>
                 <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
+                </td>
+              </tr>
 
-                </td>
-              </tr>
               <tr>
                 <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
@@ -130,16 +129,19 @@ const MyPage = () => {
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
                 </td>
               </tr>
+
               <tr>
                 <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
                 </td>
               </tr>
+
               <tr>
                 <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
                 </td>
               </tr>
+
               <tr>
                 <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
@@ -156,7 +158,6 @@ const MyPage = () => {
               <tr>
                 <td className='myPage-td-comment-last'>이거 이렇게해야됨 ㅋㅋ
                   <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
-
                 </td>
               </tr>
             </tbody>

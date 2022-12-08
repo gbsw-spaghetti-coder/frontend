@@ -138,10 +138,12 @@
 
 .pwHide:hover {
   color: red;
+  cursor: pointer;
 }
 
 .pwShow:hover {
   color: #0095f6;
+  cursor: pointer;
 }
 
 .signUp-logo-text-mobile,
@@ -150,11 +152,11 @@
 }
 
 .check-text {
-  display: flex;
+  display: block;
   font-size: 10px;
-  color: red; 
-  margin-top: 10px;
-  margin-left: 92px;
+  color: red;  
+  text-align: center;
+  margin-top: 8px;
 }
 
 @media (min-width: 1439px) and (max-width: 1440px) {
@@ -250,10 +252,6 @@
     top: 10px;
   }
 
-  .check-text {
-    margin-left: 115px;
-  }
-
   @media (min-width: 250px) and (max-width: 426px) {
     .signUp-container {
       background: white;
@@ -266,10 +264,6 @@
     .signUp-layout-right {
       background: white;
       box-shadow: none;
-    }
-
-    .check-text {
-      margin-left: 65px;
     }
   }
 }

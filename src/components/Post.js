@@ -10,13 +10,9 @@ import Like from './Like';
 const Post = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [data, setData] = useState([]);
-<<<<<<< HEAD
   const { id } = useParams();
-=======
-  const [nick, setNick] = useState("");
+  const [nick, setNick] = useState('');
   const [good, setGood] = useState(0);
-  const {id} = useParams();
->>>>>>> 7b1fb5233619323552530954cfcda8ebfa74c4fb
 
   const showModal = () => {
     setModalOpen(true);
@@ -28,14 +24,22 @@ const Post = () => {
       .get(`/api/question/${id}`, { withCredentials: true })
       .then((res) => {
         setData(res.data[0]);
-<<<<<<< HEAD
         console.log(res.data[0]);
-=======
         setNick(res.data[0].User.nick);
         setGood(res.data[0].Goods.length);
-      }).catch((err) => {
+      })
+      .catch((err) => {
         console.error(err);
->>>>>>> 7b1fb5233619323552530954cfcda8ebfa74c4fb
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+
+    await axios
+      .get(`/api/question/${id}`, { withCredentials: true })
+      .then((res) => {
+        setData(res.data[0]);
+        console.log(res.data[0]);
       })
       .catch((err) => {
         console.error(err);
@@ -53,11 +57,10 @@ const Post = () => {
           <span className="title-item2">{data.updatedAt}</span>
           <span className="title-item3">조회 {data.views}</span>
           <span className="title-item4">좋아요 {good}</span>
-          <span className="title-item5">{data.category}</span>
         </div>
       </div>
       <div className="post-title-layout-bottom">
-        <button type="submit" className="post-del-btn">
+        <button type="submit" className="post-del-btn" name="delete-button">
           {' '}
           <FaTrash className="trash-icon" />
           삭제
@@ -65,6 +68,7 @@ const Post = () => {
         <div className="post-text-div">
           <span style={{ marginTop: '10px' }}>{data.content}</span>
         </div>
+        <div></div>
         <Like />
       </div>
       <div className="comment-div" onClick={showModal}>
