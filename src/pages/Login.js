@@ -104,7 +104,9 @@ const Login = () => {
           </div>
           <div className="login-layout-bottom">
             <p className="goSignUp-text">계정이 없으신가요?</p>
+            <Link to="/signup">
             <span className="goSignUp-text-link">회원가입</span>
+            </Link>
           </div>
         </form>
       </div>

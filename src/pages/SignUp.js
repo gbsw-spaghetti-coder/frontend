@@ -188,7 +188,9 @@ const SignUp = () => {
         </div>
         <div className='signUp-layout-bottom'>
         <p className="goLogin-text">계정이 있으신가요?</p>
+        <Link to="/login">
         <span className='goLogin-text-link'>로그인</span>
+        </Link>
         </div>
       </div>
     </div>

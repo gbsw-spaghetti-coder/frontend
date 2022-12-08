@@ -51,8 +51,6 @@ const Header = () => {
         ) : (
           <p></p>
         )}
-
-        <button>게임</button>
         <Link to="/category">
         <button>카테고리</button>
         </Link>

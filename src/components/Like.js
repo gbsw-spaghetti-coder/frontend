@@ -3,7 +3,7 @@ import { FcLike } from 'react-icons/fc';
 import '../styles/like.css';
 
 const Like = () => {
-  const [count, setCount] = useState("0");
+  const [count, setCount] = useState(0);
 
   const countUP = () => {
     setCount(count + 1);
@@ -11,11 +11,8 @@ const Like = () => {
 
   return (
     <div className="like-container">
-      <FcLike className="like-icon" onClick={countUP} />
-      <div className="like-container">
-        <FcLike className="like-icon" />
-        <p className="like-count">{count}</p>
-      </div>
+      <FcLike className="like-icon" onClick={countUP}/>
+      <p className="like-count">{count}</p>
     </div>
   );
 };
