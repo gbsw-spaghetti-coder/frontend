@@ -9,6 +9,8 @@ import Comment from './Comment';
 const Post = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [data, setData] = useState([]);
+  const [nick, setNick] = useState("");
+  const [good, setGood] = useState(0);
   const {id} = useParams();
 
   const showModal = () => {
@@ -20,7 +22,8 @@ const Post = () => {
     await axios.get(`/api/question/${id}`, {withCredentials: true})
       .then((res) => {
         setData(res.data[0]);
-        console.log(res.data[0]);
+        setNick(res.data[0].User.nick);
+        setGood(res.data[0].Goods.length);
       }).catch((err) => {
         console.error(err);
       })
@@ -34,10 +37,10 @@ const Post = () => {
           <h6>{data.title}</h6>
         </div>
         <div className="post-info">
-          <span className="title-item1"></span>
+          <span className="title-item1">{nick}</span>
           <span className="title-item2">{data.updatedAt}</span>
           <span className="title-item3">조회 {data.views}</span>
-          <span className="title-item4">좋아요 </span>
+          <span className="title-item4">좋아요 {good}</span>
           <span className="title-item5">{data.category}</span>
         </div>
       </div>
