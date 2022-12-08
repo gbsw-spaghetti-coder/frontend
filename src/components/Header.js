@@ -20,7 +20,7 @@ const Header = () => {
       alert("로그인이 안 되어 있습니다")
     } else {
       localStorage.clear();
-      await axios.get('/api/auth/logout', { withCredentials: true })
+      await axios.get('/api/auth/logout', {withCredentials: true})
         .then((res) => {
           console.log(res);
           alert(res.data.message);
@@ -31,10 +31,9 @@ const Header = () => {
         })
     }
   }
-  const navigate = useNavigate();
 
   const handleGoHome = () => {
-    navigate(-1);
+    window.location.href = "/";
   }
 
   return (

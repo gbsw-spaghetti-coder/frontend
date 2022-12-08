@@ -34,7 +34,7 @@ const Comment = ({ setModalOpen }, props) => {
       const comArray = [...commentArray];
       comArray.push({ id: '박민규', comment: text });
       setCommentArray(comArray);
-      event.target.value = '';
+      setText('');
     }
   };
 
