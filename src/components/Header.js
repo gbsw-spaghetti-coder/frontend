@@ -31,7 +31,6 @@ const Header = () => {
         })
     }
   }
-  const navigate = useNavigate();
 
   const handleGoHome = () => {
     window.location.href = "/";
