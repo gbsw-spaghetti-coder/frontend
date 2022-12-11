@@ -7,29 +7,47 @@ import {Editor} from "@toast-ui/react-editor";
 import axios from 'axios';
 
 const Write = () => {
-  const [title, setTitie] = useState("");
+  const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [content, setContent] = useState("");
 
   const editorRef = useRef();
 
-  const handleRegisterButton = () => {
-    // 입력창에 입력한 내용을 HTML 태그 형태로 취득
-    console.log(editorRef.current?.getInstance().getHTML());
-    // 입력창에 입력한 내용을 MarkDown 형태로 취득
-    console.log(editorRef.current?.getInstance().getMarkdown());r
-  };
+  const titleHandler = (e) => {
+    setTitle(e.target.value);
+    console.log(title);
+  }
+
+  const categoryHandler = (e) => {
+    setCategory(e.target.value);
+    console.log(category);
+  }
+
+  const contentHandler = (e) => {
+    setContent(editorRef.current?.getInstance().getHTML());
+  }
 
   const submit = async () => {
-    const data = {
+    // 입력창에 입력한 내용을 HTML 태그 형태로 취득
+    //console.log(editorRef.current?.getInstance().getHTML());
+    // 입력창에 입력한 내용을 MarkDown 형태로 취득
+    //console.log(editorRef.current?.getInstance().getMarkdown());
+    setContent(editorRef.current?.getInstance().getHTML());
 
-    }
+    const data = { title, content, category };
+    console.log(data);
+
+
     await axios.post('/api/question', data, {withCredentials: true})
       .then((res) => {
-
+        alert(res.data.message);
+        window.location.href = '/';
       })
-
-  }
+      .catch((err) => {
+        console.error(err);
+        alert(err.response.data.message);
+      })
+  };
 
   return (
     <div style={{ background: '#f5f5f5', height: '100vh'}}>
@@ -41,8 +59,9 @@ const Write = () => {
             placeholder="제목을 입력해주세요"
             name="write-title"
             className="writeToTitle"
+            onChange={titleHandler}
           />
-          <select name="choice" className="choiceToCategory">
+          <select name="choice" className="choiceToCategory" onChange={categoryHandler}>
             <option selected>카테고리 선택</option>
             <option disabled>- 프론트엔드 -</option>
             <option value="html">HTML</option>
@@ -82,9 +101,10 @@ const Write = () => {
           height="350px"
           initialEditType="wysiwyg"
           useCommandShortcut={true}
+          onChange={contentHandler}
         />
       </div>
-    <button type='submit' className='write-button' onClick={handleRegisterButton}>글 등록</button>
+    <button type='submit' className='write-button' onClick={submit}>글 등록</button>
     </div>
   )
 }
