@@ -28,12 +28,6 @@ const Write = () => {
   }
 
   const submit = async () => {
-    // 입력창에 입력한 내용을 HTML 태그 형태로 취득
-    //console.log(editorRef.current?.getInstance().getHTML());
-    // 입력창에 입력한 내용을 MarkDown 형태로 취득
-    //console.log(editorRef.current?.getInstance().getMarkdown());
-    setContent(editorRef.current?.getInstance().getHTML());
-
     const data = { title, content, category };
     console.log(data);
 
