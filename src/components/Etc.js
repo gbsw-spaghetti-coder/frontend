@@ -8,46 +8,46 @@ const Etc = () => {
     <div className="etcCategory-container">
       <div className="etc-category-layout">
         <div className="etc-category-to-top">
-        <Link to="/category/sql">
           <div className="etc-category-item">
-            <img className="sql-img" src={Sql} alt="sql" />
+            <Link to="/category/sql">
+              <img className="sql-img" src={Sql} alt="sql" />
+            </Link>
           </div>
-        </Link>
-        
-        <Link to="/category/linux">
+
           <div className="etc-category-item">
-            <img className="linux-img" src={Linux} alt="linux" />
+            <Link to="/category/linux">
+              <img className="linux-img" src={Linux} alt="linux" />
+            </Link>
           </div>
-        </Link>
-        
-        <Link to="/category/unity">
+
           <div className="etc-category-item">
-            <img className="unity-img" src={Unity} alt="unity" />
+            <Link to="/category/unity">
+              <img className="unity-img" src={Unity} alt="unity" />
+            </Link>
           </div>
-        </Link>
-        
-        <Link to="/category/arduino">
+
           <div className="etc-category-item">
-            <img className="arduino-img" src={Arduino} alt="arduino" />
+            <Link to="/category/arduino">
+              <img className="arduino-img" src={Arduino} alt="arduino" />
+            </Link>
           </div>
-        </Link>
         </div>
-        
+
         <div className="etc-category-to-middle">
-        <Link to="/category/android">
           <div className="etc-category-item">
-            <img className="android-img" src={Android} alt="android" />
+            <Link to="/category/android">
+              <img className="android-img" src={Android} alt="android" />
+            </Link>
           </div>
-        </Link>
 
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
@@ -57,15 +57,15 @@ const Etc = () => {
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="etc-category-item">
             <p className="addToCategoryItem">+</p>
           </div>

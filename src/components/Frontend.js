@@ -8,43 +8,43 @@ const Frontend = () => {
     <div className="frontend-container">
       <div className="frontend-category-layout">
         <div className="frontend-category-to-top">
-          <Link to="/category/html">
-            <div className="frontend-category-item">
+          <div className="frontend-category-item">
+            <Link to="/category/html">
               <img className="html-img" src={Html} alt="html" />
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          <Link to="/category/css">
-            <div className="frontend-category-item">
+          <div className="frontend-category-item">
+            <Link to="/category/css">
               <img className="css-img" src={Css} alt="css" />
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          <Link to="/category/js">
-            <div className="frontend-category-item">
+          <div className="frontend-category-item">
+            <Link to="/category/js">
               <img className="js-img" src={Js} alt="js" />
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          <Link to="/category/ts">
-            <div className="frontend-category-item">
+          <div className="frontend-category-item">
+            <Link to="/category/ts">
               <img className="ts-img" src={Ts} alt="ts" />
-            </div>
-          </Link>
+            </Link>
+          </div>
         </div>
 
         <div className="frontend-category-to-middle">
-          <Link to="/category/react">
-            <div className="frontend-category-item">
+          <div className="frontend-category-item">
+            <Link to="/category/react">
               <img className="react-img" src={ReactImg} alt="react" />
-            </div>
-          </Link>
+            </Link>
+          </div>
 
-          <Link to="/category/vue">
-            <div className="frontend-category-item">
+          <div className="frontend-category-item">
+            <Link to="/category/vue">
               <img className="vue-img" src={Vue} alt="vue" />
-            </div>
-          </Link>
+            </Link>
+          </div>
 
           <div className="frontend-category-item">
             <p className="addToCategoryItem">+</p>
@@ -63,11 +63,11 @@ const Frontend = () => {
           <div className="frontend-category-item-">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="frontend-category-item">
             <p className="addToCategoryItem">+</p>
           </div>
-          
+
           <div className="frontend-category-item">
             <p className="addToCategoryItem">+</p>
           </div>

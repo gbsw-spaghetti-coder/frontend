@@ -51,7 +51,7 @@ const Header = () => {
         ) : (
           <p></p>
         )}
-        <Link to="/category">
+        <Link to="/categorylist">
         <button>카테고리</button>
         </Link>
       </div>

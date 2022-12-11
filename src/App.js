@@ -13,7 +13,7 @@ const App = () => {
           <Route path="/" element={<Main />} />
           <Route path="*" element={<Error />} />
           <Route path="/mypage" element={<MyPage />} />
-          <Route path="/category" element={<Category />} />
+          <Route path="/categorylist" element={<Category />} />
           <Route path="/password" element={<PwEdit />} />
           <Route path="/post/:id" element={<PostDetail />} />
           <Route path="/write" element={<Write />} />
