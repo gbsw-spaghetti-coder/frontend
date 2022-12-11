@@ -34,9 +34,11 @@ const Main = () => {
     <>
       <div className="main-container">
         <Header />
+        <Link to="write">
         <div id='main-button-layout'>
         <button>작성하기</button>
         </div>
+        </Link>
         <div id="list-box">
           <div id='list-text-layout'>
           <h2 id="list-text">질문</h2>

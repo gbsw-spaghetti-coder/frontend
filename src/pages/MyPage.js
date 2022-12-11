@@ -65,11 +65,6 @@ const MyPage = () => {
           <div className="blue-color" onClick={BlueColorChange}></div>
           <div className="gray-color" onClick={GrayColorChange}></div>
         </div>
-        <div className="profile-button-div">
-          <input type="submit" name="add-button" className="profile-button" value="프로필편집" />
-          <div>
-          </div>
-        </div>
       </div>
       <div className="myPage-layout-bottom">
         <img src={Profile} className="profile-img" alt="프로필" />

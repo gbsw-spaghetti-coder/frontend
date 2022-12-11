@@ -18,6 +18,7 @@ const App = () => {
           <Route path="/post" element={<PostDetail />} />
           <Route path="/write" element={<Write />} />
           <Route path='/writeedit' element={<WriteEdit />} />
+          <Route path='/category_write/:category' element={<CategoryWrite />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

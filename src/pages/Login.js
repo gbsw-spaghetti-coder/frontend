@@ -90,7 +90,9 @@ const Login = () => {
           <button type="submit" className="login-button" onClick={submit}>
             로그인
           </button>
+          <Link to="password">
           <p className="lostPW">비밀번호를 잃어버리셨나요?</p>
+          </Link>
           <div className="or-layout">
             <p className="left-or-border" />
             <p className="or">OR</p>
