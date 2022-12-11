@@ -8,25 +8,25 @@ const Frontend = () => {
     <div className="frontend-container">
       <div className="frontend-category-layout">
         <div className="frontend-category-to-top">
-          <Link to="/category_write/html">
+          <Link to="/category/html">
             <div className="frontend-category-item">
               <img className="html-img" src={Html} alt="html" />
             </div>
           </Link>
 
-          <Link to="/category_write/css">
+          <Link to="/category/css">
             <div className="frontend-category-item">
               <img className="css-img" src={Css} alt="css" />
             </div>
           </Link>
 
-          <Link to="/category_write/js">
+          <Link to="/category/js">
             <div className="frontend-category-item">
               <img className="js-img" src={Js} alt="js" />
             </div>
           </Link>
 
-          <Link to="/category_write/ts">
+          <Link to="/category/ts">
             <div className="frontend-category-item">
               <img className="ts-img" src={Ts} alt="ts" />
             </div>
@@ -34,13 +34,13 @@ const Frontend = () => {
         </div>
 
         <div className="frontend-category-to-middle">
-          <Link to="/category_write/react">
+          <Link to="/category/react">
             <div className="frontend-category-item">
               <img className="react-img" src={ReactImg} alt="react" />
             </div>
           </Link>
 
-          <Link to="/category_write/vue">
+          <Link to="/category/vue">
             <div className="frontend-category-item">
               <img className="vue-img" src={Vue} alt="vue" />
             </div>

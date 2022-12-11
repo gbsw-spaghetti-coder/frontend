@@ -8,25 +8,25 @@ const Backend = () => {
     <div className='backendCategory-container'>
       <div className='backend-category-layout'>
         <div className='backend-category-to-top'>
-        <Link to="/category_write/c">
+        <Link to="/category/c">
           <div className='backend-category-item'>
             <img className='c-img' src={C} alt='c' />
           </div>
         </Link>
 
-        <Link to="/category_write/c#">
+        <Link to="/category/c#">
           <div className='backend-category-item'>
             <img className='cs-img' src={CS} alt='cs' />
           </div>
         </Link>
 
-        <Link to="/category_write/c++">
+        <Link to="/category/c++">
           <div className='backend-category-item'>
             <img className='cpp-img' src={CPP} alt='cpp' />
           </div>
         </Link>
           
-        <Link to="/category_write/go">
+        <Link to="/category/go">
           <div className='backend-category-item'>
             <img className='go-img' src={Go} alt='go' />
           </div>
@@ -34,25 +34,25 @@ const Backend = () => {
         </div>
        
         <div className='backend-category-to-middle'>
-        <Link to="/category_write/java">
+        <Link to="/category/java">
           <div className='backend-category-item'>
             <img className='java-img' src={Java} alt='java' />
           </div>
         </Link>
 
-        <Link to="/category_write/php">
+        <Link to="/category/php">
           <div className='backend-category-item'>
             <img className='php-img' src={PHP} alt='php' />
           </div>
         </Link>
           
-        <Link to="/category_write/py">
+        <Link to="/category/py">
           <div className='backend-category-item'>
             <img className='py-img' src={Py} alt='py' />
           </div>
         </Link>
 
-        <Link to="/category_write/ruby">
+        <Link to="/category/ruby">
           <div className='backend-category-item'>
             <img className='ruby-img' src={Ruby} alt='ruby' />
           </div>
@@ -60,19 +60,19 @@ const Backend = () => {
         </div>
         
         <div className='backend-category-to-bottom'>   
-        <Link to="/category_write/rust">
+        <Link to="/category/rust">
           <div className='backend-category-item'>
             <img className='rust-img' src={Rust} alt='rust' />
           </div>
         </Link>  
 
-        <Link to="/category_write/spring">        
+        <Link to="/category/spring">        
           <div className='backend-category-item'>
             <img className='spring-img' src={Spring} alt='spring' />
           </div>
         </Link>
 
-        <Link to="/category_write/ts">
+        <Link to="/category/ts">
           <div className='backend-category-item'>
             <img className='ts-img' src={Ts} alt='ts' />
           </div>

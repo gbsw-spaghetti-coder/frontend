@@ -1,7 +1,7 @@
 import React from 'react';
 import { Main } from '.';
 
-const CategoryWrite = () => {
+const CategoryPost = () => {
   return (
     <div>
         <Main />
@@ -9,4 +9,4 @@ const CategoryWrite = () => {
   )
 }
 
-export default CategoryWrite
+export default CategoryPost

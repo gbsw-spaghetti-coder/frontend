@@ -8,25 +8,25 @@ const Etc = () => {
     <div className="etcCategory-container">
       <div className="etc-category-layout">
         <div className="etc-category-to-top">
-        <Link to="/category_write/sql">
+        <Link to="/category/sql">
           <div className="etc-category-item">
             <img className="sql-img" src={Sql} alt="sql" />
           </div>
         </Link>
         
-        <Link to="/category_write/linux">
+        <Link to="/category/linux">
           <div className="etc-category-item">
             <img className="linux-img" src={Linux} alt="linux" />
           </div>
         </Link>
         
-        <Link to="/category_write/unity">
+        <Link to="/category/unity">
           <div className="etc-category-item">
             <img className="unity-img" src={Unity} alt="unity" />
           </div>
         </Link>
         
-        <Link to="/category_write/arduino">
+        <Link to="/category/arduino">
           <div className="etc-category-item">
             <img className="arduino-img" src={Arduino} alt="arduino" />
           </div>
@@ -34,7 +34,7 @@ const Etc = () => {
         </div>
         
         <div className="etc-category-to-middle">
-        <Link to="/category_write/android">
+        <Link to="/category/android">
           <div className="etc-category-item">
             <img className="android-img" src={Android} alt="android" />
           </div>
