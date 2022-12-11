@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Login, Error, SignUp, Main, MyPage, Category, PwEdit, PostDetail, Write } from './pages/index';
+import { Login, Error, SignUp, Main, MyPage, Category, PwEdit, PostDetail, Write, CategoryWrite } from './pages/index';
 
 
 const App = () => {
