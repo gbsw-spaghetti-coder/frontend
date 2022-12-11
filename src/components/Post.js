@@ -6,16 +6,29 @@ import { FaTrash } from 'react-icons/fa';
 import { BiCommentDetail } from 'react-icons/bi';
 import Comment from './Comment';
 import Like from './Like';
+import {FcLike} from "react-icons/fc";
 
 const Post = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [data, setData] = useState([]);
   const [nick, setNick] = useState("");
   const [good, setGood] = useState(0);
+  const [count, setCount] = useState(0);
   const {id} = useParams();
 
   const showModal = () => {
     setModalOpen(true);
+  };
+
+  const countUP = async () => {
+    await axios.get(`/api/question/good/${id}`, {withCredentials: true})
+      .then((res) => {
+        alert(res.data.message);
+        window.location.reload();
+      }).catch((err) => {
+        console.error(err);
+        alert(err.response.data.message);
+      })
   };
 
   useEffect(async () => {
@@ -27,19 +40,6 @@ const Post = () => {
         setNick(res.data[0].User.nick);
         setGood(res.data[0].Goods.length);
       }).catch((err) => {
-        console.error(err);
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-
-    await axios
-      .get(`/api/question/${id}`, { withCredentials: true })
-      .then((res) => {
-        setData(res.data[0]);
-        console.log(res.data[0]);
-      })
-      .catch((err) => {
         console.error(err);
       });
   }, []);
@@ -68,7 +68,10 @@ const Post = () => {
           <span style={{ marginTop: '10px' }}>{data.content}</span>
         </div>
         <div></div>
-        <Like />
+        <div className="like-container">
+          <FcLike className="like-icon" onClick={countUP}/>
+          <p className="like-count">{good}</p>
+        </div>
       </div>
       <div className="comment-div" onClick={showModal}>
         <BiCommentDetail className="comment-icon" />

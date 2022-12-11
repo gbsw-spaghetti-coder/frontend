@@ -72,9 +72,9 @@ const MyPage = () => {
         </div>
       </div>
       <div className="myPage-layout-bottom">
-        <img src={Profile} className="profile-img" alt="프로필" />
+        <img src={profileImg} className="profile-img" alt="프로필" />
         <div style={{ height: '30px' }}>
-          <h2 className="profile-name">이름{nick}</h2>
+          <h2 className="profile-name">{nick}</h2>
         </div>
         <Coin coin={coin} className="coin"/>
       </div>
