@@ -15,7 +15,7 @@ const App = () => {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/category" element={<Category />} />
           <Route path="/password" element={<PwEdit />} />
-          <Route path="/post" element={<PostDetail />} />
+          <Route path="/post/:id" element={<PostDetail />} />
           <Route path="/write" element={<Write />} />
           <Route path='/writeedit' element={<WriteEdit />} />
           <Route path='/category_write/:category' element={<CategoryWrite />}></Route>
