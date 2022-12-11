@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Login, Error, SignUp, Main, MyPage, Category, PwEdit, PostDetail, Write, WriteEdit } from './pages/index';
+import { Login, Error, SignUp, Main, MyPage, Category, PwEdit, PostDetail, Write } from './pages/index';
 
 
 const App = () => {
@@ -17,7 +17,6 @@ const App = () => {
           <Route path="/password" element={<PwEdit />} />
           <Route path="/post/:id" element={<PostDetail />} />
           <Route path="/write" element={<Write />} />
-          <Route path='/writeedit' element={<WriteEdit />} />
           <Route path='/category_write/:category' element={<CategoryWrite />}></Route>
         </Routes>
       </BrowserRouter>
