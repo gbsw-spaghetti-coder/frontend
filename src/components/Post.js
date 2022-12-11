@@ -31,6 +31,17 @@ const Post = () => {
       })
   };
 
+  const deleteQuestion = async () => {
+    await axios.delete(`/api/question/${id}`, {withCredentials: true})
+      .then((res) => {
+        alert(res.data.message);
+        window.location.href = "/";
+      })
+      .catch((err) => {
+        alert(err.response.data.message);
+      })
+  }
+
   useEffect(async () => {
     console.log(id);
     await axios
@@ -59,13 +70,13 @@ const Post = () => {
         </div>
       </div>
       <div className="post-title-layout-bottom">
-        <button type="submit" className="post-del-btn" name="delete-button">
+        <button type="submit" className="post-del-btn" name="delete-button" onClick={deleteQuestion}>
           {' '}
           <FaTrash className="trash-icon" />
           삭제
         </button>
         <div className="post-text-div">
-          <span style={{ marginTop: '10px' }}>{data.content}</span>
+          <div style={{ marginTop: '10px' }} dangerouslySetInnerHTML={{__html : data.content}}></div>
         </div>
         <div></div>
         <div className="like-container">
