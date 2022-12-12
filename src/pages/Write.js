@@ -23,8 +23,9 @@ const Write = () => {
     console.log(category);
   }
 
-  const contentHandler = (e) => {
+  const contentHandler = () => {
     setContent(editorRef.current?.getInstance().getHTML());
+    console.log(content);
   }
 
   const submit = async () => {
