@@ -1,68 +1,52 @@
 .category-container {
-    display: block;
+  display: block;
 }
 
 .category-button-div {
-    display: block;
-    margin-top: 40px;
-    text-align: center;
+  display: block;
+  margin-top: 40px;
+  text-align: center;
 }
 
-/*   background: #ec6a5e #f5bf4f #61c554  */ 
+/*   background: #ec6a5e #f5bf4f #61c554  */
 
 .category-button-div button {
-    border: none;
-    background: #5182ee;
-    color: white;
-    height: 40px;
-    margin-left: 20px;
-    border-radius: 15px;
-    box-shadow:  0 0 5px gray;
-    cursor: pointer;
-    font-size: 15px;
+  border: none;
+  background: #5182ee;
+  color: white;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px gray;
+  cursor: pointer;
+  font-size: 15px;
 }
 
 .btn-active {
-    transition: 0.9s;
-    width: 250px;
+  transition: 0.9s;
+  width: 250px;
 }
 
 .btn-not-active {
-    transition: 1s;
-    width: 30px;
+  transition: 1s;
+  width: 30px;
 }
 
 .not-clicked {
-    width: 85px;
+  width: 85px;
 }
 
 .go-to-main-layout {
-    display: block;
+  display: block;
 }
 
 .go-to-main-category {
-    display: flex;
-    margin-top: 10px;
-    margin-left: 10px;
+  display: flex;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .go-to-main-category:hover {
-    cursor: pointer;
-    color: #0095f6;
+  cursor: pointer;
+  color: #0095f6;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

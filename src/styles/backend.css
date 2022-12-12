@@ -1,122 +1,122 @@
 .backendCategory-container {
-    display: block; 
-    width: 1150px;
-    height: 580px;
-    background: transparent;
-    margin: 10px auto 0 auto;
-    border-radius: 5px;
+  display: block;
+  width: 1150px;
+  height: 580px;
+  background: transparent;
+  margin: 10px auto 0 auto;
+  border-radius: 5px;
 }
 
 .backend-category-layout {
-    display: block;
+  display: block;
 }
 
 .backend-category-to-top {
-    display: flex;
- }
- 
- .backend-category-to-middle {
-    display: flex;
- }
+  display: flex;
+}
 
- .backend-category-to-bottom {
-    display: flex;
- }
+.backend-category-to-middle {
+  display: flex;
+}
 
- .backend-category-to-top div {
-    width: 20%;
-    height: 150px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0 0 3px gray;
-    margin: 30px auto 0 auto;
-    cursor: pointer;
-    transition: 0.8s;
- }
+.backend-category-to-bottom {
+  display: flex;
+}
 
- .backend-category-to-middle div {    
-    width: 20%;
-    height: 150px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0 0 3px gray;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    transition: 0.8s;
- }
+.backend-category-to-top div {
+  width: 20%;
+  height: 150px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 3px gray;
+  margin: 30px auto 0 auto;
+  cursor: pointer;
+  transition: 0.8s;
+}
 
- .backend-category-to-bottom div {
-    width: 20%;
-    height: 150px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0 0 3px gray;
-    margin: 30px auto 0 auto;
-    cursor: pointer;
-    transition: 0.8s;
- }
+.backend-category-to-middle div {
+  width: 20%;
+  height: 150px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 3px gray;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: 0.8s;
+}
 
- .backend-category-item img {
-    display: block;
-    width: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25px;
+.backend-category-to-bottom div {
+  width: 20%;
+  height: 150px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 0 3px gray;
+  margin: 30px auto 0 auto;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.backend-category-item img {
+  display: block;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
 
 .backend-category-to-top .backend-category-item:nth-of-type(1):hover {
-    transition: 0.8s;
-    background: #283593;
+  transition: 0.8s;
+  background: #283593;
 }
 
 .backend-category-to-top .backend-category-item:nth-of-type(2):hover {
-    transition: 0.8s;
-    background: #684d95;
+  transition: 0.8s;
+  background: #684d95;
 }
 
 .backend-category-to-top .backend-category-item:nth-of-type(3):hover {
-    transition: 0.8s;
-    background: #00599c;
+  transition: 0.8s;
+  background: #00599c;
 }
 
 .backend-category-to-top .backend-category-item:nth-of-type(4):hover {
-    transition: 0.8s;
-    background: #29beb0;
+  transition: 0.8s;
+  background: #29beb0;
 }
 
 .backend-category-to-middle .backend-category-item:nth-of-type(1):hover {
-    transition: 0.8s;
-    background: #f89820;
+  transition: 0.8s;
+  background: #f89820;
 }
 
 .backend-category-to-middle .backend-category-item:nth-of-type(2):hover {
-    transition: 0.8s;
-    background: #aeb2d5;
+  transition: 0.8s;
+  background: #aeb2d5;
 }
 
 .backend-category-to-middle .backend-category-item:nth-of-type(3):hover {
-    transition: 0.8s;
-    background: linear-gradient(to right, #306998, #ffe873);
+  transition: 0.8s;
+  background: linear-gradient(to right, #306998, #ffe873);
 }
 
 .backend-category-to-middle .backend-category-item:nth-of-type(4):hover {
-    transition: 0.8s;
-    background: #cc0000;
+  transition: 0.8s;
+  background: #cc0000;
 }
 
 .backend-category-to-bottom .backend-category-item:nth-of-type(1):hover {
-    transition: 0.8s;
-    background: #252525;
+  transition: 0.8s;
+  background: #252525;
 }
 
 .backend-category-to-bottom .backend-category-item:nth-of-type(2):hover {
-    transition: 0.8s;
-    background: #00d084;
+  transition: 0.8s;
+  background: #00d084;
 }
 
 .backend-category-to-bottom .backend-category-item:nth-of-type(3):hover {
-    transition: 0.8s;
-    background: #007acc;
+  transition: 0.8s;
+  background: #007acc;
 }

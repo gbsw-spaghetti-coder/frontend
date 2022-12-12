@@ -3,128 +3,118 @@
 }
 
 .post-title-layout-top {
-    display: block;
-    width: 65%;
-    height: 30px;
-    background-color: white;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.1px solid #d3d3d3;
-    border-radius: 4px 4px 0px 0px;
-}
+    .post-info {
+        display: flex;
+    }
 
-.post-title h4 {
-    padding: 2px 4px;
-}
+    .post-info span {
+        font-size: 13px;
+        position: relative;
+        padding: 0 4px;
+        font-size: 10px;
+        position: relative;
+        padding: 0 4px;
+    }
 
-.post-info {
-    display: flex;
-}
+    .title-item2 {
+        margin-right: auto;
+    }
 
-.post-info span {
-    font-size: 13px;
-    position: relative;
-    padding: 0 4px;
-}
+    .title-item3,
+    .title-item4,
+    .title-item5 {
+        margin-right: 3px;
+    }
 
-.title-item2 {
-    margin-right: auto;
-}
+    .post-title-layout-bottom {
+        display: block;
+        width: 65%;
+        height: 350px;
+        background-color: white;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.1px solid #d3d3d3;
+        border-radius: 0px 0px 10px 10px;
+    }
 
-.title-item3, .title-item4, .title-item5 {
-    margin-right: 3px;
-}
+    .post-del-btn {
+        display: block;
+        width: 70px;
+        height: 25px;
+        outline: 0;
+        border: 0;
+        border-radius: 10px;
+        background: #e74545;
+        color: white;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 5px;
+        position: relative;
+        top: 5px;
+        transition: 0.3s;
+        box-shadow: 0 0 3px gray;
+    }
 
-.post-title-layout-bottom {
-    display: block;
-    width: 65%;
-    height: 350px;
-    background-color: white;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.1px solid #d3d3d3;
-    border-radius: 0px 0px 10px 10px;
-}
+    .post-del-btn:hover {
+        transition: 0.3s;
+        box-shadow: 0 0 7px #e74545;
+    }
 
-.post-del-btn {
-    display: block;
-    width: 70px;
-    height: 25px;
-    outline: 0;
-    border: 0;
-    border-radius: 10px;
-    background: #E74545;
-    color: white;
-    cursor: pointer;
-    margin-left: auto; 
-    margin-right: 5px;
-    position: relative;
-    top: 5px; 
-    transition: 0.3s;
-    box-shadow: 0 0 3px gray;
-}
+    .trash-icon {
+        position: relative;
+        width: 10px;
+        top: 1.5px;
+        right: 5px;
+    }
 
-.post-del-btn:hover {
-    transition: 0.3s;
-    box-shadow: 0 0 7px #E74545;
-}
+    .post-text-div {
+        overflow: auto;
+        width: 95%;
+        height: 300px;
+        margin: auto;
+        margin-top: 5px;
+    }
 
-.trash-icon {
-    position: relative;
-    width: 10px;
-    top: 1.5px;
-    right: 5px;
-}
+    .post-text-div span {
+        display: block;
+        margin-left: 10px;
+        font-weight: 100;
+        font-size: 13px;
+    }
 
-.post-text-div {
-    overflow: auto;
-    width: 95%;
-    height: 300px;
-    margin: auto;
-    margin-top: 5px;
-}
+    .comment-div {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: white;
+        border: 1px solid #d3d3d3;
+        border-radius: 50px;
+        margin: auto;
+        margin-top: 5px;
+    }
 
-.post-text-div span {
-    display: block;
-    margin-left: 10px;
-    font-weight: 100;
-    font-size: 13px;
-}
+    .comment-icon {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+        color: black;
+    }
 
-.comment-div {
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: white;
-    border: 1px solid #d3d3d3;
-    border-radius: 50px;
-    margin: auto;
-    margin-top: 5px;
-}
+    .post-text-div::-webkit-scrollbar {
+        width: 8px;
+    }
 
-.comment-icon {
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 6px;
-    cursor: pointer;
-    color: black;
-}
+    .post-text-div::-webkit-scrollbar-thumb {
+        background-color: #2f3542;
+        border-radius: 10px;
+        background-clip: padding-box;
+        border: 2px solid transparent;
+    }
 
-.post-text-div::-webkit-scrollbar {
-    width: 8px;
-}
-
-.post-text-div::-webkit-scrollbar-thumb {
-    background-color: #2f3542;
-    border-radius: 10px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
-}
-
-.post-text-div::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius: 10px;;
-}
+    .post-text-div::-webkit-scrollbar-track {
+        background-color: transparent;
+        border-radius: 10px;
+    }

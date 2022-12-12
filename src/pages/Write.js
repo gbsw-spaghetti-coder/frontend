@@ -1,51 +1,58 @@
-import React, {useRef, useState} from 'react';
+import React, { useRef, useState } from 'react';
 import '../styles/write.css';
 import ToastEditor from '../components/ToastEditor';
 import WriteLayout from '../components/WriteLayout';
 import Header from '../components/Header';
-import {Editor} from "@toast-ui/react-editor";
+import { Editor } from '@toast-ui/react-editor';
 import axios from 'axios';
 
 const Write = () => {
-  const [title, setTitle] = useState("");
-  const [category, setCategory] = useState("");
-  const [content, setContent] = useState("");
+  const [title, setTitle] = useState('');
+  const [category, setCategory] = useState('');
+  const [content, setContent] = useState('');
 
   const editorRef = useRef();
 
   const titleHandler = (e) => {
     setTitle(e.target.value);
     console.log(title);
-  }
+  };
 
   const categoryHandler = (e) => {
     setCategory(e.target.value);
     console.log(category);
-  }
+  };
 
-  const contentHandler = (e) => {
+  const contentHandler = () => {
     setContent(editorRef.current?.getInstance().getHTML());
-  }
+    console.log(content);
+  };
 
   const submit = async () => {
     const data = { title, content, category };
     console.log(data);
 
-
-    await axios.post('/api/question', data, {withCredentials: true})
-      .then((res) => {
-        alert(res.data.message);
-        window.location.href = '/';
-      })
-      .catch((err) => {
-        console.error(err);
-        alert(err.response.data.message);
-      })
+    if (title === '') {
+      alert('글 제목을 입력해 주세요');
+    } else if (category === '') {
+      alert('카테고리를 선택해 주세요');
+    } else {
+      await axios
+        .post('/api/question', data, { withCredentials: true })
+        .then((res) => {
+          alert(res.data.message);
+          window.location.href = '/';
+        })
+        .catch((err) => {
+          console.error(err);
+          alert(err.response.data.message);
+        });
+    }
   };
 
   return (
-    <div style={{ background: '#f5f5f5', height: '100vh'}}>
-    <Header />
+    <div style={{ background: '#f5f5f5', height: '100vh' }}>
+      <Header />
       <div className="writeLayout-container">
         <div className="write-layout">
           <input
@@ -86,11 +93,18 @@ const Write = () => {
           </select>
         </div>
       </div>
-      <div style={{ width: "700px", margin: "auto", marginTop: '20px', boxShadow: '0px 2px 3px #d3d3d3' }}>
+      <div
+        style={{
+          width: '700px',
+          margin: 'auto',
+          marginTop: '20px',
+          boxShadow: '0px 2px 3px #d3d3d3',
+        }}
+      >
         <Editor
           ref={editorRef}
           initialValue=" "
-          placeholder='내용을 입력해주세요.'
+          placeholder="내용을 입력해주세요."
           previewStyle="vertical"
           height="350px"
           initialEditType="wysiwyg"
@@ -98,9 +112,11 @@ const Write = () => {
           onChange={contentHandler}
         />
       </div>
-    <button type='submit' className='write-button' onClick={submit}>글 등록</button>
+      <button type="submit" className="write-button" onClick={submit}>
+        글 등록
+      </button>
     </div>
-  )
-}
+  );
+};
 
 export default Write;

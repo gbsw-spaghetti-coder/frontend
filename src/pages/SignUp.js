@@ -59,7 +59,7 @@ const SignUp = () => {
   };
 
   const passwordHandler = (e) => {
-    console.log("비밀번호", e.target.value)
+    console.log('비밀번호', e.target.value);
     if (password === '') {
       setErrors({
         ...errors,
@@ -74,7 +74,7 @@ const SignUp = () => {
   };
 
   const passwordCheckHandler = (e) => {
-    setPasswordCheck(e.target.value)
+    setPasswordCheck(e.target.value);
     if (password === e.target.value) {
       setErrors({
         ...errors,
@@ -83,7 +83,7 @@ const SignUp = () => {
     } else {
       setErrors({
         passwordCheckError: true,
-      })
+      });
     }
   };
 
@@ -93,27 +93,27 @@ const SignUp = () => {
     const data = {
       email,
       password,
-      nick
+      nick,
     };
 
-    await axios.post('/api/auth/sign', data, { withCredentials: true })
+    await axios
+      .post('/api/auth/sign', data, { withCredentials: true })
       .then((res) => {
         alert(res.data.message);
-        window.location.href = "/login";
+        window.location.href = '/login';
       })
       .catch((err) => {
         console.log(err.response.data.message);
-        window.location.href = "/signup";
-      })
-
+        window.location.href = '/signup';
+      });
   };
 
   return (
     <div className="signUp-container">
       <div className="signUp-layout-left">
-        <div className='signUp-layout-left2'>
-        <img src={logo} alt="logo" className="signUp-logo-img"></img>
-        <span className="signUp-logo-text">Code Wave</span>
+        <div className="signUp-layout-left2">
+          <img src={logo} alt="logo" className="signUp-logo-img"></img>
+          <span className="signUp-logo-text">Code Wave</span>
         </div>
       </div>
       <div className="signUp-layout-right">
@@ -130,11 +130,7 @@ const SignUp = () => {
             className="signUp-mail"
             onChange={emailHandler}
           />
-          {errors.emailError && (
-            <p className='check-text'>
-              이메일 형식에 맞게 입력해주세요.
-            </p>
-          )}
+          {errors.emailError && <p className="check-text">이메일 형식에 맞게 입력해주세요.</p>}
           <input
             type="text"
             name="nick"
@@ -142,11 +138,7 @@ const SignUp = () => {
             className="signUp-nickname"
             onChange={nickHandler}
           />
-          {errors.nickError && (
-            <p className='check-text'>
-              닉네임을 입력해주세요.
-            </p>
-          )}
+          {errors.nickError && <p className="check-text">닉네임을 입력해주세요.</p>}
 
           <input
             type={pwType.type}
@@ -155,11 +147,7 @@ const SignUp = () => {
             className="signUp-pw"
             onChange={passwordHandler}
           />
-          {errors.passwordError && (
-            <p className='check-text'>
-              비밀번호를 입력해주세요.
-            </p>
-          )}
+          {errors.passwordError && <p className="check-text">비밀번호를 입력해주세요.</p>}
 
           <input
             type={pwType.type}
@@ -169,9 +157,7 @@ const SignUp = () => {
             onChange={passwordCheckHandler}
           />
           {errors.passwordCheckError && (
-            <p className='check-text'>
-              비밀번호 일치한지 확인해주세요.
-            </p>
+            <p className="check-text">비밀번호 일치한지 확인해주세요.</p>
           )}
         </div>
         <button type="submit" className="signUp-button" onClick={onSubmit}>
@@ -186,11 +172,11 @@ const SignUp = () => {
             )}
           </span>
         </div>
-        <div className='signUp-layout-bottom'>
-        <p className="goLogin-text">계정이 있으신가요?</p>
-        <Link to="/login">
-        <span className='goLogin-text-link'>로그인</span>
-        </Link>
+        <div className="signUp-layout-bottom">
+          <p className="goLogin-text">계정이 있으신가요?</p>
+          <Link to="/login">
+            <span className="goLogin-text-link">로그인</span>
+          </Link>
         </div>
       </div>
     </div>

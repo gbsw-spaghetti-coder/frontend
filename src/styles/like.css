@@ -1,21 +1,21 @@
 .like-container {
-    width: 70px;
-    height: 60px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 3px #d3d3d3;
-    margin: auto;
-    position: relative;
-    bottom: 50px;
+  width: 70px;
+  height: 60px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px #d3d3d3;
+  margin: auto;
+  position: relative;
+  bottom: 50px;
 }
 
 .like-icon {
-    display: block;
-    font-size: 30px;
-    margin: auto;
-    cursor: pointer;
+  display: block;
+  font-size: 30px;
+  margin: auto;
+  cursor: pointer;
 }
 
 .like-count {
-    text-align: center;
+  text-align: center;
 }

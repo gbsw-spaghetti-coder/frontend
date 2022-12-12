@@ -1,314 +1,313 @@
 .myPage-myPage-table-to-textarea {
-    display: block;
+  display: block;
 }
 
 .myPage-layout-top {
-    display: flex;
-    height: 440px;
-    background: #f5f5f5;
+  display: flex;
+  height: 440px;
+  background: #f5f5f5;
 }
 
 .color-div {
-    display: flex;
-    margin-left: 2px;
+  display: flex;
+  margin-left: 2px;
 }
 
 .blue-color,
 .red-color,
 .green-color,
 .gray-color {
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
-    border: 2px solid white;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 2px solid white;
+  cursor: pointer;
 }
 
 .red-color {
-    background: #FFA184;
+  background: #ffa184;
 }
 
 .blue-color {
-    background: #8685EF;
+  background: #8685ef;
 }
 
 .green-color {
-    background: #00C896;
+  background: #00c896;
 }
 
 .gray-color {
-    background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .profile-button-div {
-    display: block;
-    margin-left: auto;
-    margin-right: 20px;
-    margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .profile-button {
-    display: block;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
-    background: #008BE9;
-    color: white;
-    border: 0;
-    border-radius: 30px;
-    outline: 0;
-    transition: 0.2s;
-    box-shadow: 1px 1px 3px 1px black;
+  display: block;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  background: #008be9;
+  color: white;
+  border: 0;
+  border-radius: 30px;
+  outline: 0;
+  transition: 0.2s;
+  box-shadow: 1px 1px 3px 1px black;
 }
 
 .profile-button:hover {
-    outline: 0;
-    transition: 0.6s;
-    box-shadow: 0px 0px 0px 0px;
+  outline: 0;
+  transition: 0.6s;
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .myPage-layout-bottom {
-    display: flex;
-    height: 120px;
+  display: flex;
+  height: 120px;
 }
 
 .profile-img {
-    display: flex;
-    position: relative;
-    bottom: 100px;
-    width: 200px;
-    height: 200px;
-    margin: 0 30px;
-    border-radius: 70px;
+  display: flex;
+  position: relative;
+  bottom: 100px;
+  width: 200px;
+  height: 200px;
+  margin: 0 30px;
+  border-radius: 70px;
 }
 
 .profile-name {
-    display: flex;
-    margin-top: 10px;
+  display: flex;
+  margin-top: 10px;
 }
 
 .introduce-text {
-    display: block;
-    font-weight: 700;
+  display: block;
+  font-weight: 700;
 }
 
 .myPage-layout-bottom2 {
-    display: flex;
+  display: flex;
 }
 
 .myPage-table-to-textarea {
-    display: block;
-    width: 35%;
-    height: 250px;
-    margin-right: auto;
-    margin-left: 40px;
-    background: #f5f5f5;
-    border-radius: 5px;
-    border: 0.1px solid #d3d3d3;
+  display: block;
+  width: 35%;
+  height: 250px;
+  margin-right: auto;
+  margin-left: 40px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  border: 0.1px solid #d3d3d3;
 }
 
 .myPage-table-to-comment {
-    display: block;
-    width: 35%;
-    height: 250px;
-    margin-left: auto;
-    margin-right: 270px;
-    background: #f5f5f5;
-    border-radius: 5px;
-    border: 0.1px solid #d3d3d3;
+  display: block;
+  width: 35%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: 270px;
+  background: #f5f5f5;
+  border-radius: 5px;
+  border: 0.1px solid #d3d3d3;
 }
 
 .myPage-td {
-    padding: 10px 20px;
-    border-bottom: 0.1px solid gray;
-    width: 500px;
-    font-size: 17px;
-    font-weight: bold;
+  padding: 10px 20px;
+  border-bottom: 0.1px solid gray;
+  width: 500px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .myPage-td-last {
-    padding: 10px 20px;
-    width: 500px;
-    font-size: 17px;
-    font-weight: bold;
+  padding: 10px 20px;
+  width: 500px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .myPage-td-comment {
-    padding: 10px 20px;
-    border-bottom: 0.1px solid gray;
-    width: 590px;
-    font-size: 17px;
-    font-weight: bold;
+  padding: 10px 20px;
+  border-bottom: 0.1px solid gray;
+  width: 590px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .myPage-td-comment-title {
-    display: block;
-    font-size: 10px;
-    padding-top: 5px;
+  display: block;
+  font-size: 10px;
+  padding-top: 5px;
 }
 
 .myPage-td-comment-title:hover {
-    cursor: pointer;
-    color: #0095f6;
+  cursor: pointer;
+  color: #0095f6;
 }
 
 .myPage-td-comment-last {
-    padding: 10px 20px;
-    width: 500px;
-    font-size: 17px;
-    font-weight: bold;
+  padding: 10px 20px;
+  width: 500px;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .myPage-td-last:hover {
-    cursor: pointer;
-    color: #0095f6;
+  cursor: pointer;
+  color: #0095f6;
 }
 
 .myPage-td:hover {
-    cursor: pointer;
-    color: #0095f6;
+  cursor: pointer;
+  color: #0095f6;
 }
 
 .myPage-td-category {
-    border-left: 0.1px solid gray;
-    border-bottom: 0.1px solid gray;
-    padding: 20px 30px;
-    position: relative;
-    font-weight: bold;
-    font-size: 17px;
+  border-left: 0.1px solid gray;
+  border-bottom: 0.1px solid gray;
+  padding: 20px 30px;
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .myPage-td-category-last {
-    border-left: 0.1px solid gray;
-    padding: 20px 30px;
-    position: relative;
-    font-weight: bold;
-    font-size: 17px;
+  border-left: 0.1px solid gray;
+  padding: 20px 30px;
+  position: relative;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .myPage-table-to-textarea::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 .myPage-table-to-textarea::-webkit-scrollbar-thumb {
-    background-color: #2f3542;
-    border-radius: 10px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }
 
 .myPage-table-to-textarea::-webkit-scrollbar-track {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .myPage-table-to-comment::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 .myPage-table-to-comment::-webkit-scrollbar-thumb {
-    background-color: #2f3542;
-    border-radius: 10px;
-    background-clip: padding-box;
-    border: 2px solid transparent;
+  background-color: #2f3542;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
 }
 
 .myPage-table-to-comment::-webkit-scrollbar-track {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .go-to-main {
-    font-size: 15px;
-    margin-top: 310px;
-    margin-right: 10px;
+  font-size: 15px;
+  margin-top: 310px;
+  margin-right: 10px;
 }
 
 .go-to-main:hover {
-    cursor: pointer;
-    color: #008BE9;
+  cursor: pointer;
+  color: #008be9;
 }
 
-@media(min-width: 1230px) and (max-width: 1440px) {
-    .myPage-layout-top {
-        height: 500px;
-    }
+@media (min-width: 1230px) and (max-width: 1440px) {
+  .myPage-layout-top {
+    height: 500px;
+  }
 }
 
-@media(min-width: 1024px) and (max-width: 1229px) {
-    .myPage-layout-top {
-        height: 450px;
-    }
+@media (min-width: 1024px) and (max-width: 1229px) {
+  .myPage-layout-top {
+    height: 450px;
+  }
 
-    .profile-img {
-        width: 200px;
-        height: 200px;
-    }
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
 
-    .profile-name {
-        font-size: 30px;
-    }
+  .profile-name {
+    font-size: 30px;
+  }
 
-    .introduce-text {
-        font-size: 17px;
-    }
+  .introduce-text {
+    font-size: 17px;
+  }
 
-    .myPage-table-to-comment {
-        position: relative;
-        left: 100px;
-        width: 350px;
-    }
+  .myPage-table-to-comment {
+    position: relative;
+    left: 100px;
+    width: 350px;
+  }
 
-    .myPage-myPage-table-to-textarea {
-        position: relative;
-        width: 400px;
-    }
+  .myPage-myPage-table-to-textarea {
+    position: relative;
+    width: 400px;
+  }
 }
 
-@media(min-width: 550px) and (max-width: 960px) {
-    .myPage-layout-top {
-        height: 450px;
-    }
+@media (min-width: 550px) and (max-width: 960px) {
+  .myPage-layout-top {
+    height: 450px;
+  }
 
-    .profile-img {
-        width: 230px;
-        height: 230px;
-        bottom: 130px;
-    }
+  .profile-img {
+    width: 230px;
+    height: 230px;
+    bottom: 130px;
+  }
 
-    .profile-name {
-        font-size: 30px;
-    }
+  .profile-name {
+    font-size: 30px;
+  }
 
-    .myPage-table-to-comment {
-        position: relative;
-        left: 100px;
-        width: 300px;
-    }
+  .myPage-table-to-comment {
+    position: relative;
+    left: 100px;
+    width: 300px;
+  }
 
-    .myPage-myPage-table-to-textarea {
-        position: fixed;
-        width: 500px;
-    }
+  .myPage-myPage-table-to-textarea {
+    position: fixed;
+    width: 500px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 550px) {
-    
-    .myPage-layout-bottom2 {
-        width: 600px;
-    }
+  .myPage-layout-bottom2 {
+    width: 600px;
+  }
 
-    .myPage-table-to-comment {
-        position: relative;
-        left: 100px;
-    }
+  .myPage-table-to-comment {
+    position: relative;
+    left: 100px;
+  }
 
-    .profile-img {
-        width: 150px;
-        height: 150px;
-    }
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
 
-    .profile-name {
-        font-size: 20px;
-    } 
+  .profile-name {
+    font-size: 20px;
+  }
 }
