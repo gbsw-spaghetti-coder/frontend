@@ -5,7 +5,7 @@
 .post-title-layout-top {
     display: block;
     width: 65%;
-    height: 40px;
+    height: 30px;
     background-color: white;
     margin-top: 100px;
     margin-left: auto;
@@ -14,8 +14,8 @@
     border-radius: 4px 4px 0px 0px;
 }
 
-.post-title h6 {
-    padding: 3px 4px;
+.post-title h4 {
+    padding: 2px 4px;
 }
 
 .post-info {
@@ -23,7 +23,7 @@
 }
 
 .post-info span {
-    font-size: 10px;
+    font-size: 13px;
     position: relative;
     padding: 0 4px;
 }

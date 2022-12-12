@@ -59,7 +59,7 @@ const Post = () => {
     <div className="post-container">
       <div className="post-title-layout-top">
         <div className="post-title">
-          <h6>{data.title}</h6>
+          <h4>{data.title}</h4>
         </div>
         <div className="post-info">
           <span className="title-item1">{nick}</span>
