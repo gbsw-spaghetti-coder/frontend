@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/pwEdit.css';
 import logo from '../images/logo.png';
-import axios from "axios";
+import axios from 'axios';
 
 const PasswordEdit = () => {
   const [pwType, setPwType] = useState({
@@ -19,26 +19,27 @@ const PasswordEdit = () => {
   };
 
   const validatePassword = async (req, res) => {
-    await axios.post('/api/auth/password', { withCredentials: true })
+    await axios
+      .post('/api/auth/password', { withCredentials: true })
       .then((res) => {
         alert(res.data.message);
       })
       .catch((err) => {
         alert(err.response.data.message);
-      })
-  }
+      });
+  };
 
   const editPassword = async () => {
-    if(localStorage.getItem("token") === null) {
-      alert("로그인 하세요")
-      window.location.href = "/";
+    if (localStorage.getItem('token') === null) {
+      alert('로그인 하세요');
+      window.location.href = '/';
     } else {
-      await axios.post('/api/user/password', {withCredentials: true})
+      await axios.post('/api/user/password', { withCredentials: true });
     }
-  }
-  useEffect( () => {
+  };
+  useEffect(() => {
     editPassword();
-  }, [])
+  }, []);
 
   return (
     <div className="passwordEdit-container">
@@ -53,7 +54,9 @@ const PasswordEdit = () => {
             name="old-pw"
             placeholder="현재 비밀번호를 입력하세요"
           />
-          <button type="submit" onClick={validatePassword}>확인</button>
+          <button type="submit" onClick={validatePassword}>
+            확인
+          </button>
         </div>
         <div className="new-pw-div">
           <input
@@ -71,7 +74,7 @@ const PasswordEdit = () => {
             placeholder="새로운 비밀번호를 한번 더입력하세요"
           />
         </div>
-        <div className='pwShowAndHide'>
+        <div className="pwShowAndHide">
           <span onClick={handlePasswordType}>
             {pwType.visible ? (
               <span className="pwHide" style={{ fontSize: '5px', cursor: 'pointer' }}>
@@ -83,7 +86,7 @@ const PasswordEdit = () => {
               </span>
             )}
           </span>
-          </div>
+        </div>
         <div className="pwEdit-button-div">
           <button type="submit" className="pwEdit-button">
             비밀번호 변경

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/header.css';
@@ -6,42 +6,42 @@ import Search from '../images/search.png';
 import Menu from '../images/menu.png';
 import Logo from '../images/logo.png';
 
-
 const Header = () => {
-
   const [token, setToken] = useState(localStorage.getItem('token'));
 
   useEffect(() => {
-    console.log(token)
+    console.log(token);
   }, []);
 
   const logout = async () => {
     if (localStorage.getItem('token') === null) {
-      alert("로그인이 안 되어 있습니다")
+      alert('로그인이 안 되어 있습니다');
     } else {
       localStorage.clear();
-      await axios.get('/api/auth/logout', {withCredentials: true})
+      await axios
+        .get('/api/auth/logout', { withCredentials: true })
         .then((res) => {
           console.log(res);
           alert(res.data.message);
-          window.location.href = "/login";
+          window.location.href = '/login';
           localStorage.clear();
-        }).catch((error) => {
-          alert(error.response.data.message);
         })
+        .catch((error) => {
+          alert(error.response.data.message);
+        });
     }
-  }
+  };
 
   const handleGoHome = () => {
-    window.location.href = "/";
-  }
+    window.location.href = '/';
+  };
 
   return (
     <div className="header-container">
       <div onClick={handleGoHome}>
-      <div className='logo-header'>
-      <img src={Logo} alt="logo" className="logo-header" />
-      </div>
+        <div className="logo-header">
+          <img src={Logo} alt="logo" className="logo-header" />
+        </div>
       </div>
       <div className="menu-layout">
         {token ? (
@@ -52,7 +52,7 @@ const Header = () => {
           <p></p>
         )}
         <Link to="/category">
-        <button>카테고리</button>
+          <button>카테고리</button>
         </Link>
       </div>
       <div className="menu-layout-mobile">
@@ -72,18 +72,18 @@ const Header = () => {
         </button>
       </div>
       <div className="lol-layout">
-        {token?(
+        {token ? (
           <div className="l-layout" onClick={logout}>
             <span>로그아웃</span>
           </div>
         ) : (
           <div className="lo-layout">
             <Link to="/login">
-            <span>로그인</span>
+              <span>로그인</span>
             </Link>
             <div className="height-line"></div>
             <Link to="/signup">
-            <span>회원가입</span>
+              <span>회원가입</span>
             </Link>
           </div>
         )}

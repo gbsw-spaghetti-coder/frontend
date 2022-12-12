@@ -17,10 +17,10 @@ body {
   margin-right: 15px;
   margin-top: 10px;
   cursor: pointer;
-  border: 0; 
+  border: 0;
   font-weight: bold;
   color: white;
-  background: #008BE9;
+  background: #008be9;
   border-radius: 30px;
   transition: 0.2s;
   box-shadow: 1px 1px 3px 1px black;
@@ -29,7 +29,7 @@ body {
 #main-button-layout button:hover {
   outline: 0;
   transition: 0.6s;
-  box-shadow: 0px 0px 0px 0px ;
+  box-shadow: 0px 0px 0px 0px;
 }
 
 #table-box {
@@ -60,7 +60,8 @@ tbody {
   opacity: 0.7;
 }
 
-thead tr, #main-tr {
+thead tr,
+#main-tr {
   border-bottom: 1px solid;
   height: 40px;
 }

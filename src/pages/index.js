@@ -7,4 +7,4 @@ export { default as Category } from './Category';
 export { default as PwEdit } from './PasswordEdit';
 export { default as PostDetail } from './PostDetail';
 export { default as Write } from './Write';
-export { default as CategoryPost } from './CategoryPost'
+export { default as CategoryPost } from './CategoryPost';

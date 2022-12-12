@@ -33,8 +33,8 @@ const Login = () => {
       if (response.data.success) {
         localStorage.clear();
         alert(response.data.message);
-        window.location.href = "/";
-        localStorage.setItem("token", "token");
+        window.location.href = '/';
+        localStorage.setItem('token', 'token');
       }
     } catch (error) {
       console.log(error);
@@ -91,7 +91,7 @@ const Login = () => {
             로그인
           </button>
           <Link to="password">
-          <p className="lostPW">비밀번호를 잃어버리셨나요?</p>
+            <p className="lostPW">비밀번호를 잃어버리셨나요?</p>
           </Link>
           <div className="or-layout">
             <p className="left-or-border" />
@@ -107,7 +107,7 @@ const Login = () => {
           <div className="login-layout-bottom">
             <p className="goSignUp-text">계정이 없으신가요?</p>
             <Link to="/signup">
-            <span className="goSignUp-text-link">회원가입</span>
+              <span className="goSignUp-text-link">회원가입</span>
             </Link>
           </div>
         </form>

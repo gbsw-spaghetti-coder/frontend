@@ -1,34 +1,33 @@
 .coin-container {
-    margin-left: auto;
-    margin-right: 10px;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 .coin-layout {
-    display: flex;
-    width: 100px;
-    height: 30px;
-    margin-top: 10px;
-    border-radius: 20px;
-    background: #252525;
+  display: flex;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: #252525;
 }
 
 .coin-icon {
-    display: flex;
-    font-size: 20px;
-    color: white;
-    margin-top: 5px;
-    margin-left: 10px;
+  display: flex;
+  font-size: 20px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
 }
 
 .coin-line {
-    color: white;
-    position: relative;
+  color: white;
+  position: relative;
 }
 
 .coin-text {
-    display: flex;
-    font-weight: bold;
-    color: white;
-    margin: auto;
+  display: flex;
+  font-weight: bold;
+  color: white;
+  margin: auto;
 }
-

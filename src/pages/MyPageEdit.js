@@ -10,7 +10,7 @@ const MyPageEdit = () => {
   const [nick, setNick] = useState('');
   const [introduce, setIntroduce] = useState('');
   const [coin, setCoin] = useState(0);
-  const [profileImg, setProfileImg] = useState("");
+  const [profileImg, setProfileImg] = useState('');
 
   const RedColorChange = () => {
     let layout = document.querySelector('.myPage-layout-top');
@@ -68,15 +68,23 @@ const MyPageEdit = () => {
         </div>
         <div className="profile-button-div">
           <input type="submit" name="add-button" className="profile-button" value="프로필편집" />
-          <div>
-          </div>
+          <div></div>
         </div>
       </div>
       <div className="myPage-layout-bottom">
         <img src={profileImg} className="profile-img" alt="프로필" />
         <div style={{ height: '30px' }}>
-          <h2 className="profile-name"><div className='profile-name_div'>닉네임: <input type="text" className='profile-name_div_input' /></div></h2>
-          <p className="introduce-text"><div className='introduce-text_div'>자기소개: <textarea className='introduce-text_div_textarea' rows="3" cols="30"></textarea></div></p>
+          <h2 className="profile-name">
+            <div className="profile-name_div">
+              닉네임: <input type="text" className="profile-name_div_input" />
+            </div>
+          </h2>
+          <p className="introduce-text">
+            <div className="introduce-text_div">
+              자기소개:{' '}
+              <textarea className="introduce-text_div_textarea" rows="3" cols="30"></textarea>
+            </div>
+          </p>
         </div>
         <Coin coin={coin} />
       </div>
@@ -84,29 +92,34 @@ const MyPageEdit = () => {
         <div className="myPage-table-to-textarea" style={{ overflow: 'auto' }}>
           <table>
             <tbody>
-              <tr className='myPage-tr'>
-                <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
-                <td className='myPage-td-category'>CSS</td>
+              <tr className="myPage-tr">
+                <td className="myPage-td">이거 어떻게 해야 margin이 먹히나요??</td>
+                <td className="myPage-td-category">CSS</td>
               </tr>
-              <tr className='myPage-tr'>
-                <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
-                <td className='myPage-td-category'>CSS</td>
+              <tr className="myPage-tr">
+                <td className="myPage-td">이거 어떻게 해야 margin이 먹히나요??</td>
+                <td className="myPage-td-category">CSS</td>
               </tr>
-              <tr className='myPage-tr'>
-                <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
-                <td className='myPage-td-category'>CSS</td>
+              <tr className="myPage-tr">
+                <td className="myPage-td">이거 어떻게 해야 margin이 먹히나요??</td>
+                <td className="myPage-td-category">CSS</td>
               </tr>
-              <tr className='myPage-tr'>
-                <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
-                <td className='myPage-td-category'>CSS</td>
+              <tr className="myPage-tr">
+                <td className="myPage-td">이거 어떻게 해야 margin이 먹히나요??</td>
+                <td className="myPage-td-category">CSS</td>
               </tr>
-              <tr className='myPage-tr'>
-                <td className='myPage-td'>이거 어떻게 해야 margin이 먹히나요??</td>
-                <td className='myPage-td-category'>CSS</td>
+              <tr className="myPage-tr">
+                <td className="myPage-td">이거 어떻게 해야 margin이 먹히나요??</td>
+                <td className="myPage-td-category">CSS</td>
               </tr>
-              <tr className='myPage-tr'>
-                <td className='myPage-td-last'>이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요?? </td>
-                <td className='myPage-td-category-last'>CSS</td>
+              <tr className="myPage-tr">
+                <td className="myPage-td-last">
+                  이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거
+                  어떻게 해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게
+                  해야 margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??이거 어떻게 해야
+                  margin이 먹히나요??이거 어떻게 해야 margin이 먹히나요??{' '}
+                </td>
+                <td className="myPage-td-category-last">CSS</td>
               </tr>
             </tbody>
           </table>
@@ -115,49 +128,67 @@ const MyPageEdit = () => {
           <table>
             <tbody>
               <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
-
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
               </tr>
               <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
-                </td>
-
-              </tr>
-              <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
               </tr>
               <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
               </tr>
               <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
               </tr>
               <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
-
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
               </tr>
               <tr>
-                <td className='myPage-td-comment'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
-
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
-
               </tr>
               <tr>
-                <td className='myPage-td-comment-last'>이거 이렇게해야됨 ㅋㅋ
-                  <td className='myPage-td-comment-title'>제목: 이거 어떻게 해야 margin이 먹히나요?</td>
-
+                <td className="myPage-td-comment">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
+                </td>
+              </tr>
+              <tr>
+                <td className="myPage-td-comment-last">
+                  이거 이렇게해야됨 ㅋㅋ
+                  <td className="myPage-td-comment-title">
+                    제목: 이거 어떻게 해야 margin이 먹히나요?
+                  </td>
                 </td>
               </tr>
             </tbody>

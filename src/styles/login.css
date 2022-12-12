@@ -167,7 +167,6 @@
   margin: auto;
 }
 
-
 .github-login-button:hover {
   background-color: rgb(66, 66, 66);
   cursor: pointer;
@@ -178,8 +177,8 @@
   position: relative;
   width: 27px;
   height: 27px;
-  top: 4px;  
-  left: 7px; 
+  top: 4px;
+  left: 7px;
 }
 
 .login-layout-bottom {

@@ -1,133 +1,133 @@
 .passwordEdit-container {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(#004581, #000000);
+  display: block;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#004581, #000000);
 }
 
 .pw-edit-logo {
-    display: block;
-    width: 300px;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
+  display: block;
+  width: 300px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
 }
 
 .pw-edit-logo-text {
-    display: block;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    bottom: 15px;
+  display: block;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  bottom: 15px;
 }
 
 .passwordEdit-layout {
-    display: block;
-    position: relative;
-    top: 10px;
-    width: 300px;
-    height: 500px;
-    background: white;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 0 5px black inset;
-    border-radius: 10px;
+  display: block;
+  position: relative;
+  top: 10px;
+  width: 300px;
+  height: 500px;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 5px black inset;
+  border-radius: 10px;
 }
 
 .passwordEdit-layout span {
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-    padding-top: 50px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 50px;
 }
 
 .old-pw-div {
-    display: flex;
-    padding-top: 85px;
+  display: flex;
+  padding-top: 85px;
 }
 
 .old-pw-div button {
-    width: 45px;
-    position: relative;
-    background: #004581;
-    right: 22px;
-    border: 0;
-    border-radius: 5px;
-    font-weight: bold;
-    color: white;
-    box-shadow: 0 0 4px gray;
+  width: 45px;
+  position: relative;
+  background: #004581;
+  right: 22px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 0 4px gray;
 }
 
 .old-pw-div button:hover {
-    cursor: pointer;
-    background: #0048;
+  cursor: pointer;
+  background: #0048;
 }
 
 .new-pw-div,
 .new-pwChk-div {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .old-password {
-    display: flex;
-    margin: auto;
-    width: 200px;
-    height: 30px;
-    border: 0;
-    border-bottom: 0.5px solid black;
-    background: transparent;
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 30px;
+  border: 0;
+  border-bottom: 0.5px solid black;
+  background: transparent;
 }
 
 .new-password,
 .new-password-chk {
-    display: block;
-    margin: auto;
-    width: 250px;
-    height: 30px;
-    border: 0;
-    border-bottom: 0.5px solid black;
-    background: transparent;
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 30px;
+  border: 0;
+  border-bottom: 0.5px solid black;
+  background: transparent;
 }
 
 .old-password:hover,
 .new-password:hover,
 .new-password-chk:hover {
-    outline: none;
+  outline: none;
 }
 
 .pwEdit-button {
-    display: block;
-    background: #004581;
-    color: white;
-    font-weight: bold;
-    width: 200px;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    font-size: 15px;
-    margin: 0 auto 0 auto;
-    position: relative;
-    bottom: 45px;
+  display: block;
+  background: #004581;
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  margin: 0 auto 0 auto;
+  position: relative;
+  bottom: 45px;
 }
 
 .pwEdit-button:hover {
-    cursor: pointer;
-    background: #0048;
+  cursor: pointer;
+  background: #0048;
 }
 
 .pwShowAndHide {
-    position: relative;
-    bottom: 58px;
+  position: relative;
+  bottom: 58px;
 }
 
 .pwHide:hover {
-    color: red;
+  color: red;
 }
 
 .pwShow:hover {
-    color: #0095f6;
+  color: #0095f6;
 }
